@@ -64,8 +64,8 @@ git push origin team-{n}-dev
 
 ## 작업 규칙
 
-* 팀의 폴더에서만 작업해주세요!: 반드시 projects/team-{n}/ 폴더 내부만 수정합니다.
-* 루트 파일 수정 금지: .gitignore나 README.md 등 루트 폴더의 내용을 수정하지 말아주세요!
+* 팀의 폴더에서만 작업해주세요!: 반드시 `projects/team-{n}/` 폴더 내부만 수정합니다.
+* 루트 파일 수정 금지: `.gitignore`나 `README.md` 등 루트 폴더의 내용을 수정하지 말아주세요!
 
 ## 제출 프로세스 (2-Step)
 
