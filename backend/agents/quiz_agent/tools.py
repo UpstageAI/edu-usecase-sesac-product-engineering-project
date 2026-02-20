@@ -9,6 +9,8 @@ Tools exposed for quiz generation workflow:
 """
 
 import json
+import asyncio
+import threading
 from typing import List, Dict, Any, Optional
 from langchain.tools import tool
 from backend.rag.retriever import search as rag_search
@@ -32,6 +34,35 @@ def _dedupe_and_rank(results: List[Dict[str, Any]], k: int) -> List[Dict[str, An
         if len(deduped) >= k:
             break
     return deduped
+
+
+def _run_async(coro: Any) -> Any:
+    """
+    Run an async coroutine safely from sync code.
+    - If no loop is running in current thread, use asyncio.run directly.
+    - If a loop is already running, run the coroutine in a worker thread.
+    """
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        return asyncio.run(coro)
+
+    result_holder: Dict[str, Any] = {}
+    error_holder: Dict[str, BaseException] = {}
+
+    def _runner() -> None:
+        try:
+            result_holder["value"] = asyncio.run(coro)
+        except BaseException as exc:  # pragma: no cover - defensive path
+            error_holder["error"] = exc
+
+    worker = threading.Thread(target=_runner, daemon=True)
+    worker.start()
+    worker.join()
+
+    if "error" in error_holder:
+        raise error_holder["error"]
+    return result_holder.get("value")
 
 
 @tool
@@ -182,7 +213,9 @@ def validate_quiz_quality(quiz_data: Dict[str, Any]) -> Dict[str, Any]:
             }
 
         # Run EvalTool validation
-        validation_results = evaluate_quiz_list(questions)
+        validation_results = _run_async(evaluate_quiz_list(questions))
+        if not isinstance(validation_results, list):
+            raise TypeError("evaluate_quiz_list must return a list")
 
         # Aggregate results
         total = len(validation_results)

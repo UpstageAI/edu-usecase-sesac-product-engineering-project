@@ -5,6 +5,7 @@ import sys
 import json
 import time
 import re
+import inspect
 from typing import Dict, Any, List, Optional, Type, cast
 
 import openai

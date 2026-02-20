@@ -1,10 +1,21 @@
 import json
 from pathlib import Path
 
+def _get_risk_type(m):
+    return str(m.get("risk_type") or m.get("category") or "unknown")
+
+def _get_expected_loss(m):
+    impact = m.get("impact")
+    if isinstance(impact, dict):
+        expected_loss = impact.get("expected_loss")
+        if expected_loss:
+            return str(expected_loss)
+    expected_loss = m.get("expected_loss") or m.get("estimated_loss")
+    return str(expected_loss) if expected_loss else "unknown"
+
 def pick_meta(m):
     # 케이스별로 최소한의 "상황 메타"를 결정 (서비스 입력 형태 맞추기)
-    rid = m["id"]
-    rt = m["risk_type"]
+    rid = str(m.get("id", ""))
 
     if rid in ["M005", "M001", "M003", "M012"]:
         return {"topic": "documentation", "situation": "document_review", "doc_type": "BL/Invoice"}
@@ -23,7 +34,7 @@ def pick_meta(m):
     return {"topic": "general", "situation": "work_review", "doc_type": "Document"}
 
 def scenario_text_variants(m):
-    rid = m["id"]
+    rid = str(m.get("id", ""))
 
     # 케이스별 “신입이 실제로 입력할 법한” 상황 텍스트 3종
     if rid == "M005":
@@ -94,30 +105,43 @@ def scenario_text_variants(m):
         ]
 
     # fallback
+    risk_type = _get_risk_type(m)
     return [
-        f"{m['risk_type']} 관련해서 지금 상황이 불안합니다. 어떤 실수를 조심해야 할까요?",
-        f"{m['risk_type']} 케이스에서 발생 가능한 결과와 예방책을 알려주세요.",
-        f"실무에서 {m['risk_type']} 실수는 보통 왜 발생하나요?"
+        f"{risk_type} 관련해서 지금 상황이 불안합니다. 어떤 실수를 조심해야 할까요?",
+        f"{risk_type} 케이스에서 발생 가능한 결과와 예방책을 알려주세요.",
+        f"실무에서 {risk_type} 실수는 보통 왜 발생하나요?"
     ]
 
 def main():
-    mistakes_path = Path("data/mistakes.json")
-    out_path = Path("data/scenarios.json")
+    mistakes_candidates = [
+        Path("dataset/mistakes_master.json"),
+        Path("dataset/mistakes.json"),
+        Path("data/mistakes.json"),
+    ]
+    mistakes_path = next((p for p in mistakes_candidates if p.exists()), mistakes_candidates[0])
+    out_path = Path("dataset/scenarios.json")
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     mistakes = json.loads(mistakes_path.read_text(encoding="utf-8"))
 
     scenarios = []
     for m in mistakes:
+        if not isinstance(m, dict):
+            continue
+        rid = str(m.get("id", "")).strip()
+        if not rid:
+            continue
+        risk_type = _get_risk_type(m)
+        expected_loss = _get_expected_loss(m)
         meta = pick_meta(m)
         variants = scenario_text_variants(m)
 
         for i, text in enumerate(variants, start=1):
             scenarios.append({
-                "scenario_id": f"{m['id']}-S{i}",
-                "case_id": m["id"],
-                "expected_risk_type": m["risk_type"],
-                "expected_loss": m["expected_loss"],
+                "scenario_id": f"{rid}-S{i}",
+                "case_id": rid,
+                "expected_risk_type": risk_type,
+                "expected_loss": expected_loss,
                 "situation": meta["situation"],
                 "topic": meta["topic"],
                 "doc_type": meta["doc_type"],

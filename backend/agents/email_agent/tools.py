@@ -150,7 +150,6 @@ def detect_email_risks(
         # Critical risk patterns
         critical_patterns = {
             "incoterms_invalid": r"\b(FOV|CIV|FOBB|CIIF)\b",
-            "payment_missing": r"(결제|payment).*(?!L/C|T/T|D/P|D/A|CAD)",
             "liability_admission": r"(책임지겠습니다|전적으로.*책임|모든.*책임)"
         }
 
@@ -161,10 +160,43 @@ def detect_email_risks(
         }
 
         # Medium risk patterns
-        medium_patterns = {
-            "quantity_missing": r"(수량|quantity).*(?!\d)",
-            "date_missing": r"(납기|delivery).*(?!\d{4}-\d{2}-\d{2})"
-        }
+        medium_patterns = {}
+
+        # Presence + absence checks for missing details
+        if re.search(r"(결제|payment)", email_content, re.IGNORECASE) and not re.search(
+            r"(L/C|T/T|D/P|D/A|CAD)", email_content, re.IGNORECASE
+        ):
+            risks.append({
+                "type": "payment_missing",
+                "severity": "critical",
+                "current": "",
+                "risk": "Critical issue detected: payment_missing",
+                "recommendation": "Specify payment terms (L/C, T/T, D/P, D/A, CAD)"
+            })
+
+        if re.search(r"(수량|quantity)", email_content, re.IGNORECASE) and not re.search(
+            r"\b\d+(?:[.,]\d+)?\b", email_content, re.IGNORECASE
+        ):
+            risks.append({
+                "type": "quantity_missing",
+                "severity": "medium",
+                "current": "",
+                "risk": "Information may be incomplete",
+                "recommendation": "Add specific quantity values"
+            })
+
+        if re.search(r"(납기|delivery)", email_content, re.IGNORECASE) and not re.search(
+            r"(\d{4}[-/.]\d{1,2}[-/.]\d{1,2}|\d{1,2}[-/.]\d{1,2}(?:[-/.]\d{2,4})?|\d{1,2}\s*월\s*\d{1,2}\s*일|\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b)",
+            email_content,
+            re.IGNORECASE,
+        ):
+            risks.append({
+                "type": "date_missing",
+                "severity": "medium",
+                "current": "",
+                "risk": "Information may be incomplete",
+                "recommendation": "Add a specific delivery date"
+            })
 
         # Check critical risks
         for risk_type, pattern in critical_patterns.items():

@@ -133,9 +133,9 @@ def normalize_metadata(entry: Dict[str, Any], source_file: str) -> Dict[str, Any
     # Special handling for ceo_style's existing "priority" field (rename to ceo_focus)
     if normalized["original_category"] == "ceo_style" and "priority" in metadata:
         normalized["ceo_focus"] = metadata["priority"]
-        # Ensure the new 'priority' field is not overwritten by the old one
-        if "priority" not in UNIFIED_METADATA_SCHEMA: # if we have already moved it
-            normalized["priority"] = UNIFIED_METADATA_SCHEMA["priority"] # Reset to default if not set by content logic
+        # Old ceo_style priority is domain intent (focus), not severity.
+        # Reset unified severity priority to schema default.
+        normalized["priority"] = UNIFIED_METADATA_SCHEMA["priority"]
 
     # Ensure source_dataset is set
     normalized["source_dataset"] = os.path.basename(source_file)
