@@ -14,7 +14,7 @@ class _StubCompiledGraph:
         return self.final_state
 
 
-def test_email_agent_run_returns_payload_and_sets_followup_state(monkeypatch):
+async def test_email_agent_run_returns_payload_and_sets_followup_state(monkeypatch):
     monkeypatch.setattr(
         email_agent_module,
         "compiled_email_agent_app",
@@ -36,7 +36,7 @@ def test_email_agent_run_returns_payload_and_sets_followup_state(monkeypatch):
     )
 
     agent = email_agent_module.EmailAgent()
-    result = agent.run(
+    result = await agent.run(
         user_input="이거 리뷰해줘",
         conversation_history=[],
         analysis_in_progress=False,
@@ -50,7 +50,7 @@ def test_email_agent_run_returns_payload_and_sets_followup_state(monkeypatch):
     assert result["conversation_history"][1]["role"] == "Agent"
 
 
-def test_quiz_agent_run_returns_payload_and_updates_history(monkeypatch):
+async def test_quiz_agent_run_returns_payload_and_updates_history(monkeypatch):
     monkeypatch.setattr(
         quiz_agent_module,
         "compiled_quiz_agent_app",
@@ -68,7 +68,7 @@ def test_quiz_agent_run_returns_payload_and_updates_history(monkeypatch):
     )
 
     agent = quiz_agent_module.QuizAgent()
-    result = agent.run(
+    result = await agent.run(
         user_input="퀴즈줘",
         conversation_history=[],
         analysis_in_progress=False,
@@ -82,7 +82,7 @@ def test_quiz_agent_run_returns_payload_and_updates_history(monkeypatch):
     assert "[퀴즈 1]" in result["conversation_history"][1]["content"]
 
 
-def test_quiz_agent_run_sets_pending_quiz_when_answer_exists(monkeypatch):
+async def test_quiz_agent_run_sets_pending_quiz_when_answer_exists(monkeypatch):
     monkeypatch.setattr(
         quiz_agent_module,
         "compiled_quiz_agent_app",
@@ -111,7 +111,7 @@ def test_quiz_agent_run_sets_pending_quiz_when_answer_exists(monkeypatch):
     )
 
     agent = quiz_agent_module.QuizAgent()
-    result = agent.run(
+    result = await agent.run(
         user_input="퀴즈줘",
         conversation_history=[],
         analysis_in_progress=False,
@@ -122,9 +122,9 @@ def test_quiz_agent_run_sets_pending_quiz_when_answer_exists(monkeypatch):
     assert result["agent_specific_state"]["pending_quiz"]["answer"] == 0
 
 
-def test_quiz_agent_run_evaluates_numeric_answer_from_pending_quiz():
+async def test_quiz_agent_run_evaluates_numeric_answer_from_pending_quiz():
     agent = quiz_agent_module.QuizAgent()
-    result = agent.run(
+    result = await agent.run(
         user_input="4",
         conversation_history=[{"role": "Agent", "content": "[퀴즈 1]"}],
         analysis_in_progress=False,

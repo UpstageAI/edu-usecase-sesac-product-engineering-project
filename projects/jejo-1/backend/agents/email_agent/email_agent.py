@@ -3,7 +3,6 @@
 import os
 import sys
 from typing import Dict, Any, List, Optional
-import asyncio # For async graph invocation
 
 # Ensure backend directory is in path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -29,8 +28,9 @@ class EmailAgent(BaseAgent):
         # and initialized globally by EmailAgentComponents.
         pass
 
-    async def run(self, 
-            user_input: str, 
+    async def run(
+            self,
+            user_input: str,
             conversation_history: List[Dict[str, str]], # Retained for signature consistency
             analysis_in_progress: bool, # Retained for signature consistency
             context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:

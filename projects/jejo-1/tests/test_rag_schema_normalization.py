@@ -72,3 +72,19 @@ def test_normalize_metadata_maps_raw_trade_terms_to_trade_terminology():
     assert normalized["document_type"] == "trade_terminology"
     assert normalized["topic"] == ["trade_terms"]
     assert normalized["situation"] == ["learning"]
+
+
+def test_normalize_metadata_ceo_style_priority_is_reset_to_default():
+    entry = {
+        "id": "ceo_1",
+        "category": "ceo_style",
+        "metadata": {
+            "priority": "거래처신뢰",
+            "situation": "선적지연",
+        },
+    }
+
+    normalized = normalize_metadata(entry, "dataset/ceo_style.json")
+
+    assert normalized["ceo_focus"] == "거래처신뢰"
+    assert normalized["priority"] == "normal"

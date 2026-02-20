@@ -99,5 +99,5 @@ if __name__ == "__main__":
     agent = DefaultChatAgent()
     test_q = "안녕! 리스크 점수가 15점이면 위험한 거야?"
     print(f"Query: {test_q}")
-    result = agent.run(test_q, [])
+    result = asyncio.run(agent.run(test_q, []))
     print(f"Response: {result['response']['response']}")

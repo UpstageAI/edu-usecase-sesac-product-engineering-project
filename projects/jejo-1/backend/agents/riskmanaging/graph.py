@@ -102,10 +102,11 @@ class RiskManagingAgent(BaseAgent):
     """
     agent_type: str = "riskmanaging"
 
-    async def run(self, 
-            user_input: str, 
-            conversation_history: List[Dict[str, str]], 
-            analysis_in_progress: bool, 
+    async def run(
+            self,
+            user_input: str,
+            conversation_history: List[Dict[str, str]],
+            analysis_in_progress: bool,
             context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         if context is None:
             context = {}
@@ -123,7 +124,6 @@ class RiskManagingAgent(BaseAgent):
         }
 
         # Invoke the compiled graph using AsyncSqliteSaver for persistent storage
-        
         async def _run_graph():
             try:
                 # Open async connection to sqlite
@@ -138,7 +138,6 @@ class RiskManagingAgent(BaseAgent):
         session_id = context.get("session_id", str(uuid.uuid4()))
         config = {"configurable": {"thread_id": session_id}}
         logger.info(f"RiskManagingAgent running with thread_id: {session_id}")
-        
         final_state = await _run_graph()
 
         # Extract the final agent_response (RiskManagingAgentResponse object)
@@ -163,4 +162,3 @@ class RiskManagingAgent(BaseAgent):
             "conversation_history": final_state.get("conversation_history", conversation_history),
             "analysis_in_progress": final_state.get("analysis_in_progress", False)
         }
-
