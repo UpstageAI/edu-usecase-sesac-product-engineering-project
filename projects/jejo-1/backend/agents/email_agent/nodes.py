@@ -6,7 +6,7 @@ import json
 import re
 from typing import Dict, Any, List, Optional, cast
 import openai
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 # Ensure backend directory is in path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -425,7 +425,7 @@ class EmailAgentComponents:
 
         self.llm = None
         if self.settings.upstage_api_key:
-            self.llm = OpenAI(
+            self.llm = AsyncOpenAI(
                 base_url="https://api.upstage.ai/v1",
                 api_key=self.settings.upstage_api_key
             )
@@ -593,7 +593,7 @@ def prepare_llm_messages_node(state: EmailGraphState) -> Dict[str, Any]:
     return state_dict
 
 
-def call_llm_and_parse_response_node(state: EmailGraphState) -> Dict[str, Any]:
+async def call_llm_and_parse_response_node(state: EmailGraphState) -> Dict[str, Any]:
     state_dict = cast(Dict[str, Any], state)
 
     # Early return when previous node already produced a direct response
@@ -617,7 +617,7 @@ def call_llm_and_parse_response_node(state: EmailGraphState) -> Dict[str, Any]:
     
     if llm and llm_messages:
         try:
-            chat_completion = llm.chat.completions.create(
+            chat_completion = await llm.chat.completions.create(
                 model=model_used,
                 messages=llm_messages,
                 temperature=0.3

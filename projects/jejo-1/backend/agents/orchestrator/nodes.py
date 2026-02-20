@@ -5,11 +5,10 @@ import sys
 import json
 import time
 import re
-import inspect
 from typing import Dict, Any, List, Optional, Type, cast
 
 import openai
-from openai import OpenAI
+from openai import AsyncOpenAI
 from langsmith import traceable # traceable will be applied at graph level or individual agent level if needed
 
 # External imports
@@ -63,7 +62,7 @@ class OrchestratorComponents:
         
         self.llm = None
         if self.settings.upstage_api_key:
-            self.llm = OpenAI(
+            self.llm = AsyncOpenAI(
                 base_url="https://api.upstage.ai/v1",
                 api_key=self.settings.upstage_api_key
             )
@@ -124,7 +123,7 @@ def load_session_state_node(state: OrchestratorGraphState) -> Dict[str, Any]:
     return state_dict
 
 
-def _classify_intent_with_llm(user_input: str) -> str:
+async def _classify_intent_with_llm(user_input: str) -> str:
     llm = ORCHESTRATOR_COMPONENTS.llm
     orchestrator_intent_prompt = ORCHESTRATOR_COMPONENTS.orchestrator_intent_prompt
 
@@ -147,12 +146,13 @@ def _classify_intent_with_llm(user_input: str) -> str:
             len(user_input),
         )
 
-        response = llm.chat.completions.create(
+        response_completion = await llm.chat.completions.create(
             model="solar-pro2",
             messages=messages,
             temperature=0.1,
             response_format={"type": "json_object"}
-        ).choices[0].message.content
+        )
+        response = response_completion.choices[0].message.content
         
         logger.debug(
             "LLM intent classification raw response (truncated): %s",
@@ -170,7 +170,7 @@ def _classify_intent_with_llm(user_input: str) -> str:
         return DEFAULT_AGENT_NAME
 
 
-def detect_intent_and_route_node(state: OrchestratorGraphState) -> Dict[str, Any]:
+async def detect_intent_and_route_node(state: OrchestratorGraphState) -> Dict[str, Any]:
     state_dict = cast(Dict[str, Any], state)
 
     user_input = state_dict["user_input"]
@@ -310,7 +310,7 @@ def detect_intent_and_route_node(state: OrchestratorGraphState) -> Dict[str, Any
             logger.debug("Active agent is %s; re-evaluating intent", active_agent_name)
 
     # 4. LLM-based intent classification
-    llm_predicted_agent_type = _classify_intent_with_llm(user_input)
+    llm_predicted_agent_type = await _classify_intent_with_llm(user_input)
     state_dict["llm_intent_classification"] = {"predicted_type": llm_predicted_agent_type}
     
     if llm_predicted_agent_type == "out_of_scope":
@@ -362,16 +362,11 @@ async def call_agent_node(state: OrchestratorGraphState) -> Dict[str, Any]:
     if selected_agent_name == "quiz":
         agent_context["_agent_specific_state"] = agent_specific_state
 
-    maybe_agent_output = agent_instance.run(
+    agent_output = await agent_instance.run(
         user_input=user_input,
         conversation_history=conversation_history,
         analysis_in_progress=agent_specific_state.get("analysis_in_progress", False),
         context=agent_context
-    )
-    agent_output = (
-        await maybe_agent_output
-        if inspect.isawaitable(maybe_agent_output)
-        else maybe_agent_output
     )
 
     state_dict["orchestrator_response"] = agent_output.get("response", {"response": "에이전트 응답 오류", "agent_type": "orchestrator", "metadata": {}})

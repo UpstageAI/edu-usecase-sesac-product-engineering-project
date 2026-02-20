@@ -7,7 +7,7 @@ import re
 import hashlib
 from typing import Dict, Any, List, Optional, cast
 import openai
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 # Ensure backend directory is in path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -263,7 +263,7 @@ class QuizAgentComponents:
 
         self.llm = None
         if self.settings.upstage_api_key:
-            self.llm = OpenAI(
+            self.llm = AsyncOpenAI(
                 base_url="https://api.upstage.ai/v1",
                 api_key=self.settings.upstage_api_key
             )
@@ -372,7 +372,7 @@ def prepare_llm_messages_node(state: QuizGraphState) -> Dict[str, Any]:
     return state_dict
 
 
-def call_llm_and_parse_response_node(state: QuizGraphState) -> Dict[str, Any]:
+async def call_llm_and_parse_response_node(state: QuizGraphState) -> Dict[str, Any]:
     state_dict = cast(Dict[str, Any], state)
 
     llm = QUIZ_AGENT_COMPONENTS.llm
@@ -385,7 +385,7 @@ def call_llm_and_parse_response_node(state: QuizGraphState) -> Dict[str, Any]:
     
     if llm:
         try:
-            chat_completion = llm.chat.completions.create(
+            chat_completion = await llm.chat.completions.create(
                 model=model_used,
                 messages=llm_messages,
                 temperature=0.3

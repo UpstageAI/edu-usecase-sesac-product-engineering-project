@@ -11,7 +11,7 @@ import time
 from typing import Dict, Any, List, Optional, cast, TypedDict
 from backend.utils.json_utils import safe_json_parse
 import openai
-from openai import OpenAI
+from openai import AsyncOpenAI
 from langsmith import traceable
 import numpy as np
 from numpy.linalg import norm
@@ -409,12 +409,12 @@ class ConversationManager:
     """
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(
+        self.client = AsyncOpenAI(
             api_key=self.settings.upstage_api_key,
             base_url="https://api.upstage.ai/v1/solar"
         )
     
-    def assess_conversation_progress(self, agent_input: RiskManagingAgentInput, extracted_data: Dict[str, Any] = None) -> Dict[str, Any]:
+    async def assess_conversation_progress(self, agent_input: RiskManagingAgentInput, extracted_data: Dict[str, Any] = None) -> Dict[str, Any]:
         """
         Assess if enough information has been collected for risk analysis.
         
@@ -441,7 +441,7 @@ class ConversationManager:
         )
         
         try:
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": RISK_AGENT_SYSTEM_PROMPT},
@@ -578,12 +578,12 @@ class RiskEngine:
     """
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(
+        self.client = AsyncOpenAI(
             api_key=self.settings.upstage_api_key,
             base_url="https://api.upstage.ai/v1/solar"
         )
     
-    def evaluate_risk(
+    async def evaluate_risk(
         self,
         agent_input: RiskManagingAgentInput,
         rag_documents: List[Dict[str, Any]],
@@ -633,7 +633,7 @@ class RiskEngine:
             user_instruction = build_user_instruction(user_profile)
             system_prompt = f"{RISK_AGENT_SYSTEM_PROMPT}\n추가 지침:\n{user_instruction}"
             
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -674,13 +674,13 @@ class ReportGenerator:
     """
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(
+        self.client = AsyncOpenAI(
             api_key=self.settings.upstage_api_key,
             base_url="https://api.upstage.ai/v1/solar"
         )
     
     @traceable(name="report_generator_generate")
-    def generate_report(
+    async def generate_report(
         self,
         agent_input: RiskManagingAgentInput,
         risk_scoring: RiskScoring,
@@ -705,16 +705,16 @@ class ReportGenerator:
         """
         self.user_profile = user_profile # Store for private methods
         # Generate input summary
-        input_summary = self._generate_input_summary(agent_input)
+        input_summary = await self._generate_input_summary(agent_input)
         
         # Generate loss simulation
-        loss_simulation = self._generate_loss_simulation(risk_scoring)
+        loss_simulation = await self._generate_loss_simulation(risk_scoring)
         
         # Generate control gap analysis
-        control_gap_analysis = self._generate_control_gap_analysis(risk_scoring)
+        control_gap_analysis = await self._generate_control_gap_analysis(risk_scoring)
         
         # Generate prevention strategy
-        prevention_strategy = self._generate_prevention_strategy(risk_scoring, control_gap_analysis)
+        prevention_strategy = await self._generate_prevention_strategy(risk_scoring, control_gap_analysis)
         
         # Calculate confidence score
         confidence_score = self._calculate_confidence_score(risk_scoring, rag_documents)
@@ -741,7 +741,7 @@ class ReportGenerator:
             evidence_sources=evidence_sources
         )
     
-    def _generate_input_summary(self, agent_input: RiskManagingAgentInput) -> str:
+    async def _generate_input_summary(self, agent_input: RiskManagingAgentInput) -> str:
         """Generate concise summary of user input"""
         conversation_history_str = "\n".join([
             f"{turn.get('role', 'User')}: {turn.get('content', '')}"
@@ -758,7 +758,7 @@ class ReportGenerator:
         system_prompt = f"{RISK_AGENT_SYSTEM_PROMPT}\n추가 지침:\n{user_instruction}"
 
         try:
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -771,7 +771,7 @@ class ReportGenerator:
             logger.warning("Error generating input summary: %s", e)
             return agent_input.user_input
     
-    def _generate_loss_simulation(self, risk_scoring: RiskScoring) -> LossSimulation:
+    async def _generate_loss_simulation(self, risk_scoring: RiskScoring) -> LossSimulation:
         """Generate loss simulation"""
         risk_summary = risk_scoring.overall_assessment
         
@@ -783,7 +783,7 @@ class ReportGenerator:
             user_instruction = build_user_instruction(getattr(self, 'user_profile', None))
             system_prompt = f"{RISK_AGENT_SYSTEM_PROMPT}\n추가 지침:\n{user_instruction}"
 
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -804,7 +804,7 @@ class ReportGenerator:
                 qualitative="손실 시뮬레이션 생성 중 오류 발생"
             )
     
-    def _generate_control_gap_analysis(self, risk_scoring: RiskScoring) -> ControlGapAnalysis:
+    async def _generate_control_gap_analysis(self, risk_scoring: RiskScoring) -> ControlGapAnalysis:
         """Generate control gap analysis"""
         risk_summary = risk_scoring.overall_assessment
         
@@ -816,7 +816,7 @@ class ReportGenerator:
             user_instruction = build_user_instruction(getattr(self, 'user_profile', None))
             system_prompt = f"{RISK_AGENT_SYSTEM_PROMPT}\n추가 지침:\n{user_instruction}"
 
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -840,7 +840,7 @@ class ReportGenerator:
                 recommendations=[]
             )
     
-    def _generate_prevention_strategy(
+    async def _generate_prevention_strategy(
         self, 
         risk_scoring: RiskScoring, 
         control_gap_analysis: ControlGapAnalysis
@@ -1014,7 +1014,7 @@ def detect_trigger_and_similarity_node(state: RiskManagingGraphState) -> Dict[st
     }
 
 # Node function for assessing conversation progress
-def assess_conversation_progress_node(state: RiskManagingGraphState) -> Dict[str, Any]:
+async def assess_conversation_progress_node(state: RiskManagingGraphState) -> Dict[str, Any]:
     logger.debug("risk node: assess_conversation_progress")
     agent_input = RiskManagingAgentInput(
         user_input=state["current_user_input"],
@@ -1022,7 +1022,7 @@ def assess_conversation_progress_node(state: RiskManagingGraphState) -> Dict[str
     )
     
     conversation_manager = ConversationManager() # Initialize here
-    assessment_result = conversation_manager.assess_conversation_progress(agent_input, state.get("extracted_data"))
+    assessment_result = await conversation_manager.assess_conversation_progress(agent_input, state.get("extracted_data"))
     
     # Update state based on assessment result
     # Merge extracted_data to prevent losing previously collected information
@@ -1056,7 +1056,7 @@ def assess_conversation_progress_node(state: RiskManagingGraphState) -> Dict[str
     return state_updates
 
 # Node function for performing full risk analysis (RAG, Risk Engine, Report Gen)
-def perform_full_analysis_node(state: RiskManagingGraphState) -> Dict[str, Any]:
+async def perform_full_analysis_node(state: RiskManagingGraphState) -> Dict[str, Any]:
     logger.debug("risk node: perform_full_analysis")
     user_input = state["current_user_input"]
     conversation_history = state["conversation_history"]
@@ -1077,7 +1077,7 @@ def perform_full_analysis_node(state: RiskManagingGraphState) -> Dict[str, Any]:
     
     # 2. Risk Engine
     risk_engine = RiskEngine()
-    risk_scoring = risk_engine.evaluate_risk(
+    risk_scoring = await risk_engine.evaluate_risk(
         agent_input, 
         rag_documents, 
         user_profile=user_profile,
@@ -1086,7 +1086,7 @@ def perform_full_analysis_node(state: RiskManagingGraphState) -> Dict[str, Any]:
 
     # 3. Report Generator
     report_generator = ReportGenerator()
-    report_generated = report_generator.generate_report(
+    report_generated = await report_generator.generate_report(
         agent_input=agent_input,
         risk_scoring=risk_scoring,
         similar_cases=similar_cases,

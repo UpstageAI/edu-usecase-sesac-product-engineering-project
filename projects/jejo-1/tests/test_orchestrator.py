@@ -188,7 +188,7 @@ def test_detect_intent_uses_llm_when_no_fast_path(monkeypatch):
     assert updated["llm_intent_classification"]["predicted_type"] == "email"
 
 
-async def test_call_agent_node_sets_active_agent_for_normal_agent():
+def test_call_agent_node_sets_active_agent_for_normal_agent():
     state = make_state(
         selected_agent_name="quiz",
         user_input="퀴즈",
@@ -196,14 +196,14 @@ async def test_call_agent_node_sets_active_agent_for_normal_agent():
         agent_specific_state={},
     )
 
-    updated = await orchestrator_nodes.call_agent_node(state)
+    updated = orchestrator_nodes.call_agent_node(state)
 
     assert updated["active_agent"] == "quiz"
     assert updated["orchestrator_response"]["agent_type"] == "quiz"
     assert len(updated["conversation_history"]) == 2
 
 
-async def test_call_agent_node_clears_active_agent_when_risk_analysis_complete(monkeypatch):
+def test_call_agent_node_clears_active_agent_when_risk_analysis_complete(monkeypatch):
     monkeypatch.setitem(
         orchestrator_nodes.ORCHESTRATOR_COMPONENTS.agents_instances,
         "riskmanaging",
@@ -217,13 +217,13 @@ async def test_call_agent_node_clears_active_agent_when_risk_analysis_complete(m
         agent_specific_state={"analysis_in_progress": True},
     )
 
-    updated = await orchestrator_nodes.call_agent_node(state)
+    updated = orchestrator_nodes.call_agent_node(state)
 
     assert updated["active_agent"] is None
     assert updated["agent_specific_state"]["analysis_in_progress"] is False
 
 
-async def test_call_agent_node_merges_agent_specific_state(monkeypatch):
+def test_call_agent_node_merges_agent_specific_state(monkeypatch):
     class FollowUpAgent(DummyAgent):
         def run(self, user_input, conversation_history, analysis_in_progress, context=None):
             base = super().run(user_input, conversation_history, analysis_in_progress, context)
@@ -243,7 +243,7 @@ async def test_call_agent_node_merges_agent_specific_state(monkeypatch):
         agent_specific_state={},
     )
 
-    updated = await orchestrator_nodes.call_agent_node(state)
+    updated = orchestrator_nodes.call_agent_node(state)
 
     assert updated["agent_specific_state"]["awaiting_follow_up"] is True
 
