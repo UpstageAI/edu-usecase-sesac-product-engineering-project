@@ -1,0 +1,132 @@
+import json
+from pathlib import Path
+
+def pick_meta(m):
+    # 케이스별로 최소한의 "상황 메타"를 결정 (서비스 입력 형태 맞추기)
+    rid = m["id"]
+    rt = m["risk_type"]
+
+    if rid in ["M005", "M001", "M003", "M012"]:
+        return {"topic": "documentation", "situation": "document_review", "doc_type": "BL/Invoice"}
+    if rid in ["M010"]:
+        return {"topic": "payment", "situation": "payment_execution", "doc_type": "Bank/Remittance"}
+    if rid in ["M019"]:
+        return {"topic": "incoterms", "situation": "shipment_preparation", "doc_type": "Insurance"}
+    if rid in ["M004"]:
+        return {"topic": "customs_clearance", "situation": "customs_filing", "doc_type": "HS Code"}
+    if rid in ["M008"]:
+        return {"topic": "payment", "situation": "lc_management", "doc_type": "LC"}
+    if rid in ["M013"]:
+        return {"topic": "contract_terms", "situation": "contract_review", "doc_type": "Sales Contract"}
+    if rid in ["M016", "M017"]:
+        return {"topic": "communication", "situation": "email_draft_review", "doc_type": "Email"}
+    return {"topic": "general", "situation": "work_review", "doc_type": "Document"}
+
+def scenario_text_variants(m):
+    rid = m["id"]
+
+    # 케이스별 “신입이 실제로 입력할 법한” 상황 텍스트 3종
+    if rid == "M005":
+        return [
+            "인보이스 초안인데 품목별 합계랑 총액이 안 맞아요. 그냥 보내도 되나요?",
+            "Invoice line total 합계가 final amount랑 달라요. 어떤 실수가 생길 수 있죠?",
+            "견적서 기반으로 인보이스 만들었는데 숫자가 애매하게 10~20달러 정도 차이나요."
+        ]
+    if rid == "M010":
+        return [
+            "송금 정보 확인 중인데 은행은 UK인데 SWIFT 코드가 KR로 시작해요. 괜찮나요?",
+            "Bank name이 HSBC London인데 SWIFT가 KODBKRSE로 나왔어요. 이대로 보내도 되나요?",
+            "벤더가 준 계좌정보에 국가가 섞여 보이는데, 송금 진행 전에 뭐부터 확인해야 하나요?"
+        ]
+    if rid == "M019":
+        return [
+            "CIF 조건인데 보험 서류가 아직 없어요. 선적 먼저 진행해도 되나요?",
+            "CIF인데 insurance certificate 누락 상태예요. 지금 단계에서 리스크가 뭐죠?",
+            "운송보험 가입을 깜빡했는데 출항 전까지 꼭 해야 하나요?"
+        ]
+    if rid == "M001":
+        return [
+            "BL 수하인 이름 철자가 계약서랑 한 글자 달라요. 그냥 진행해도 되나요?",
+            "Consignee name 오타 같아요. 수정 안 하면 어떤 문제가 생기죠?",
+            "서류상 수하인 표기가 애매해서 현지에서 거절될까 걱정돼요."
+        ]
+    if rid == "M003":
+        return [
+            "계약은 freight prepaid인데 BL에는 collect로 찍혔어요. 문제 되나요?",
+            "운임 조건이 계약서랑 BL이 달라요. 항구에서 인도 거부될 수도 있나요?",
+            "선불/후불 표시가 혼동돼요. 어디를 기준으로 맞춰야 하죠?"
+        ]
+    if rid == "M004":
+        return [
+            "HS Code를 일반 시계 코드로 넣었는데, 사실 스마트 기기예요. 리스크 있나요?",
+            "통관용 HS가 애매해서 비슷한 코드로 넣으려는데 괜찮나요?",
+            "HS Code 잘못 넣으면 벌금/추징이 실제로 얼마나 커질 수 있나요?"
+        ]
+    if rid == "M008":
+        return [
+            "L/C 선적기한보다 2~3일 늦을 것 같아요. 어떤 리스크가 있죠?",
+            "LC expiry 전에 출항이 어려워요. 바이어가 지급 거절할 수 있나요?",
+            "선적이 늦어질 것 같은데, 지금 당장 해야 할 조치가 뭔가요?"
+        ]
+    if rid == "M012":
+        return [
+            "FOB로 계약했는데 뒤에 선적항을 안 적었어요. 괜찮나요?",
+            "FOB 조건에서 PORT 누락이면 분쟁이 생길 수 있나요?",
+            "FOB인데 어느 항부터 비용 책임이 갈리는지 불명확해요."
+        ]
+    if rid == "M013":
+        return [
+            "계약서에 '좋은 품질'이라고만 적었는데 문제 될까요?",
+            "품질 기준을 수치로 안 박으면 나중에 반품이 어려운가요?",
+            "바이어가 품질 클레임 걸 때 대비하려면 문구를 어떻게 써야 하나요?"
+        ]
+    if rid == "M016":
+        return [
+            "바이어에게 보내는 메일 첨부에 내부 마진 시트가 들어갔을지도 몰라요. 큰일인가요?",
+            "첨부파일에 원가 계산 엑셀이 포함된 것 같아요. 지금 어떻게 해야 해요?",
+            "견적 메일에 내부 단가표가 섞여 나갔을 가능성이 있어요."
+        ]
+    if rid == "M017":
+        return [
+            "클레임 메일에 '저희 책임입니다'라고 먼저 써버렸어요. 문제 되나요?",
+            "사고 원인 확인 전인데 사과부터 했어요. 보험/클레임에 영향 있나요?",
+            "바이어가 화나서 급히 책임 인정했는데, 수습을 어떻게 해야 하죠?"
+        ]
+
+    # fallback
+    return [
+        f"{m['risk_type']} 관련해서 지금 상황이 불안합니다. 어떤 실수를 조심해야 할까요?",
+        f"{m['risk_type']} 케이스에서 발생 가능한 결과와 예방책을 알려주세요.",
+        f"실무에서 {m['risk_type']} 실수는 보통 왜 발생하나요?"
+    ]
+
+def main():
+    mistakes_path = Path("data/mistakes.json")
+    out_path = Path("data/scenarios.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    mistakes = json.loads(mistakes_path.read_text(encoding="utf-8"))
+
+    scenarios = []
+    for m in mistakes:
+        meta = pick_meta(m)
+        variants = scenario_text_variants(m)
+
+        for i, text in enumerate(variants, start=1):
+            scenarios.append({
+                "scenario_id": f"{m['id']}-S{i}",
+                "case_id": m["id"],
+                "expected_risk_type": m["risk_type"],
+                "expected_loss": m["expected_loss"],
+                "situation": meta["situation"],
+                "topic": meta["topic"],
+                "doc_type": meta["doc_type"],
+                "input_text": text,
+                "entities": {},  # MVP: 빈 dict로 시작, 나중에 SWIFT/금액/국가 등 추출로 확장
+            })
+
+    out_path.write_text(json.dumps(scenarios, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"OK: scenarios={len(scenarios)} -> {out_path}")
+
+if __name__ == "__main__":
+    main()
