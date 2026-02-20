@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "kpi",
+    "content": "평균 선적지연 2.3일",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "logistics"],
+      "situation": ["performance_monitoring", "delay", "risk_assessment"],
+      "topic": ["logistics_performance", "shipment_tracking", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "risk_management"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 2,
+    "category": "kpi",
+    "content": "클레임율 3%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales", "quality_control"],
+      "situation": ["performance_monitoring", "quality_issue", "risk_assessment", "claim_analysis"],
+      "topic": ["claim_management", "quality_control", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "risk_management", "process_improvement"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 3,
+    "category": "kpi",
+    "content": "재구매율 62%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "customer_retention", "sales_strategy"],
+      "topic": ["sales_performance", "customer_relationship", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 4,
+    "category": "kpi",
+    "content": "신규거래 전환율 18%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "business_development", "sales_strategy"],
+      "topic": ["sales_performance", "market_penetration", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 5,
+    "category": "kpi",
+    "content": "평균 협상마진 7%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "negotiation", "profitability"],
+      "topic": ["sales_performance", "negotiation_strategy", "KPI", "financial_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "strategy_planning"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 6,
+    "category": "kpi",
+    "content": "LC 비중 45%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "finance"],
+      "situation": ["performance_monitoring", "risk_assessment", "payment_terms"],
+      "topic": ["trade_finance", "payment_terms", "KPI", "risk_management"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "risk_management"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 7,
+    "category": "kpi",
+    "content": "T/T 비중 55%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "finance"],
+      "situation": ["performance_monitoring", "risk_assessment", "payment_terms"],
+      "topic": ["trade_finance", "payment_terms", "KPI", "risk_management"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "risk_management"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 8,
+    "category": "kpi",
+    "content": "주요시장 EU 40%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global", "EU"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "market_analysis", "sales_strategy"],
+      "topic": ["market_share", "sales_performance", "KPI"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "strategy_planning"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 9,
+    "category": "kpi",
+    "content": "월 shipment 28건",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "logistics"],
+      "situation": ["performance_monitoring", "operational_efficiency", "logistics_volume"],
+      "topic": ["logistics_performance", "shipment_volume", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "logistics_operations"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 10,
+    "category": "kpi",
+    "content": "평균 deal size 45k$",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "sales_performance"],
+      "topic": ["sales_performance", "deal_value", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 11,
+    "category": "kpi",
+    "content": "top buyer 비중 22%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "customer_concentration", "risk_assessment"],
+      "topic": ["sales_performance", "customer_relations", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "risk_management"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 12,
+    "category": "kpi",
+    "content": "환율 영향 ±4%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "finance"],
+      "situation": ["performance_monitoring", "financial_risk", "market_analysis"],
+      "topic": ["trade_finance", "exchange_rate", "risk_management", "KPI"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "strategy_planning"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 13,
+    "category": "kpi",
+    "content": "반품율 1.2%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales", "quality_control"],
+      "situation": ["performance_monitoring", "quality_issue", "customer_satisfaction"],
+      "topic": ["returns_management", "quality_control", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "process_improvement"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 14,
+    "category": "kpi",
+    "content": "분쟁 해결 평균 5일",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "legal"],
+      "situation": ["performance_monitoring", "dispute_resolution", "customer_service"],
+      "topic": ["claim_management", "dispute_resolution", "customer_satisfaction", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "process_improvement"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 15,
+    "category": "kpi",
+    "content": "견적→계약 전환 31%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "sales_pipeline", "conversion_rate"],
+      "topic": ["sales_performance", "business_development", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 16,
+    "category": "kpi",
+    "content": "샘플→본계약 48%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "sales_pipeline", "conversion_rate"],
+      "topic": ["sales_performance", "product_sampling", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 17,
+    "category": "kpi",
+    "content": "신규 buyer 6/month",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "sales"],
+      "situation": ["performance_monitoring", "business_growth", "customer_acquisition"],
+      "topic": ["sales_performance", "business_development", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "sales_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 18,
+    "category": "kpi",
+    "content": "선적 정확도 96%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "logistics"],
+      "situation": ["performance_monitoring", "operational_efficiency", "logistics_accuracy"],
+      "topic": ["logistics_performance", "shipment_accuracy", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "process_improvement"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 19,
+    "category": "kpi",
+    "content": "문서 오류율 4%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "logistics", "operations", "compliance"],
+      "situation": ["performance_monitoring", "document_error", "quality_control"],
+      "topic": ["documentation", "compliance", "operational_efficiency", "KPI"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "process_improvement"],
+      "source_dataset": "kpi.json"
+    }
+  },
+  {
+    "id": 20,
+    "category": "kpi",
+    "content": "교육 이수율 70%",
+    "metadata": {
+      "original_category": "kpi",
+      "document_type": "kpi_metric",
+      "country": ["Global"],
+      "role": ["manager", "executive", "HR"],
+      "situation": ["performance_monitoring", "training_effectiveness"],
+      "topic": ["employee_development", "training", "KPI"],
+      "priority": "normal",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["decision_support", "performance_monitoring", "coaching", "training_strategy"],
+      "source_dataset": "kpi.json"
+    }
+  }
+]
