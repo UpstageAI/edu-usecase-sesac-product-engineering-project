@@ -1,0 +1,37 @@
+meta:
+  article_id: '40687'
+  written_date: 2025.02.26. 15:40
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  - 보험금청구
+  - 슬개골
+  - 치주질환
+  original_question_summary: DB손해보험 펫블리 반려묘 보험 가입 적합성 확인 및 타사 추천 상품 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 자부담 1/통원 30 또는 자부담 3/통원 30 추천, H사 상품 비교 제안, 자기부담금 1만원/보상비율 90%/통원한도
+      30만원 구성 권장
+    recommended_insurers: null
+    coverage_advice: 입/통원/수술비 합산 연간 1천만원, MRI/CT 통원 보상, 슬개골/구강질환/스케일링 포함
+    price_info: H사 기준 자기부담금 1만원부터 가능
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 믹스묘
+  age: 1
+  gender: male
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - DB손해보험

@@ -1,0 +1,32 @@
+meta:
+  article_id: '47319'
+  written_date: 2025.06.10. 18:48
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  original_question_summary: 만 1살 스탠다드푸들 강아지 펫보험 가입 시 주의사항과 보장범위(슬개골, 치아 등)에 대해 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 스탠다드푸들
+  age: 1
+  gender: female
+  is_neutered: false
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

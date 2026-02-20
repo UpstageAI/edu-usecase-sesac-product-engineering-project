@@ -1,0 +1,36 @@
+meta:
+  article_id: '36494'
+  written_date: 2024.12.24. 15:16
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 자기부담금
+  - 보상비율
+  original_question_summary: 5살 말티즈를 위한 펫보험을 KB펫보험으로 설계 비교 중인데, 90% 보장에 자기부담금 1만 원
+    조건에서 더 저렴하거나 조건이 좋은 다른 보험사를 추천받고 싶음
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: 현재 KB펫보험의 조건은 유리하나, 다양한 보험사 비교를 권장하며 특히 슬개골 탈구 및 치아 질환 보장을 중점적으로
+      확인할 것을 조언함
+    recommended_insurers: null
+    coverage_advice: 질병, 상해, 재활치료 등 주요 보장 항목과 한도를 꼼꼼히 비교하고, 반려견의 특성 반영한 맞춤형 설계 확인이
+      중요함
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 5
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

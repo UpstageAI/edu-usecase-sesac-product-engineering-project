@@ -1,0 +1,34 @@
+meta:
+  article_id: '37217'
+  written_date: 2025.01.07. 12:53
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 자기부담금
+  - 보상비율
+  original_question_summary: KB 펫보험 실비보험 가입 시 5만원대 예상했으나 보험료가 높아 타 보험사와 비교 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 해당 상품은 슬개골 등 흔한 질병 재활치료 보장, 자기부담금 없고 90% 고보장 비율로 보험료가 높음. 보장 범위나
+      자기부담금 조정으로 보험료 절감 가능
+    recommended_insurers: null
+    coverage_advice: 슬개골 등 흔한 질병 재활치료 보장
+    price_info: 보장 범위나 자기부담금 조정으로 보험료 절감 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 12
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

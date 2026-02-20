@@ -1,0 +1,35 @@
+meta:
+  article_id: '37126'
+  written_date: 2025.01.06. 14:08
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 슬개골
+  - 치주질환
+  - 보험금청구
+  original_question_summary: 현대해상 굿앤굿 우리 펫보험 가입 고려 중이며, 보장 내용과 비용 부담에 대한 조언을 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: 현대해상 상품이 높은 치료보상률(90%)과 자기부담금 1만 원부터 설정 가능한 점 등 장점이 있으며, 고보장형 선택
+      시 보장 범위 강화 가능. 현재 설계안(보장률 70%)은 비추천
+    recommended_insurers: null
+    coverage_advice: 고보장형 선택 시 자기부담금 5만 원으로 높이면서 보장 범위 강화 가능
+    price_info: 고보장형 선택 시 보험료 더 저렴하게 유지 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 4
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

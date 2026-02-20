@@ -1,0 +1,35 @@
+meta:
+  article_id: '37486'
+  written_date: 2025.01.10. 15:35
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 5년째 반려묘를 키우고 있으며, 병원 이용 시 자기부담금 1만원, 통원 30만원 한도, 보상비율
+    90% 조건으로 받은 펫보험 견적을 가입해도 괜찮을지 조언 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 현재 견적은 보장 범위가 넓지만 비용이 비싸므로 타사 비교 추천. K사는 재활치료 및 백내장/녹내장 수술 추가 보상,
+      D사는 아포퀠/사이토포인트 보상 가능. 보험사별 장단점 비교 후 맞춤 설계 권장
+    recommended_insurers: null
+    coverage_advice: 보험사마다 보장 범위와 비용 차이 존재. 타사 비교 후 원하는 방향으로 설계 조정 권장
+    price_info: 현재 견적은 비용적으로 비싸게 설정됨
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 코리안숏헤어
+  age: 8
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

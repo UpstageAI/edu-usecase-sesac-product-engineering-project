@@ -1,0 +1,32 @@
+meta:
+  article_id: '42024'
+  written_date: 2025.03.15. 21:46
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보험료
+  - 보장범위
+  original_question_summary: 메리츠 펫퍼민트 펫보험의 보장 범위와 보험료 수준이 다른 보험사 대비 괜찮은지 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 4
+  gender: male
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

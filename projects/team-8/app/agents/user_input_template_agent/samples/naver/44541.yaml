@@ -1,0 +1,37 @@
+meta:
+  article_id: '44541'
+  written_date: 2025.04.29. 14:18
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 치주질환
+  - 보험금청구
+  - 보험사비교
+  - 갱신
+  original_question_summary: KB손해보험 펫보험의 스케일링 보장 여부와 5월 보장 변경 사항 및 보험사별 차이점을 문의함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: KB손해보험 기본형 플랜에서는 스케일링 보장이 없으나 특약 추가로 가능하며, 치료 목적일 때만 보장됨. 5월부터
+      금융감독원 지침에 따른 보장 표준화 작업이 진행되며 보험사별로 개정 시기와 내용이 다름. 강아지 연령대에 맞춘 슬개골 탈구, 피부질환,
+      구강질환 보장을 권장하고 현재 가입 시 유리한 조건 적용 가능
+    recommended_insurers: null
+    coverage_advice: 스케일링 보장을 원할 경우 치과치료 특약 필수 가입 필요
+    price_info: 5월 보장 변경 전 가입 시 상대적으로 유리한 조건 적용 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 1
+  gender: male
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - KB손해보험

@@ -1,0 +1,35 @@
+meta:
+  article_id: '63107'
+  written_date: 2026.01.09. 10:29
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 치주질환
+  - 보험금청구
+  - 갱신
+  original_question_summary: 3살 코리안숏헤어 실내묘를 키우는 중. 고양이도 펫보험이 필요한지, 통원/검사비 보장, 노묘 대비,
+    실제 청구 경험자 후기가 궁금하다
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 고양이는 사고보다 질병 대비로 펫보험을 고려해야 한다. 질병 발생 시 통원/검사비 보장, 자기부담금, 갱신 구조
+      확인이 중요하다. 2~3세 이전 가입 권장
+    recommended_insurers: null
+    coverage_advice: 통원·질병 보장 위주로 체크, 수술 보장보다 통원·검사비 보장 여부 중요
+    price_info: null
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 코리안숏헤어
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

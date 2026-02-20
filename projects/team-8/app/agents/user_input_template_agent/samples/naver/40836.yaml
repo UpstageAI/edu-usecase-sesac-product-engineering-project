@@ -1,0 +1,37 @@
+meta:
+  article_id: '40836'
+  written_date: 2025.02.27. 21:15
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 자기부담금
+  - 보상비율
+  - 슬개골
+  - 보험료
+  - 보험금청구
+  original_question_summary: 메리츠 펫퍼민트 펫보험 가입 고려 중. 자부담 1만원에 80% 보장, 자동청구 시스템 관련 정보
+    확인 후 추천 여부 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 해당 상품은 통원 15만원/수술 250만원 한도로 보장되며, 자기부담금 1만원 제외 80% 보장, 연간 1000만원
+      한도. 가입 31일 후 보장 시작(상해 즉시), 슬개골/고관절탈구는 1년 후 보장. 보장범위 확대(치과치료, 아포퀠 등). 고보장 시 타사
+      비교 추천. 질병 시 경제적 손실 대비로 어린 시절 가입 권장
+    recommended_insurers: null
+    coverage_advice: 보장범위 확대(치과치료, 아포퀠 등) 및 고보장 시 타사 비교 필요
+    price_info: 자기부담금 1만원, 80% 보장, 연간 1000만원 한도
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 7
+  gender: female
+  is_neutered: true
+  weight: 11
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

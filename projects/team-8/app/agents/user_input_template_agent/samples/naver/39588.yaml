@@ -1,0 +1,35 @@
+meta:
+  article_id: '39588'
+  written_date: 2025.02.14. 10:21
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험사비교
+  original_question_summary: 3살 된 강아지의 슬개골 취약성으로 KB 펫보험 강아지 실비보험의 적합성 여부를 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: 반려견 의료비 대비해 보험 가입을 권유하며, 보험사별로 한도 조정을 제안하고 상품 비교를 권유함
+    recommended_insurers:
+    - KB손해보험
+    - 메리츠화재해상보험
+    coverage_advice: 가입 금액을 낮추고 통원 한도를 조정하는 방법 고려
+    price_info: 보험료가 부담되지 않으면 가입 권장, 부담 시 1천만원 한도로 조정 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 진돗개
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 26
+  health_condition:
+    frequent_illness_area: 슬개골
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

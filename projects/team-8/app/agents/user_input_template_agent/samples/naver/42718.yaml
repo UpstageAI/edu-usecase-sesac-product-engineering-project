@@ -1,0 +1,34 @@
+meta:
+  article_id: '42718'
+  written_date: 2025.03.31. 11:16
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: 6세 토이푸들의 매리츠 펫퍼민트 보험 가입 검토 중이며, 개인 부담금 20% 여부와 보험료 절감
+    방법을 문의함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 6
+  gender: female
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

@@ -1,0 +1,37 @@
+meta:
+  article_id: '38633'
+  written_date: 2025.02.04. 15:19
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 피부질환
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  original_question_summary: 1살 비숑 강아지의 슬개골 탈구 및 피부병 대비 펫보험 가입 고려 중이며, DB보험사 자기부담금
+    1만 원 설정 시 보험료 부담에 대한 고민. 다른 보험사 비교 및 추천 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험캡틴
+    reply_summary: 비숑은 슬개골 탈구와 피부 질환 위험이 높아 펫보험 가입이 유리함. 자기부담금은 1만 원이 이상적이지만, 보험료
+      부담 시 3만 원으로 조정 가능하며, DB 외에도 K사와 S사 등 타사 보장 범위도 경쟁력 있음
+    recommended_insurers: null
+    coverage_advice: 슬개골 탈구 및 피부 질환 보장 강조
+    price_info: 자기부담금 3만 원으로 조정 시 월 보험료 절감 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 비숑
+  age: 1
+  gender: male
+  is_neutered: false
+  weight: 6
+  health_condition:
+    frequent_illness_area: 슬개골, 피부
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

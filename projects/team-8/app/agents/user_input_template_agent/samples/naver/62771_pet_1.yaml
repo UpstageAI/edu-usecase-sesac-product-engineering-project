@@ -1,0 +1,37 @@
+meta:
+  article_id: '62771'
+  written_date: 2026.01.05. 14:51
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 피부질환
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 펫보험 유무에 따른 병원비 차이와 보장 범위(통원 치료·검사비 포함 여부)에 대해 현실적 경험담을
+    묻고 있으며, 가입 시기와 보험사 선택에 대한 고민을 담고 있음
+  total_pets: 2
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 펫보험은 수술·입원 시 보장 비율로 병원비 부담이 절반 이하로 줄어들며, 보험 유무에 따라 치료 선택에 심리적 부담
+      차이가 큼. 다만 통원 치료는 보장 조건에 제한이 있으므로 약관 확인이 필수적임. 보험은 큰 병·사고에 대비한 안전장치로 접근하는 것이
+      현실적임.
+    recommended_insurers: null
+    coverage_advice: 통원·검사비 보장 여부, 횟수 제한, 1일 보장 한도, 특정 질환 제외 조건 등을 꼼꼼히 확인해야 함
+    price_info: 보험 가입 시 보장 비율이 50~70%로 적용되며, 수술비(200만~500만 원) 등에서 체감 효과가 큼
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 2
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

@@ -1,0 +1,31 @@
+meta:
+  article_id: '44440'
+  written_date: 2025.04.28. 09:19
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보장범위
+  - 보험료
+  original_question_summary: 3세 말티푸를 구조한 후 검진 및 중성화 진행, 매리츠화재 펫퍼민트보험 가입 적합성 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

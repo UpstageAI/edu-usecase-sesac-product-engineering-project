@@ -1,0 +1,36 @@
+meta:
+  article_id: '37411'
+  written_date: 2025.01.09. 14:52
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 슬개골
+  - 치주질환
+  original_question_summary: DB손해보험 펫블리 반려묘보험 상품 가입 고려 중이며, 다른 회사 상품 추천 및 검토 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: DB손해보험 펫블리 상품은 저렴하지만 보장 한도가 부족할 수 있으며, 자기부담금 1만원/보상비율 90%/통원한도
+      30만원 이상을 추천. H사 상품이 보장 대비 저렴하며, MRI/CT 통원 한도, 슬개골, 구강질환 보상 가능
+    recommended_insurers: null
+    coverage_advice: 자기부담금 1만원/보상비율 90%/통원한도 30만원 이상, MRI/CT 통원 한도, 슬개골, 구강질환 보상 포함
+      상품 추천
+    price_info: 금액을 조금 더 납부하더라도 보장 범위 확대 권장
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 브리티시 숏헤어
+  age: 8
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - DB손해보험

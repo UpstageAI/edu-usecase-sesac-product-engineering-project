@@ -1,0 +1,39 @@
+meta:
+  article_id: '39632'
+  written_date: 2025.02.14. 15:21
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보상비율
+  - 자기부담금
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 말티즈 펫보험으로 삼성화재 견적을 받았으나 보상 비율 90%와 자기 부담금 1만 원 의미, 다른
+    추천 보험, 아포퀠 주사 보상 가능 여부 질문
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험코디
+    reply_summary: 보상 비율 90%는 치료비 90% 보상이지만 하루/수술/연간 한도 내에서만 적용되며, 삼성화재와 DB손해보험 비교를
+      권장함
+    recommended_insurers:
+    - 삼성화재해상보험
+    - DB손해보험
+    - KB손해보험
+    - 현대해상화재보험
+    coverage_advice: 보상 비율, 한도, 자기 부담금을 종합적으로 비교해 보험 상품 선택 필요
+    price_info: 하루 한도, 수술 한도, 연간 한도에 따라 실제 보상 금액이 결정됨
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 4
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 삼성화재해상보험

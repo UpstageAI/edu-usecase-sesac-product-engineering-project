@@ -1,0 +1,37 @@
+meta:
+  article_id: '33717'
+  written_date: 2024.11.03. 12:31
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보험료
+  - 보상비율
+  - 자기부담금
+  - 보상비율
+  - 보장범위
+  original_question_summary: 메리츠화재 펫보험의 보장 범위와 보험료를 타사와 비교해 알고 싶으며, 자기부담금과 보상비율 설정
+    조언 및 다른 추천 보험사를 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 코디
+    reply_summary: 메리츠화재 펫보험은 추천 가능하나 보장 범위가 제한적일 수 있으며, 반려동물 나이에 따라 적합한 상품이 다르다.
+      4-5살 이상은 타사 추천. 고양이 특정 약물치료 보장 여부 확인 필요
+    recommended_insurers: null
+    coverage_advice: 보장 범위와 담보 내용을 꼼꼼히 비교할 것
+    price_info: null
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 스코티시폴드
+  age: 0
+  gender: male
+  is_neutered: true
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

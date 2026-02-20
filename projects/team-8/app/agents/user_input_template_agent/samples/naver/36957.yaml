@@ -1,0 +1,42 @@
+meta:
+  article_id: '36957'
+  written_date: 2025.01.03. 14:14
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보험금청구
+  - 보험사비교
+  - 보험료
+  - 보상비율
+  - 갱신
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  - 보험사비교
+  - 보험사비교
+  - 보험사비교
+  original_question_summary: 5살 된 토이푸들 여아 반려인. KB 금쪽같은 펫보험 설계안 검토 및 다른 보험사 비교 요청.
+    한도 조정과 보험료 절감을 원함.
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: KB사 펫보험 한도 및 통원 한도 조정으로 보험료 절감 가능. M사 펫보험과 동일 조건 비교 추천.
+    recommended_insurers:
+    - KB손해보험
+    - M사
+    coverage_advice: 보장 한도 1천만 원, 통원 1일 한도 15만 원으로 조정 시 보험료 절감 가능
+    price_info: 보장 조건 조정 후 KB와 M사 보험료 비교 필요
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 5
+  gender: female
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

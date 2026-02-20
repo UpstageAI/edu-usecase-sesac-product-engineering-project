@@ -1,0 +1,36 @@
+meta:
+  article_id: '38325'
+  written_date: 2025.01.25. 22:57
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: KB금쪽같은 펫보험 추천을 받았으나, 다른 보험사와 비교 후 가입 적합성을 확인하고자 함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 위너
+    reply_summary: KB금쪽같은 펫보험은 보장한도 2천만원, 자기부담금/보상비율 조정 가능, 슬개골/백내장/녹내장 수술 보장, 다양한
+      할인 혜택 존재. 타사 대비 피부질환, 구강질환, 치석제거, 탈장 보장 가능 상품 비교 후 가입 권장
+    recommended_insurers: null
+    coverage_advice: 피부질환, 구강질환, 치석제거, 탈장 보장 가능 상품 비교 필수
+    price_info: 보험료 납입여력에 따라 자기부담금 및 보상비율 조정 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 미니어처슈나우저
+  age: 5
+  gender: female
+  is_neutered: true
+  weight: 6
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

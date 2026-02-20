@@ -1,0 +1,33 @@
+meta:
+  article_id: '44325'
+  written_date: 2025.04.25. 15:36
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험료
+  original_question_summary: KB손해보험 펫보험 가입 고려 중, 더 좋은 보장이나 가성비 있는 다른 펫보험 추천 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 5월 변경 예정 보장 내용(보장 비율 80% 제한, 자기부담금 3만 원 이상, 1년 갱신) 안내. H사와 K사 비교
+      추천. K사는 넓은 보장, H사는 가성비 우수. 백내장/녹내장 보장 여부 차이 존재
+    recommended_insurers: null
+    coverage_advice: 백내장/녹내장 보장 여부, 연간 보장 한도, 자기부담금 0원 가능 여부 확인
+    price_info: K사는 보장 넓지만 보험료 높음, H사는 가성비 우수
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: KB손해보험

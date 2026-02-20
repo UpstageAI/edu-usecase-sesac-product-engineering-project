@@ -1,0 +1,42 @@
+meta:
+  article_id: '63954'
+  written_date: 2026.01.21. 11:47
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  - 갱신
+  - 보험사비교
+  original_question_summary: 3살 포메라니안 슬개골 병력으로 펫보험 가입 가능 여부, 수술 보장, 청구 경험, 소형견 조건,
+    추천 보험사를 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 기존 슬개골 병력은 일반적으로 보장 제외되며, 보험은 미래 질환 대비용. 3살 이하·재수술 가능성·병원비 부담 시
+      가입 권장. A손보(기존 병력 일정 조건 가입 가능), N손보(수술비 최대 250만 원 보장) 등 상품별 특징 설명
+    recommended_insurers:
+    - A손해보험
+    - N손해보험
+    coverage_advice: 기존 병력 제외 가능성 있으나, A손보는 일정 조건 가입 가능. 수술비 높은 N손보 추천
+    price_info: 실손형 80% 보장 가능, 연간 최고 보장액 존재
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 포메라니안
+  age: 3
+  gender: female
+  is_neutered: false
+  weight: 2
+  health_condition:
+    frequent_illness_area: 슬개골
+    disease_surgery_history: 슬개골 탈구(보존 치료), 미세 골절
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험
+  - DB손해보험
+  - 삼성화재해상보험
+  - 현대해상화재보험

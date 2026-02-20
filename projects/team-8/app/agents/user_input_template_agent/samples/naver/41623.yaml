@@ -1,0 +1,32 @@
+meta:
+  article_id: '41623'
+  written_date: 2025.03.10. 22:34
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보장범위
+  original_question_summary: 고양이를 키우고 있으며 현대해상 펫보험의 보장이 괜찮은지 궁금하다
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 4다둥이네
+    reply_summary: 현대해상 펫보험이 괜찮다고 생각하며 매리츠도 괜찮다고 답변했다
+    recommended_insurers:
+    - 현대해상화재보험
+    - 메리츠화재해상보험
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 러시안블루
+  age: 0
+  gender: male
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 현대해상화재보험

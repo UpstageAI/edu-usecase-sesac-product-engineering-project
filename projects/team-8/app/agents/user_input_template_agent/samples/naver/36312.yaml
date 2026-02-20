@@ -1,0 +1,39 @@
+meta:
+  article_id: '36312'
+  written_date: 2024.12.21. 18:50
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 피부질환
+  - 보험금청구
+  - 갱신
+  - 보험사비교
+  original_question_summary: 현대해상 펫보험의 가입 적합성 확인 요청. 슬개골/치주질환/피부염 보장범위, 보험료 적정성, 갱신
+    조건 문의 및 타사 추천 여부 질문
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 위너
+    reply_summary: 현대해상 펫보험은 5년갱신, 90%보장, 연간최대1천만원한도, 입통원하루최대30만원, 1일본인부담금1만원보장, 연간1회한
+      CT 및 MRI 촬영 비용 100만원 보장. 반려동물 2마리 이상 시 할인 가능. 피부염 치료약 보장 가능
+    recommended_insurers: null
+    coverage_advice: 피부염 치료약까지 보장 가능
+    price_info: 반려동물 2마리 이상 시 할인 가능
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 아메리칸숏헤어
+  age: 1
+  gender: male
+  is_neutered: false
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 현대해상화재보험

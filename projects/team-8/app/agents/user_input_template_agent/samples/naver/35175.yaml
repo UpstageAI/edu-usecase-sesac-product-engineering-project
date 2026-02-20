@@ -1,0 +1,33 @@
+meta:
+  article_id: '35175'
+  written_date: 2024.12.05. 13:24
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 포메라니안을 키우며 메리츠펫보험 가입을 고려 중인데 보험료가 비싼지, 다른 추천 상품이 있는지
+    문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 포메라니안
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

@@ -1,0 +1,34 @@
+meta:
+  article_id: '62086'
+  written_date: 2025.12.23. 15:26
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  - 갱신
+  original_question_summary: 중성화 수술 후 펫보험 가입의 의미, 기존 병력으로 인한 보장 제한, 실제 병원비 청구 경험 및
+    보험료 대비 보장 체감에 대한 고민
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 치와와
+  age: 6
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: 중성화 수술
+  coverage_style: comprehensive
+  preferred_insurers: null

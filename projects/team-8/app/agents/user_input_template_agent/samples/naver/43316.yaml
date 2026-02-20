@@ -1,0 +1,31 @@
+meta:
+  article_id: '43316'
+  written_date: 2025.04.10. 09:07
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  original_question_summary: 매리츠 펫퍼민트 펫보험 5만원대 견적이 적절한지 확인 요청. 다른 친구보다 낮은 이유(보장 내용/견년/건강
+    상태) 질문
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 2
+  gender: female
+  is_neutered: false
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

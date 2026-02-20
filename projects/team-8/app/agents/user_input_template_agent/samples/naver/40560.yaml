@@ -1,0 +1,35 @@
+meta:
+  article_id: '40560'
+  written_date: 2025.02.25. 12:06
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 보험사비교
+  original_question_summary: 현대해상 펫보험 가입 고려 중이며 슬개골탈구 보장 여부 및 타사 보험 추천 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: H사(현대해상) 보험 추천. 치과치료 및 아포퀼/사이토포인트 보장, 30일 면책기간 주의. D사/M사는 저렴한 대안.
+      고객 상황에 따라 맞춤 상담 필요
+    recommended_insurers: null
+    coverage_advice: 슬관절, 구강질환(치주염), 치과치료(스케일링, 발치) 등 종합 보장
+    price_info: D사, M사는 현대해상보다 저렴한 보험료
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: 슬개골탈구
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 현대해상화재보험

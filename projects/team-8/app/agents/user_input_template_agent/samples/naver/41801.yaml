@@ -1,0 +1,37 @@
+meta:
+  article_id: '41801'
+  written_date: 2025.03.12. 14:25
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 보상비율
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 말티즈 강아지를 위해 KB금쪽같은펫보험 가입을 고려 중이며, 받은 견적서로 가입 적합성 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: KB금쪽같은펫보험은 자기부담금 없이 90% 보상비율, 1일당 15만원/수술 200만원/총 1000만원 한도로 슬개골·고관절·치과질환·MRI/CT
+      보장 포함. 통원 한도 상향 권장
+    recommended_insurers: null
+    coverage_advice: 통원한도 상향을 통해 보장 강화 권장
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 7
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

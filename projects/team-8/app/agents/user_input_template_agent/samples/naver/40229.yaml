@@ -1,0 +1,36 @@
+meta:
+  article_id: '40229'
+  written_date: 2025.02.21. 12:14
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 피부질환
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: 비숑프리제 강아지의 피부과 병원비 부담으로 펫보험 가입을 고려 중이며, DB손해 펫보험의 보험료
+    부담과 타사 상품을 비교하고 싶어함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 슬개골 탈구 위험이 높은 견종으로 피부 질환 가능성도 높으므로 펫보험 가입을 추천하며, 보험료 부담을 줄이기 위해
+      자기부담금 조정을 고려해볼 것을 권유함. 타사 상품 비교 후 가입 권장
+    recommended_insurers: null
+    coverage_advice: 피부 질환 및 슬개골 탈구 위험 고려
+    price_info: 자기부담금을 3만원으로 조정해 보험료 부담 감소 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 비숑프리제
+  age: 5
+  gender: male
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: 피부
+    disease_surgery_history: 피부병
+  coverage_style: comprehensive
+  preferred_insurers:
+  - DB손해보험

@@ -1,0 +1,34 @@
+meta:
+  article_id: '43006'
+  written_date: 2025.04.04. 14:14
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 3살 말티푸 강아지를 키우고 있으며 메리츠화재 펫보험 가입 적합성 확인이 필요함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고s
+    reply_summary: 펫보험료는 보장 범위, 연령, 견종에 따라 달라지며, 보상비율과 자부담 조건을 비교하여 선택해야 함
+    recommended_insurers: null
+    coverage_advice: 필요한 보장을 포함한 상품 선택을 권장
+    price_info: 5만원대 보험료는 일반적인 수준
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 3
+  gender: female
+  is_neutered: false
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

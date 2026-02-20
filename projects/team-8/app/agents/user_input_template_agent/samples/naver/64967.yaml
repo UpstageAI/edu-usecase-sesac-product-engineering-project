@@ -1,0 +1,39 @@
+meta:
+  article_id: '64967'
+  written_date: 2026.02.04. 16:31
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 심장사상충 예방약 및 예방접종 비용이 펫보험 실비 처리 가능한지, 예방 소홀 시 보상 여부, 추천
+    보험 상품 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 예방 비용은 보상 불가하지만, 예방 기록이 있으면 질병 발생 시 보상 가능. 주요 보험사별 보장 특성 및 추천 상품
+      제시
+    recommended_insurers:
+    - 메리츠화재해상보험
+    - 삼성화재해상보험
+    coverage_advice: 예방 기록 보관이 치료비 보상 시 중요. 예방 가능 질병 발생 시 예방 기록 있으면 보상 가능
+    price_info: DB손해보험 등 예방 접종 인증 시 보험료 할인 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험
+  - 삼성화재해상보험

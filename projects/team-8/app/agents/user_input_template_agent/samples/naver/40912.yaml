@@ -1,0 +1,32 @@
+meta:
+  article_id: '40912'
+  written_date: 2025.02.28. 14:41
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 보험료
+  original_question_summary: KB손해보험의 금쪽같은 펫보험 상품을 강아지 보험으로 추천받았을 때 적합성에 대한 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: KB손해보험의 금쪽같은 펫보험 상품이 다양한 질병과 사고를 폭넓게 보장하며 보험료가 합리적이라 추천. 단, 정확한
+      상품명은 법적 제한으로 직접 상담 시 제공 가능
+    recommended_insurers: null
+    coverage_advice: 다양한 질병과 사고에 대한 보장 제공
+    price_info: 보험료가 합리적인 수준
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 치와와
+  age: 0
+  gender: female
+  is_neutered: true
+  weight: 1
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

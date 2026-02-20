@@ -1,0 +1,35 @@
+meta:
+  article_id: '38043'
+  written_date: 2025.01.21. 13:52
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 자기부담금
+  original_question_summary: 2살 닥스훈트를 키우는 반려인으로서 펫보험 가입을 고려 중이며, 메리츠 펫퍼민트 보험 가입제안서를
+    받은 상태입니다. 배상책임 보장 포함 여부와 일반 배상책임(일배책)과의 차이점이 궁금합니다.
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 펫보험은 보험료와 자기부담금/한도가 비례합니다. 통원 횟수가 많다면 자기부담금을 낮추고 한도를 높이는 것이 좋으며,
+      배상책임은 일반 배상책임(일배책)과 유사하지만 자기부담금 차이가 있을 수 있습니다. 회원님의 상황에 따라 추천 상품이 달라질 수 있음을
+      강조했습니다.
+    recommended_insurers: null
+    coverage_advice: 통원 횟수가 많을 경우 자기부담금 낮추고 한도 높이기 권장
+    price_info: 자기부담금 올리면 월 보험료 절감 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 닥스훈트
+  age: 2
+  gender: female
+  is_neutered: false
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

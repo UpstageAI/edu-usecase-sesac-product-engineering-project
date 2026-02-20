@@ -1,0 +1,37 @@
+meta:
+  article_id: '44466'
+  written_date: 2025.04.28. 13:51
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  - 갱신
+  - 보험사비교
+  original_question_summary: 3년 전 방광염 이력이 있는 4살 고양이 KB손해보험 고양이보험 가입 시 고지 대상 여부 및 가입
+    가능성 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: 3년 전 방광염 이력은 최근 3개월 이내 진료 기록이 아니므로 고지 대상이 아니며, 현재 완치 상태라면 가입 가능.
+      방광/요로계 보장 제한 없음. 자부담 0% 플랜은 월 5만 원 전후 예상
+    recommended_insurers: KB손해보험
+    coverage_advice: 고지사항 이슈 없을 경우 특정 부위/질병 제외 없이 정상 보장 가능
+    price_info: 자부담 0% 플랜은 월 5만 원 전후 예상
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 스코티시폴드
+  age: 4
+  gender: male
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: 3년 전 방광염 + 약 복용
+  coverage_style: comprehensive
+  preferred_insurers: KB손해보험

@@ -1,0 +1,36 @@
+meta:
+  article_id: '37118'
+  written_date: 2025.01.06. 12:45
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험금청구
+  - 자기부담금
+  - 보상비율
+  original_question_summary: 비숑프리제 강아지 펫보험 가입 시 메리츠화재 펫퍼민트 상품 설명 및 다른 상품 비교 필요. 자기부담금과
+    보장 내용 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 현재 제안서 내용(보상비율 50%/자기부담금 1만원) 설명. 1일 통원 15만원/수술 200만원 한도, 피부질환·구강질환
+      보장, 제휴병원 자동청구 가능. 최대 보상비율 80% 설계 가능성을 언급하며 비교 설계 추천
+    recommended_insurers: null
+    coverage_advice: 피부질환 및 구강질환 보장 포함, 제휴병원 자동청구 가능
+    price_info: 현재 제안서는 보상비율 50%/자기부담금 1만원 구성. 여유에 따라 보상비율 80% 설계 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 비숑프리제
+  age: 5
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

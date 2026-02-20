@@ -1,0 +1,32 @@
+meta:
+  article_id: '46870'
+  written_date: 2025.06.04. 11:12
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 갱신
+  - 보험료
+  - 보장범위
+  original_question_summary: 매리츠화재 펫퍼민트 보험의 갱신 기간(3년/5년) 의미와 4살 말티즈 남아의 제안서 받는 방법
+    문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 4
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: 특별한 질환 없음
+  coverage_style: null
+  preferred_insurers: 메리츠화재해상보험

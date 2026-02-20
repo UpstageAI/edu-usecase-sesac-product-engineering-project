@@ -1,0 +1,33 @@
+meta:
+  article_id: '35133'
+  written_date: 2024.12.04. 23:05
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험사비교
+  - 보험료
+  - 보장범위
+  original_question_summary: 메리츠펫보험 가입을 검토 중이며 보장 범위와 보험료 적정성 확인을 요청하고 타사 보험 추천 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 요크셔테리어
+  age: 2
+  gender: male
+  is_neutered: false
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험
+  - 현대해상화재보험

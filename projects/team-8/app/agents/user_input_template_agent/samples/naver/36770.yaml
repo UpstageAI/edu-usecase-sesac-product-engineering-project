@@ -1,0 +1,36 @@
+meta:
+  article_id: '36770'
+  written_date: 2024.12.30. 17:31
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  - 보험금청구
+  - 슬개골
+  - 치주질환
+  - 보상비율
+  - 보장범위
+  - 보험사비교
+  original_question_summary: KB손해보험 금쪽같은 펫보험 가입 설계 확인 및 보험료 절감 방법 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 현재 제안서는 적절하며, 보험료 절감을 위해 자기부담금 조정을 고려할 것을 권장
+    recommended_insurers: null
+    coverage_advice: 치료보상 90%, 자기부담금 0원 설정 가능, 슬개골 및 치주질환 보상 포함
+    price_info: 보장 유지하며 보험료 절감 위해 자기부담금 상향 조정 가능 (0/1/3/5만원 설정)
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 미니어처 푸들
+  age: 1
+  gender: male
+  is_neutered: false
+  weight: 6
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

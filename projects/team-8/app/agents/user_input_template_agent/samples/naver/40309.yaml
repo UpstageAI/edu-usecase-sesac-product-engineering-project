@@ -1,0 +1,33 @@
+meta:
+  article_id: '40309'
+  written_date: 2025.02.22. 09:43
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 추천받은 메리츠 펫퍼민트 고양이 보험의 적합성 확인을 요청하며, 건강검진 및 노후 질병 대비 필요성을
+    언급함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 터키시앙고라
+  age: 2
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

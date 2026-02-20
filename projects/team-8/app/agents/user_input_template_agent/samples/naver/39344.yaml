@@ -1,0 +1,35 @@
+meta:
+  article_id: '39344'
+  written_date: 2025.02.12. 09:35
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  original_question_summary: KB금쪽같은 펫보험 가입 적합성과 추천 보험사 문의. 슬개골 특약 필요성 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: KB 펫보험은 경쟁력 있으나 슬개골 특약 가입 필요. 스케일링도 특약 가입 시 보장 가능. 반려동물 상태에 따라
+      맞춤 상담 권장
+    recommended_insurers: null
+    coverage_advice: 슬개골 및 스케일링 보장을 위해 특약 가입 필요
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 7
+  gender: male
+  is_neutered: true
+  weight: 7
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

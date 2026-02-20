@@ -1,0 +1,39 @@
+meta:
+  article_id: '62949'
+  written_date: 2026.01.07. 15:48
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 피부질환
+  - 보험금청구
+  - 갱신
+  - 보험사비교
+  original_question_summary: 강아지 3년 차 보호자로서 펫보험 가입 여부를 고민 중입니다. 보험료가 비싸서 망설여지며, 실제
+    보장 경험과 보험료 대비 만족도, 슬개골/피부질환 등 잔병치레 보장 여부, 나이 들수록 가입 조건 변화 등을 알고 싶습니다.
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 펫보험 가입 필요성은 반려동물의 연령, 건강 상태, 경제적 상황에 따라 달라집니다. 어리고 건강한 경우 보장 선택권
+      확보를 위해 가입이 유리하며, 나이 많거나 병력이 있는 경우 적금 등 대체 수단도 고려해야 합니다. 보장 조건(보장 비율, 한도, 특정
+      질환 보장)을 꼼꼼히 비교해야 합니다.
+    recommended_insurers: null
+    coverage_advice: 보장 비율(50%/70%/80%), 연간 보장 한도, 통원/입원/수술 분리 여부, 슬개골/피부병 보장 시점 등을
+      확인해야 합니다.
+    price_info: 월 보험료 대비 치료비 부담 감소 효과, 특히 수술/입원 시 보험료 회수 가능성 고려 필요
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

@@ -1,0 +1,35 @@
+meta:
+  article_id: '38289'
+  written_date: 2025.01.24. 16:17
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 현대해상 펫보험을 고려 중이며, 5만원 정도 보험료가 적절한지, 다른 사람들이 많이 가입하는지
+    궁금함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 5년 갱신, 90% 보장, 연간 최대 1천만원 한도, 입/통원 하루 최대 30만원, 1일 본인 부담금 1만원 보장,
+      CT/MRI 비용 100만원 보장 등 풀보장 구성. 반려동물 2마리 이상 시 할인 가능. 현재 보험료와 보장 범위 측면에서 가장 좋은 펫보험으로
+      추천
+    recommended_insurers: null
+    coverage_advice: 풀보장 구성 추천
+    price_info: 반려동물 2마리 이상 시 할인 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

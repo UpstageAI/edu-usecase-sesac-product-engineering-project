@@ -1,0 +1,37 @@
+meta:
+  article_id: '41271'
+  written_date: 2025.03.06. 12:07
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  original_question_summary: KB손해보험 금쪽같은 펫보험 가입 적합성 확인 및 보장내용 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: KB손해보험 금쪽같은 펫보험 기본형Ⅰ은 자기부담금 없이 90% 보상비율, 1일당 15만원/수술 1일당 200만원/연
+      1000만원 한도로 보장하며, 슬관절·고관절·치과질환·MRI·CT까지 포함. 통원 보장 한도 상승 제안
+    recommended_insurers: null
+    coverage_advice: 통원 보장 한도 상승 필요
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 1
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - KB손해보험

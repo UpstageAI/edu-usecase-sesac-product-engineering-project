@@ -1,0 +1,30 @@
+meta:
+  article_id: '44007'
+  written_date: 2025.04.22. 10:16
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 갱신
+  - 보험사비교
+  original_question_summary: KB펫보험의 5년 갱신 주기와 다른 보험사 갱신 여부 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 시츄
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 6
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

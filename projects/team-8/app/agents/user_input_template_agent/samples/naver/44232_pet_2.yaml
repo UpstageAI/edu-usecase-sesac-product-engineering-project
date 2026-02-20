@@ -1,0 +1,42 @@
+meta:
+  article_id: '44232'
+  written_date: 2025.04.24. 15:11
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보험료
+  - 보장범위
+  - 보상비율
+  - 자기부담금
+  - 갱신
+  original_question_summary: 고양이 두 마리 키우고 있는데 현대해상 펫보험 가입을 고민 중이며, 다음 달 보장 변경이 진짜인지와
+    DB/KB/메리츠 비교 및 더 나은 보험 추천 요청
+  total_pets: 2
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: 5월부터 펫보험 보장 변경(보장 비율 80% 제한, 자기부담금 3만원 이상, 1년 갱신) 예정이므로 4월 내 가입
+      추천. H사(가성비)와 K사(넓은 보장) 중 선택 권장
+    recommended_insurers:
+    - 현대해상화재보험
+    - KB손해보험
+    coverage_advice: K사는 예방접종 미실시나 고의 사고 제외 대부분 질환 보장, H사는 기본 보장 구성 우수
+    price_info: H사는 보험료 합리적, K사는 장기적 보장 강점
+  pet_index: 2
+state:
+  species: 고양이
+  breed: 코리안숏헤어
+  age: 5
+  gender: male
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 현대해상화재보험
+  - KB손해보험
+  - DB손해보험
+  - 메리츠화재해상보험

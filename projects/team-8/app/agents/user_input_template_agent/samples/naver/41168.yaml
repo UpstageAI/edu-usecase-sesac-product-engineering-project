@@ -1,0 +1,33 @@
+meta:
+  article_id: '41168'
+  written_date: 2025.03.05. 14:11
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: KB손해보험 펫보험 가입 고려 중이며, 해당 상품의 적합성과 가입자들의 평가를 알고 싶어함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: KB손해보험 펫보험은 다양한 질병과 사고에 대한 폭넓은 보장과 합리적인 보험료로 반려견 관리에 적합한 상품이며,
+      맞춤 상담을 추천함
+    recommended_insurers: null
+    coverage_advice: 다양한 질병과 사고에 대한 보장을 폭넓게 제공함
+    price_info: 보험료 합리적인 수준임
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 포메라니안
+  age: 2
+  gender: female
+  is_neutered: true
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - KB손해보험
