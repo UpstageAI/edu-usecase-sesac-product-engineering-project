@@ -1,0 +1,574 @@
+# Use Case Datasets
+
+---
+
+## 1. User Profiles Dataset (from `(0212)데이터 유저셋 (json) (1).txt`)
+
+```json
+[
+  {
+    "user_id": "U01",
+    "role_level": "junior",
+    "experience_months": 1,
+    "weak_topics": ["payment", "documentation"],
+    "risk_tolerance": "low",
+    "preferred_style": "checklist"
+  },
+  {
+    "user_id": "U02",
+    "role_level": "junior",
+    "experience_months": 6,
+    "weak_topics": ["customs_clearance", "documentation"],
+    "risk_tolerance": "low",
+    "preferred_style": "coaching"
+  },
+  {
+    "user_id": "U03",
+    "role_level": "working",
+    "experience_months": 24,
+    "weak_topics": ["incoterms", "contract_terms"],
+    "risk_tolerance": "medium",
+    "preferred_style": "coaching"
+  },
+  {
+    "user_id": "U04",
+    "role_level": "senior",
+    "experience_months": 84,
+    "weak_topics": [],
+    "risk_tolerance": "low",
+    "preferred_style": "blunt"
+  },
+  {
+    "user_id": "U05",
+    "role_level": "working",
+    "experience_months": 36,
+    "weak_topics": ["negotiation", "pricing"],
+    "risk_tolerance": "high",
+    "preferred_style": "concise"
+  }
+]
+```
+
+---
+
+## 2. Detailed Mistake Scenarios Dataset (from `message.txt`)
+
+```json
+[
+  {
+    "id": "M001",
+    "category": "BL_CHECK",
+    "situation": "BL 확인",
+    "mistake": "Consignee 이름 오타",
+    "risk_level": "HIGH",
+    "description": "수하인(Consignee) 정보 입력 시 철자 오류",
+    "consequences": [
+      "통관 지연 (평균 3-5일)",
+      "BL amendment 비용 $150-300",
+      "바이어 클레임 발생 가능"
+    ],
+    "prevention": [
+      "계약서 원본과 글자 단위로 대조",
+      "회사명은 공식 영문명 사용",
+      "띄어쓰기, 대소문자까지 정확히 확인",
+      "가능하면 바이어에게 재확인 요청"
+    ],
+    "estimated_loss": "$150-500",
+    "frequency": "HIGH",
+    "real_case": "2024년 1월, ABC사 케이스: 'CO., LTD' → 'CO, LTD' 오타로 통관 4일 지연"
+  },
+  {
+    "id": "M002",
+    "category": "BL_CHECK",
+    "situation": "BL 확인",
+    "mistake": "Shipping Mark 누락",
+    "risk_level": "MEDIUM",
+    "description": "선적 마크(Shipping Mark) 기재 누락",
+    "consequences": [
+      "화물 식별 불가",
+      "창고 입고 지연",
+      "잘못된 화물 배송 위험"
+    ],
+    "prevention": [
+      "Packing List와 교차 확인",
+      "컨테이너 번호와 함께 확인",
+      "특수 마크가 있다면 사진으로 보관"
+    ],
+    "estimated_loss": "$100-300",
+    "frequency": "MEDIUM",
+    "real_case": "혼재화물 시 마크 누락으로 다른 고객 화물과 혼선"
+  },
+  {
+    "id": "M003",
+    "category": "BL_CHECK",
+    "situation": "BL 확인",
+    "mistake": "Freight Term 불일치",
+    "risk_level": "HIGH",
+    "description": "운임 지급 조건(Freight Prepaid/Collect) 오기재",
+    "consequences": [
+      "정산 분쟁 발생",
+      "화물 인도 거부 가능",
+      "추가 운임 청구"
+    ],
+    "prevention": [
+      "계약서의 Incoterms 조건 재확인",
+      "FOB → Freight Collect",
+      "CFR/CIF → Freight Prepaid",
+      "Shipping Instruction과 대조"
+    ],
+    "estimated_loss": "$500-2000",
+    "frequency": "MEDIUM",
+    "real_case": "FOB 계약인데 Freight Prepaid로 발행되어 운임 이중 청구 발생"
+  },
+  {
+    "id": "M004",
+    "category": "CUSTOMS",
+    "situation": "통관 서류 준비",
+    "mistake": "HS Code 오류",
+    "risk_level": "HIGH",
+    "description": "품목분류번호(HS Code) 잘못 기재",
+    "consequences": [
+      "관세율 차이 발생",
+      "통관 보류 또는 반송",
+      "가산세 부과 가능",
+      "수입 허가 거부"
+    ],
+    "prevention": [
+      "관세청 HSK 사이트에서 재확인",
+      "필요시 관세사에게 사전 확인",
+      "유사 품목과 혼동 주의",
+      "6자리까지는 국제 공통, 10자리는 국가별 상이"
+    ],
+    "estimated_loss": "$1000-10000",
+    "frequency": "HIGH",
+    "real_case": "전자제품을 완제품 대신 부품으로 분류하여 관세율 차이 발생"
+  },
+  {
+    "id": "M005",
+    "category": "CUSTOMS",
+    "situation": "통관 서류 준비",
+    "mistake": "Invoice 금액과 실제 금액 불일치",
+    "risk_level": "CRITICAL",
+    "description": "Commercial Invoice 금액 허위 기재",
+    "consequences": [
+      "밀수 혐의",
+      "통관 보류 및 조사",
+      "가산세 및 벌금",
+      "향후 수입 불이익"
+    ],
+    "prevention": [
+      "실제 거래 금액 그대로 기재",
+      "Under Invoice 절대 금지",
+      "계약서, 송금 내역과 일치 확인",
+      "외화 환율 적용 시 주의"
+    ],
+    "estimated_loss": "$5000-50000+",
+    "frequency": "LOW",
+    "real_case": "관세 절감 목적으로 금액 축소 기재 후 세관 적발"
+  },
+  {
+    "id": "M006",
+    "category": "CUSTOMS",
+    "situation": "통관 서류 준비",
+    "mistake": "원산지증명서 미제출",
+    "risk_level": "MEDIUM",
+    "description": "FTA 적용 위한 원산지증명서 누락",
+    "consequences": [
+      "FTA 관세 혜택 미적용",
+      "높은 관세율 적용",
+      "사후 정정 어려움"
+    ],
+    "prevention": [
+      "FTA 대상 국가 확인",
+      "수출자에게 사전 요청",
+      "Form A, C/O 등 종류 확인",
+      "유효기간 확인"
+    ],
+    "estimated_loss": "$200-2000",
+    "frequency": "MEDIUM",
+    "real_case": "한-EU FTA 적용 가능했으나 C/O 미제출로 8% 관세 추가 부담"
+  },
+  {
+    "id": "M007",
+    "category": "SHIPPING",
+    "situation": "선적 서류 준비",
+    "mistake": "Packing List 수량 오류",
+    "risk_level": "MEDIUM",
+    "description": "포장명세서 수량이 실제와 불일치",
+    "consequences": [
+      "통관 시 수량 검사 실시",
+      "통관 지연",
+      "Invoice와 불일치 시 정정 필요"
+    ],
+    "prevention": [
+      "실제 적재 수량과 정확히 일치",
+      "Invoice 수량과 교차 확인",
+      "컨테이너 적재 시 재확인",
+      "Gross/Net Weight 정확히 기재"
+    ],
+    "estimated_loss": "$100-500",
+    "frequency": "MEDIUM",
+    "real_case": "Packing List 1000개, 실제 950개 → 세관 전수조사"
+  },
+  {
+    "id": "M008",
+    "category": "SHIPPING",
+    "situation": "선적 서류 준비",
+    "mistake": "선적 기한 미준수",
+    "risk_level": "HIGH",
+    "description": "L/C 또는 계약서상 Latest Shipment Date 초과",
+    "consequences": [
+      "L/C 불일치(Discrepancy)",
+      "은행의 대금 지급 거부",
+      "바이어의 계약 해지 가능",
+      "Penalty 조항 적용"
+    ],
+    "prevention": [
+      "L/C 접수 즉시 선적일 확인",
+      "생산 스케줄과 대조",
+      "여유 기간 확보(최소 1주일)",
+      "필요시 L/C Amendment 요청"
+    ],
+    "estimated_loss": "$1000-계약금액 전체",
+    "frequency": "MEDIUM",
+    "real_case": "선적일 3일 초과로 L/C 불일치, 바이어가 대금 지급 거부"
+  },
+  {
+    "id": "M009",
+    "category": "SHIPPING",
+    "situation": "선적 서류 준비",
+    "mistake": "B/L Notify Party 누락",
+    "risk_level": "MEDIUM",
+    "description": "화물 도착 통지받을 당사자 정보 누락",
+    "consequences": [
+      "화물 도착 통지 불가",
+      "화물 인수 지연",
+      "Demurrage(컨테이너 장치료) 발생"
+    ],
+    "prevention": [
+      "To Order B/L인 경우 필수 확인",
+      "바이어 또는 Consignee 정보 기재",
+      "연락처(전화, 이메일) 포함",
+      "여러 Notify Party 가능"
+    ],
+    "estimated_loss": "$50-200/일",
+    "frequency": "LOW",
+    "real_case": "Notify Party 없어서 바이어가 화물 도착 몰라 3일 지연"
+  },
+  {
+    "id": "M010",
+    "category": "PAYMENT",
+    "situation": "대금 결제",
+    "mistake": "송금 정보 오류",
+    "risk_level": "CRITICAL",
+    "description": "수취인 계좌번호, SWIFT Code 오기재",
+    "consequences": [
+      "대금 오송금",
+      "자금 회수 어려움",
+      "추가 수수료 발생",
+      "거래 지연"
+    ],
+    "prevention": [
+      "계좌 정보 3회 이상 확인",
+      "Beneficiary Bank SWIFT Code 확인",
+      "소액 테스트 송금 후 본 송금",
+      "Invoice 계좌 정보와 대조"
+    ],
+    "estimated_loss": "$50-송금액 전체",
+    "frequency": "LOW",
+    "real_case": "SWIFT Code 한 글자 오타로 엉뚱한 은행에 송금, 회수에 2주 소요"
+  },
+  {
+    "id": "M011",
+    "category": "PAYMENT",
+    "situation": "대금 결제",
+    "mistake": "환율 적용 시점 착오",
+    "risk_level": "MEDIUM",
+    "description": "송금일과 적용 환율 불일치로 금액 차이",
+    "consequences": [
+      "예상보다 적은 금액 수취",
+      "차액 발생으로 재정산 필요",
+      "환차손 발생"
+    ],
+    "prevention": [
+      "전신환매도율(TTS) 확인",
+      "송금 시점 환율 실시간 체크",
+      "환율 변동 큰 경우 고정환율 계약",
+      "금액 확정 후 즉시 송금"
+    ],
+    "estimated_loss": "$100-1000",
+    "frequency": "MEDIUM",
+    "real_case": "환율 변동으로 $500 차액 발생, 재협상 필요"
+  },
+  {
+    "id": "M012",
+    "category": "CONTRACT",
+    "situation": "계약서 작성",
+    "mistake": "Incoterms 조건 불명확",
+    "risk_level": "HIGH",
+    "description": "무역조건 표기 없거나 애매모호",
+    "consequences": [
+      "비용 분담 분쟁",
+      "위험 이전 시점 불명확",
+      "추가 비용 발생"
+    ],
+    "prevention": [
+      "반드시 Incoterms 2020 명시",
+      "FOB, CFR, CIF 등 정확한 용어",
+      "장소(Port/Place) 구체적 기재",
+      "예: FOB Busan, Korea"
+    ],
+    "estimated_loss": "$500-5000",
+    "frequency": "MEDIUM",
+    "real_case": "단순히 'FOB'만 기재해서 선적항 분쟁 발생"
+  },
+  {
+    "id": "M013",
+    "category": "CONTRACT",
+    "situation": "계약서 작성",
+    "mistake": "품질 기준 미명시",
+    "risk_level": "HIGH",
+    "description": "품질 검사 기준, 허용 오차 범위 누락",
+    "consequences": [
+      "품질 클레임 발생",
+      "검사 기준 분쟁",
+      "반품/교환 비용",
+      "신뢰도 하락"
+    ],
+    "prevention": [
+      "상세 스펙(Spec) 첨부",
+      "검사 방법 명시(육안/기계)",
+      "허용 오차 범위 기재",
+      "샘플 승인서 보관"
+    ],
+    "estimated_loss": "$1000-계약금액 20%",
+    "frequency": "MEDIUM",
+    "real_case": "색상 오차 기준 없어서 전량 반품 요구받음"
+  },
+  {
+    "id": "M014",
+    "category": "EMAIL",
+    "situation": "바이어 이메일",
+    "mistake": "첨부파일 누락",
+    "risk_level": "LOW",
+    "description": "언급한 파일을 첨부하지 않음",
+    "consequences": [
+      "비전문적 인상",
+      "업무 지연",
+      "재발송 번거로움"
+    ],
+    "prevention": [
+      "본문에 '첨부'라는 단어가 있으면 재확인",
+      "첨부 먼저 하고 본문 작성",
+      "발송 전 첨부파일 목록 체크",
+      "자동 알림 기능 활용"
+    ],
+    "estimated_loss": "시간 손실",
+    "frequency": "HIGH",
+    "real_case": "PI 첨부한다고 했는데 안 보내서 재발송"
+  },
+  {
+    "id": "M015",
+    "category": "EMAIL",
+    "situation": "바이어 이메일",
+    "mistake": "Reply All 오용",
+    "risk_level": "MEDIUM",
+    "description": "불필요한 사람에게까지 회신",
+    "consequences": [
+      "기밀 정보 유출",
+      "내부 의견 노출",
+      "상대방 불쾌감"
+    ],
+    "prevention": [
+      "Reply vs Reply All 구분",
+      "수신자 목록 확인",
+      "민감 내용은 개별 회신",
+      "CC는 정보 공유 목적만"
+    ],
+    "estimated_loss": "신뢰도 하락",
+    "frequency": "MEDIUM",
+    "real_case": "내부 논의 내용을 Reply All로 바이어에게 노출"
+  },
+  {
+    "id": "M016",
+    "category": "NEGOTIATION",
+    "situation": "가격 협상",
+    "mistake": "원가 정보 노출",
+    "risk_level": "HIGH",
+    "description": "협상 중 우리 측 원가 또는 마진 언급",
+    "consequences": [
+      "협상력 상실",
+      "추가 가격 인하 압박",
+      "향후 거래 불리"
+    ],
+    "prevention": [
+      "원가 절대 언급 금지",
+      "시장 가격 기준으로 설명",
+      "부가가치, 품질로 정당화",
+      "경쟁사 비교는 신중히"
+    ],
+    "estimated_loss": "마진 10-30% 감소",
+    "frequency": "LOW",
+    "real_case": "신입사원이 원가 언급 후 20% 추가 할인 요구받음"
+  },
+  {
+    "id": "M017",
+    "category": "QUALITY",
+    "situation": "품질 클레임 대응",
+    "mistake": "즉시 책임 인정",
+    "risk_level": "HIGH",
+    "description": "조사 전 사과하거나 책임 인정",
+    "consequences": [
+      "불리한 협상 위치",
+      "과도한 보상 요구",
+      "법적 불리함"
+    ],
+    "prevention": [
+      "사실 확인 후 대응",
+      "'조사하겠다' 우선 답변",
+      "절대 '우리 잘못' 섣불리 말하지 않기",
+      "상사와 상의 후 공식 입장"
+    ],
+    "estimated_loss": "$1000-계약금액 전체",
+    "frequency": "MEDIUM",
+    "real_case": "사진만 보고 사과했다가 실제는 고객 과실로 판명"
+  },
+  {
+    "id": "M018",
+    "category": "LOGISTICS",
+    "situation": "운송 주선",
+    "mistake": "컨테이너 타입 오선택",
+    "risk_level": "MEDIUM",
+    "description": "20FT/40FT, 일반/냉동 컨테이너 잘못 예약",
+    "consequences": [
+      "화물 적재 불가",
+      "컨테이너 변경 비용",
+      "선적 일정 차질"
+    ],
+    "prevention": [
+      "화물 CBM(부피) 정확히 계산",
+      "온도 관리 필요 여부 확인",
+      "특수화물(위험물 등) 사전 신고",
+      "Forwarder와 재확인"
+    ],
+    "estimated_loss": "$200-1000",
+    "frequency": "MEDIUM",
+    "real_case": "20FT 예약했는데 화물이 40FT 필요해서 재예약"
+  },
+  {
+    "id": "M019",
+    "category": "INSURANCE",
+    "situation": "보험 처리",
+    "mistake": "보험 가입 누락",
+    "risk_level": "CRITICAL",
+    "description": "CIF 조건인데 보험 미가입",
+    "consequences": [
+      "계약 위반",
+      "사고 시 전액 손실",
+      "신용도 추락"
+    ],
+    "prevention": [
+      "Incoterms에 따른 보험 의무 확인",
+      "CIF, CIP → 매도인이 보험 가입",
+      "보험 증권 B/L과 함께 발송",
+      "보험료는 CIF 가격의 110%"
+    ],
+    "estimated_loss": "화물 가액 전체",
+    "frequency": "LOW",
+    "real_case": "CIF 조건 화물 분실 시 보험 없어서 $50K 손실"
+  },
+  {
+    "id": "M020",
+    "category": "COMMUNICATION",
+    "situation": "바이어 미팅",
+    "mistake": "문화적 실례",
+    "risk_level": "MEDIUM",
+    "description": "상대국 비즈니스 문화 모르고 실수",
+    "consequences": [
+      "신뢰 관계 손상",
+      "거래 결렬",
+      "회사 이미지 실추"
+    ],
+    "prevention": [
+      "상대국 비즈니스 에티켓 사전 조사",
+      "명함 교환 방식 확인",
+      "종교/문화적 금기 숙지",
+      "시차, 휴일 고려"
+    ],
+    "estimated_loss": "거래 기회 상실",
+    "frequency": "MEDIUM",
+    "real_case": "중동 바이어에게 왼손으로 명함 건네서 불쾌감"
+  }
+]
+```
+
+---
+
+## 3. Virtual Case Examples (from `가상사례 11 (1).txt`)
+
+```
+가상사례 대표 11
+
+id,risk_type,supervisor_feedback,expected_loss 
+
+M005,금액 불일치,"""품목별 합계와 최종 금액이 맞지 않습니다. 계산 실수나 오타는 신뢰도를 크게 떨어뜨립니다. 다시 계산해 보세요.""","$45,000 + 과태료"
+M010,송금 정보 오류,"""은행명(영국)과 SWIFT 코드(한국)의 국가 정보가 다릅니다. 이대로 송금하면 자금 회수가 불가능할 수 있습니다!""","송금액 전액 (최대 $10만+)"
+M019,보험 가입 누락,"""CIF 조건은 우리가 보험을 들어야 합니다. 현재 보험 서류가 누락되었습니다. 사고 발생 시 독박을 쓸 수 있어요.""","화물 가액 전체 ($5만~20만)"
+M001,이름 오타,"""수하인 이름에 오타가 보입니다. 철자 하나만 틀려도 현지에서 물건을 못 찾고 재발행 비용이 발생합니다.""","$500 ~ $1,500"
+M003,운임 조건 불일치,"""계약은 선불인데 B/L은 후불로 되어 있네요. 항구에서 화물 인도가 거부되어 창고료가 발생할 수 있습니다.""","$500 ~ $2,000"
+M004,HS Code 오류,"""입력한 코드는 일반 시계용입니다. 스마트 기기는 다른 코드를 써야 관세 포탈 의심을 피할 수 있습니다.""","포탈 세액의 3배 + 가산세"
+M008,선적 기한 미준수,"""L/C 기한보다 선적이 늦어질 예정입니다. 바이어가 이를 빌미로 대금 지급을 거절하거나 깎을 수 있습니다.""","계약 금액의 5~10% 감액"
+M012,조건 미비,"""FOB 뒤에 선적항 이름이 빠졌습니다. 어디서부터 우리가 운송비를 내야 하는지 분쟁이 생길 수 있어요.""","$1,000 ~ $5,000"
+M013,품질 기준 모호,"""'좋은 품질' 같은 표현은 위험합니다. 구체적인 수치나 ISO 기준을 넣어야 나중에 불량품 반품이 가능합니다.""","재고 폐기 비용 (매입가 100%)"
+M016,원가 정보 노출,"""첨부파일에 내부 마진 시트가 포함되었습니다! 바이어가 우리 마진을 알면 향후 협상이 불가능해집니다.""","기대 마진의 10~20% 삭감"
+M017,즉시 책임 인정,"""사고 원인이 밝혀지기 전에 과실을 인정하면 안 됩니다. 보험사에서 보험금 지급을 거절할 명분이 됩니다.""","손해액 전액 부담 (보험 불가)"
+```
+
+---
+
+## 4. User Profiles Dataset (from `0213 (서비스 검증).txt`)
+
+```json
+[
+  {
+    "user_id": "U01",
+    "role_level": "junior",
+    "experience_months": 1,
+    "weak_topics": ["payment", "documentation"],
+    "risk_tolerance": "low",
+    "preferred_style": "coaching"
+  },
+  {
+    "user_id": "U02",
+    "role_level": "junior",
+    "experience_months": 6,
+    "weak_topics": ["customs"],
+    "risk_tolerance": "low",
+    "preferred_style": "checklist"
+  },
+  {
+    "user_id": "U03",
+    "role_level": "working",
+    "experience_months": 24,
+    "weak_topics": ["incoterms"],
+    "risk_tolerance": "medium",
+    "preferred_style": "concise"
+  },
+  {
+    "user_id": "U04",
+    "role_level": "senior",
+    "experience_months": 60,
+    "weak_topics": [],
+    "risk_tolerance": "low",
+    "preferred_style": "blunt"
+  },
+  {
+    "user_id": "U05",
+    "role_level": "sales",
+    "experience_months": 36,
+    "weak_topics": ["negotiation"],
+    "risk_tolerance": "high",
+    "preferred_style": "concise"
+  }
+]
+```

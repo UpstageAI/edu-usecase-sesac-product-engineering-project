@@ -1,0 +1,66 @@
+
+네, 반드시 스키마를 지정해야 합니다.
+현재 dataset/raw/raw_situation에 있는 파일들은 CSV 형태, 서로 다른 구조의 JSON, 심지어 파이썬 코드 안에 포함된 리스트 등 형식이 제각각입니다. 이를 하나의 일관된 Master Dataset으로 통합해야 AI가 RAG(검색)를 할 때나 파인튜닝을 할 때 정확도가 올라갑니다.
+구축해야 할 3가지 핵심 데이터 스키마를 제안해 드립니다.
+1. [지식 베이스] Master Mistake Schema
+가상사례 11 (1).txt와 message.txt를 합쳐서 만들 리스크 백과사전 스키마입니다.
+code
+JSON
+{
+  "id": "string (예: M001)",
+  "category": "string (예: PAYMENT, CUSTOMS)",
+  "risk_type": "string (리스크 명칭)",
+  "situation_context": "string (실수가 발생하는 상황 설명)",
+  "mistake_details": "string (어떤 실수가 구체적으로 일어나는가)",
+  "risk_level": "string (CRITICAL, HIGH, MEDIUM, LOW)",
+  "impact": {
+    "expected_loss": "string (금전적 손실 범위)",
+    "consequences": ["string (지연, 클레임 등 결과 리스트)"]
+  },
+  "coaching": {
+    "supervisor_feedback": "string (사수급의 구어체 조언)",
+    "prevention_checklist": ["string (예방 조치 리스트)"],
+    "recovery_action": "string (사고 발생 시 즉시 수습책)"
+  },
+  "metadata": {
+    "topic": "string",
+    "doc_type": "string"
+  }
+}
+2. [사용자 프로필] User Persona Schema
+(0212)데이터 유저셋 (json) (1).txt를 기반으로 정의합니다.
+code
+JSON
+{
+  "user_id": "string",
+  "role_level": "string (junior, working, senior, sales)",
+  "experience_months": "integer",
+  "weak_topics": ["string"],
+  "risk_tolerance": "string (low, medium, high)",
+  "preferred_style": "string (coaching, checklist, blunt, concise)",
+  "instruction_prompt": "string (이 유저에게 답변할 때 적용할 시스템 프롬프트 조각)"
+}
+3. [테스트/검증] Evaluation Scenario Schema
+scripts/generate_scenarios.py를 통해 생성될 AI 성능 평가용 데이터셋입니다.
+code
+JSON
+{
+  "scenario_id": "string (예: M001-S1)",
+  "base_case_id": "string (Master Mistake ID와 연결)",
+  "input_text": "string (신입 사원이 입력할 법한 자연어 질문)",
+  "expected_answers": {
+    "risk_type": "string",
+    "min_severity": "string",
+    "must_contain_keywords": ["string"]
+  },
+  "context_metadata": {
+    "topic": "string",
+    "situation": "string"
+  }
+}
+이렇게 스키마를 정하면 얻는 이점
+데이터 통합의 용이성: 가상사례 11에는 supervisor_feedback이 있고 message.txt에는 consequences가 있는데, 이를 하나의 스키마로 합치면 AI가 훨씬 풍부한 근거를 바탕으로 답변할 수 있습니다.
+RAG 검색 최적화: category나 topic을 필드로 분리해두면, 사용자가 "송금"에 대해 물었을 때 전체 문서가 아닌 PAYMENT 카테고리만 필터링해서 검색(Metadata Filtering)할 수 있어 정확도가 급상승합니다.
+자동 채점 가능: AI의 답변 결과가 expected_answers의 risk_type과 일치하는지, 필수 키워드가 포함되었는지 코드로 자동 검증할 수 있습니다.
+다음 작업 추천
+먼저 가상사례 11 (1).txt와 message.txt를 위 1번(Master Mistake Schema) 형식의 하나의 mistakes_master.json으로 병합하는 스크립트를 작성하시는 것을 추천합니다. 제가 이 병합을 위한 파이썬 코드를 도와드릴까요?
