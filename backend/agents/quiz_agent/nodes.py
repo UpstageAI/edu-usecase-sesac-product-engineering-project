@@ -140,7 +140,8 @@ def _build_reference_data(retrieved_documents: List[Dict[str, Any]]) -> str:
         return QUIZ_FALLBACK_REFERENCE
 
     lines: List[str] = []
-    for idx, doc in enumerate(retrieved_documents[:8], start=1):
+    # Use the first half of documents (up to 3) for reference
+    for idx, doc in enumerate(retrieved_documents[:3], start=1):
         metadata = doc.get("metadata", {})
         source = metadata.get("source_dataset", "unknown")
         doc_type = metadata.get("document_type", "unknown")
@@ -149,6 +150,23 @@ def _build_reference_data(retrieved_documents: List[Dict[str, Any]]) -> str:
         lines.append(f"- [{idx}] ({source}/{doc_type}) {snippet}")
 
     return "\n".join(lines) if lines else QUIZ_FALLBACK_REFERENCE
+
+
+def _build_distractor_data(retrieved_documents: List[Dict[str, Any]]) -> str:
+    if not retrieved_documents or len(retrieved_documents) <= 3:
+        return "(오답 생성을 위한 추가 유사 정보 없음. 일반적인 실무 오류 유형을 사용하세요.)"
+
+    lines: List[str] = []
+    # Use the second half of documents (from 4th onwards) for distractors
+    for idx, doc in enumerate(retrieved_documents[3:6], start=1):
+        metadata = doc.get("metadata", {})
+        source = metadata.get("source_dataset", "unknown")
+        doc_type = metadata.get("document_type", "unknown")
+        text = str(doc.get("document", "")).strip().replace("\n", " ")
+        snippet = text[:220] + ("..." if len(text) > 220 else "")
+        lines.append(f"- [유사-오류-{idx}] ({source}/{doc_type}) {snippet}")
+
+    return "\n".join(lines) if lines else "(오답 생성을 위한 추가 유사 정보 없음)"
 
 
 def _extract_questions_from_payload(payload: Any) -> List[Dict[str, Any]]:
@@ -302,7 +320,7 @@ def perform_rag_search_node(state: QuizGraphState) -> Dict[str, Any]:
         retrieved_documents = search_trade_documents.invoke(
             {
                 "query": rag_query,
-                "k": 3,
+                "k": 6,
                 "document_type": context.get("document_type"),
                 "category": context.get("category"),
             }
@@ -347,7 +365,7 @@ def prepare_llm_messages_node(state: QuizGraphState) -> Dict[str, Any]:
         .replace("{exclude_instruction}", _build_exclude_instruction(context.get("exclude_terms")))
         .replace("{feedback_instruction}", _build_feedback_instruction(context.get("feedback")))
         .replace("{reference_data}", _build_reference_data(retrieved_documents))
-        .replace("{distractor_data}", _build_reference_data(retrieved_documents))
+        .replace("{distractor_data}", _build_distractor_data(retrieved_documents))
     )
 
     messages = [
