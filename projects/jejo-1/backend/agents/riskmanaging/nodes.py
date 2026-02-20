@@ -862,7 +862,7 @@ class ReportGenerator:
             user_instruction = build_user_instruction(getattr(self, 'user_profile', None))
             system_prompt = f"{RISK_AGENT_SYSTEM_PROMPT}\n추가 지침:\n{user_instruction}"
 
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model="solar-pro",
                 messages=[
                     {"role": "system", "content": system_prompt},
