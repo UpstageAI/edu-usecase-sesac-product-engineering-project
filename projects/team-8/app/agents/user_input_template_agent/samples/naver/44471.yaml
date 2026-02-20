@@ -1,0 +1,36 @@
+meta:
+  article_id: '44471'
+  written_date: 2025.04.28. 14:24
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 슬개골
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  original_question_summary: 말티푸의 슬개골탈구 대비 KB손해보험 펫보험 적합성 문의. 보장범위, 보험료, 자기부담금 0원
+    적용 방식, 슬개골탈구 보장 포함 여부 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고s
+    reply_summary: KB손해보험 상품은 높은 보장 한도와 특약으로 가성비 우수. 보장 비율 90%, 자기 부담금 1만원 권장. 타사(D사)
+      상품 비교 추천
+    recommended_insurers: null
+    coverage_advice: 이물 치료, 재활 치료 특약 포함
+    price_info: 보장 비율 90%, 자기 부담금 1만원 권장
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 1
+  gender: male
+  is_neutered: false
+  weight: 4
+  health_condition:
+    frequent_illness_area: 슬개골
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

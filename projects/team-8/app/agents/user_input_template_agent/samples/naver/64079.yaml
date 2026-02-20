@@ -1,0 +1,37 @@
+meta:
+  article_id: '64079'
+  written_date: 2026.01.22. 15:05
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  - 갱신
+  original_question_summary: DB손해보험 펫보험에서 강아지 사망 시 장례식 비용 전액 보장 여부(사고사/자연사, 실비/정액)
+    및 실제 경험자 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 대부분의 펫보험은 장례비를 정액 보장하며, 실비 보장은 거의 없음. 사망 보장은 정액(20~50만 원) 또는 사고사
+      한정 특약(화장 비용 30~50만 원)으로 구성됨. 펫보험은 의료비 보장용이며, 장례비 보장 목적 가입은 비추천. 가입 시 사망 보장 형태,
+      자연사 포함 여부, 화장 비용 인정 범위, 중복 청구 가능성 확인 필요
+    recommended_insurers: null
+    coverage_advice: 사망 보장은 '보너스 개념'으로 이해하고, 의료비 보장 중심으로 가입 권장
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 9
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - DB손해보험

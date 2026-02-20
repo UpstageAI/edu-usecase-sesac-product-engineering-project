@@ -1,0 +1,32 @@
+meta:
+  article_id: '36694'
+  written_date: 2024.12.28. 14:51
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보장범위
+  - 피부질환
+  original_question_summary: 현대해상 펫보험 추천받았는데 어떤지 의견을 묻고 있음
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: 현대해상 펫보험은 보상 범위가 넓으며 피부질환, 구강질환, 치석 제거, 탈장 등 다양한 치료비를 보장하여 시츄와
+      같은 피부질환이 흔한 견종에게 적합함
+    recommended_insurers: null
+    coverage_advice: 피부질환 치료제, 구강질환, 치석 제거, 탈장 등 다양한 치료비 보장
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 시츄
+  age: 4
+  gender: male
+  is_neutered: true
+  weight: 6
+  health_condition:
+    frequent_illness_area: 피부질환
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

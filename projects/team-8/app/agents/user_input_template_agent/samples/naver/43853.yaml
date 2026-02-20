@@ -1,0 +1,30 @@
+meta:
+  article_id: '43853'
+  written_date: 2025.04.18. 10:33
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보험사비교
+  original_question_summary: 3살 진도개 중성화 후 매리츠 펫보험 가입 시 충분할지 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 진도개
+  age: 3
+  gender: male
+  is_neutered: false
+  weight: 7
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

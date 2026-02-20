@@ -1,0 +1,34 @@
+meta:
+  article_id: '43023'
+  written_date: 2025.04.04. 15:32
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: 3살 미니슈나우저 치아 문제(치석, 스케일링 필요)로 펫보험 가입 고려 중, 현대해상 외 더 좋은
+    보장 있는 보험사를 추천받고자 함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: 현대해상 외 다른 보험사와 비교 시 질병(치주염, 스케일링) 및 상해 관련 입원/통원/수술비 보장 가능, 슬개골/배상책임/CT/MRI
+      검사 특약 선택 가능, 생년월일/성별/중성화여부/동물등록증/사진3장/병원명 필요, 입양 시 펫보험료 할인 혜택 존재
+    recommended_insurers: null
+    coverage_advice: 치주염, 스케일링, 질병, 상해, 입원, 통원, 수술비 등 보장 가능, 슬개골/배상책임/CT/MRI 검사 특약
+      선택 가능
+    price_info: 입양 시 펫보험료 할인 혜택 존재
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 미니슈나우저
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 6
+  health_condition:
+    frequent_illness_area: 이빨
+    disease_surgery_history: 치석, 스케일링 필요
+  coverage_style: comprehensive
+  preferred_insurers: null

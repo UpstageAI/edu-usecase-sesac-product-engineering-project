@@ -1,0 +1,34 @@
+meta:
+  article_id: '35794'
+  written_date: 2024.12.14. 21:17
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보험사비교
+  - 보상비율
+  - 보험금청구
+  original_question_summary: 5세 말티즈를 키우고 있으며 기존 펫보험이 비싸 메리츠 펫보험으로 재설계하려는데, 보험료 저렴화
+    가능성과 보장 내용을 확인하고 싶어함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 5
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: minimal
+  preferred_insurers:
+  - 메리츠화재해상보험

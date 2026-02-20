@@ -1,0 +1,31 @@
+meta:
+  article_id: '43576'
+  written_date: 2025.04.15. 09:58
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  original_question_summary: 고양이 3살과 강아지 5살을 키우는 반려인으로, 현대해상 펫보험 제안서를 받았으나 치아구강질환
+    보장 포함 여부와 전반적인 조건 평가가 궁금하다
+  total_pets: 2
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 2
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 5
+  gender: male
+  is_neutered: true
+  weight: 10
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: 현대해상화재보험

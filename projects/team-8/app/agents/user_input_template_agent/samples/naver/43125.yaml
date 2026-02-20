@@ -1,0 +1,32 @@
+meta:
+  article_id: '43125'
+  written_date: 2025.04.07. 15:48
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 현대해상 펫보험 제안을 받았으나 다른 보험사와 비교해 가성비 좋은 보험을 찾고 있음
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: A사 펫보험을 추천하며, 자기부담금 0원 설정 가능, 연간 보장한도 2000만원, 백내장·녹내장 보장 등 장점이
+      있으나 보험료는 더 비쌀 수 있음. 현대해상 보험도 나쁘지 않으나 타사와 비교 분석 필요
+    recommended_insurers: null
+    coverage_advice: 타사 미보장 항목(백내장, 녹내장) 포함 여부 확인
+    price_info: A사 보험료는 더 비쌀 수 있음
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 랙돌
+  age: 1
+  gender: male
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

@@ -1,0 +1,31 @@
+meta:
+  article_id: '36645'
+  written_date: 2024.12.27. 10:19
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 치주질환
+  - 보험사비교
+  original_question_summary: 현대해상 펫보험의 보장범위가 가장 넓은지 확인 및 가입 적합성 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 치와와
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 2
+  health_condition:
+    frequent_illness_area: 구강
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: 현대해상화재보험

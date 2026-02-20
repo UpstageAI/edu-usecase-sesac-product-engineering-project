@@ -1,0 +1,35 @@
+meta:
+  article_id: '40572'
+  written_date: 2025.02.25. 13:53
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험금청구
+  - 보험사비교
+  - 자기부담금
+  original_question_summary: 비숑프리제를 키우며 펫보험 가입을 고민 중이며, 친구가 받은 메리츠화재 설계서가 적절한지 문의함
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 반려견 나이와 보험료를 고려한 맞춤 설계가 중요하며, 보험료 부담이 크다면 자기부담금 조정을 권장한다. 조기 가입을
+      권유하며 상담을 통한 맞춤형 설계를 제안한다.
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: 자기부담금 상향 시 보험료 부담 감소 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 비숑프리제
+  age: 2
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

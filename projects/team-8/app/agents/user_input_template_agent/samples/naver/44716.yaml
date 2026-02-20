@@ -1,0 +1,31 @@
+meta:
+  article_id: '44716'
+  written_date: 2025.05.02. 11:17
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 자기부담금
+  - 갱신
+  original_question_summary: 5세 진돗개 펫보험 가입 시 매리츠화재 펫퍼민트(메리츠화재해상보험) 상품 정보(3년 갱신 가능
+    여부) 확인 및 추천 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 진돗개
+  age: 5
+  gender: male
+  is_neutered: true
+  weight: 21
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: 메리츠화재해상보험

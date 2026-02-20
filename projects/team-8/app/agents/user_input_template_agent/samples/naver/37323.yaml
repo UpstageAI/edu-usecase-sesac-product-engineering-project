@@ -1,0 +1,36 @@
+meta:
+  article_id: '37323'
+  written_date: 2025.01.08. 15:41
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보험사비교
+  - 보장범위
+  - 보상비율
+  - 자기부담금
+  original_question_summary: KB손해보험 금쪽같은 펫보험 가입을 고려 중이지만 보험료가 높아 가성비 좋은 타사 상품을 비교하고
+    싶다.
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: KB손해보험 상품의 보장 한도 및 통원 1일 한도 조정을 통해 보험료 절감이 가능하며, M사 상품도 비교 추천.
+      동일한 보장 조건으로 두 회사 상품을 비교 후 선택 권장.
+    recommended_insurers: null
+    coverage_advice: 보장 한도는 1천만원으로 낮추고 통원 1일 한도 15만원으로 설정 시 보험료 절감 가능
+    price_info: 보장 조건 조정 시 보험료 절감 효과 기대
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 3
+  gender: male
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

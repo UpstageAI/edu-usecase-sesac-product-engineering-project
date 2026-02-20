@@ -1,0 +1,41 @@
+meta:
+  article_id: '44447'
+  written_date: 2025.04.28. 10:55
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 치주질환
+  - 슬개골
+  - 보험사비교
+  - 보험금청구
+  - 보험료
+  - 보상비율
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: KB펫보험 가입 고려 중이며, 가격과 슬개골 탈구·치주질환 보장 여부 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: KB펫보험은 가성비가 좋으며 슬개골 탈구·치주질환 보장이 가능하나 특약 확인이 필요함. 보장비율 70% 이상 권장하며
+      견종·나이·체중 정보에 따라 맞춤형 설계 가능.
+    recommended_insurers:
+    - KB손해보험
+    coverage_advice: 슬개골 탈구 보장은 가입 연령 확인 필요하며, 치주질환 보장은 특약 추가 여부 확인해야 함
+    price_info: '소형견 기준 보장비율별 월 보험료: 50% 보장 약 2~3만 원, 70% 보장 약 4~5만 원, 80% 보장 약 5~6만
+      원'
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 4
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

@@ -1,0 +1,15 @@
+state:
+  species: "강아지"
+  breed: "치와와"
+  age: 10
+  gender: "male"
+  is_neutered: true
+  weight: 10
+  health_condition:
+    frequent_illness_area: "머리"
+    disease_surgery_history: "질병 이력없음"
+  coverage_style: "minimal"
+  preferred_insurers:
+    - "메리츠화재해상보험"
+    - "삼성화재해상보험"
+    - "DB손해보험"

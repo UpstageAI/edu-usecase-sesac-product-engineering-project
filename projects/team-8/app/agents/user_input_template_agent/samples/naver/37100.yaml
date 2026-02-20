@@ -1,0 +1,32 @@
+meta:
+  article_id: '37100'
+  written_date: 2025.01.06. 10:36
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험사비교
+  - 보장범위
+  - 보험료
+  original_question_summary: 2살 푸들을 키우고 있으며 메리츠화재 펫보험 가입 고려 중인데 다른 추천 보험사가 있는지 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 위너
+    reply_summary: 타사 상품과 비교 분석 후 가입 결정 권장, A사 상품 추천(5,7,10년 갱신형, 구강질환 보장 가능)
+    recommended_insurers:
+    - null
+    coverage_advice: 구강질환 보장 가능한 상품 권장
+    price_info: 동물등록증 5%, 유기입양 3%, 다펫 5% 할인 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 푸들
+  age: 2
+  gender: male
+  is_neutered: false
+  weight: 7
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

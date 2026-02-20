@@ -1,0 +1,32 @@
+meta:
+  article_id: '33968'
+  written_date: 2024.11.08. 13:05
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 슬개골
+  - 보험사비교
+  - 보험료
+  original_question_summary: 2살과 6살 강아지 반려 중입니다. 한 마리는 슬개골 탈구 수술 이력이 있고, 다른 한 마리는
+    건강합니다. 펫보험 다이렉트 가입 가능 보험사와 추천 보험사를 문의합니다.
+  total_pets: 2
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 2
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 6
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

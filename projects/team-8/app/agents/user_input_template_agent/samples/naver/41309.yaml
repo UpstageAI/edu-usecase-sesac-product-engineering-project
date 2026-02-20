@@ -1,0 +1,36 @@
+meta:
+  article_id: '41309'
+  written_date: 2025.03.06. 17:29
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  original_question_summary: DB손해보험 반려묘 보험 가입 적합성 확인 및 타사 추천 상품 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 자기부담금 1만원/보상비율 90%/통원한도 30만원 추천, H사 상품이 보장 대비 저렴하며 필수 특약 구성 권장
+    recommended_insurers: null
+    coverage_advice: 자기부담금 1만원, 보상비율 90%, 통원한도 30만원, 입/통원/수술비 합산 연간 1천만원, MRI/CT 통원
+      한도 보상, 슬개골/구강질환 보상 포함
+    price_info: 금액 추가 납부 시 더 나은 보장 가능
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 스코티시폴드
+  age: 2
+  gender: female
+  is_neutered: true
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

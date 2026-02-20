@@ -1,0 +1,35 @@
+meta:
+  article_id: '36279'
+  written_date: 2024.12.20. 17:12
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 치주질환
+  original_question_summary: KB 펫보험 가입 전 다른 보험사와 비교 후 추천 요청. 1살 푸들 강아지 대상, 슬개골/치주질환
+    보장 및 보험료 관련 질문
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 마루
+    reply_summary: 재활치료 및 구강 관련 보장 확장된 상품 추천. 건강할 때 가입이 저렴하며, 슬개골은 1년 면책기간 존재. 타사
+      비교 후 가입 권장
+    recommended_insurers: null
+    coverage_advice: 재활치료와 구강 관련 항목까지 보장 확장
+    price_info: 건강하고 어릴 때 가입 시 보장대비 저렴하게 가입 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 푸들
+  age: 1
+  gender: female
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

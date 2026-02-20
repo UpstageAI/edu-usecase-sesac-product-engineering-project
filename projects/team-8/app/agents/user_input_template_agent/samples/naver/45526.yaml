@@ -1,0 +1,34 @@
+meta:
+  article_id: '45526'
+  written_date: 2025.05.15. 11:11
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보험사비교
+  - 갱신
+  original_question_summary: 4살 건강한 말티푸 수컷을 위한 KB손해보험과 펫퍼민트 펫보험 가입 비교 및 5년 갱신형 여부
+    문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 4
+  gender: male
+  is_neutered: false
+  weight: 4
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험
+  - KB손해보험

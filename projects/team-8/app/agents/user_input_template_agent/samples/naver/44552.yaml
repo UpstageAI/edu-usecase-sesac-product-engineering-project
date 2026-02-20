@@ -1,0 +1,36 @@
+meta:
+  article_id: '44552'
+  written_date: 2025.04.29. 15:14
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험금청구
+  - 보장범위
+  - 보험사비교
+  - 보상비율
+  - 자기부담금
+  original_question_summary: 5개월 된 말티푸의 펫보험 가입 시 메리츠 펫보험을 추천받았는데, 보험금 자동 청구 기능 및 다른
+    보험사와의 보장 내용 비교에 대한 질문
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고s
+    reply_summary: 제휴 병원 진료 시 보험금 자동 청구 기능 설명, 보장 범위와 보험료가 더 중요하다며 H사와 K사 추천. H사와
+      K사는 보장 범위 넓고 할인 혜택 많으며 중요한 질환 보장, 보장 비율 90% 설정 가능, K사는 연간 2천만원 한도 및 자기부담금 0원
+      가능
+    recommended_insurers: null
+    coverage_advice: 피부염, 치주질환, 슬관절, 고관절 등 중요 질환 잘 보장
+    price_info: 동물등록증, 유기견, 다견 할인 시 보험료 저렴
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 0
+  gender: male
+  is_neutered: false
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: 메리츠화재해상보험

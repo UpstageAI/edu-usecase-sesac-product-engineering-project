@@ -1,0 +1,33 @@
+meta:
+  article_id: '46226'
+  written_date: 2025.05.25. 09:32
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 갱신
+  original_question_summary: 매리츠화재 펫퍼민트보험 가입 고려 중. 대형견(18kg) 3살 믹스견 기준 보장 충분성 및 현재
+    가입 적합성 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 3
+  gender: male
+  is_neutered: false
+  weight: 18
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

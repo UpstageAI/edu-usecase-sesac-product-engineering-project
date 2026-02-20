@@ -1,0 +1,37 @@
+meta:
+  article_id: '36079'
+  written_date: 2024.12.19. 01:11
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 자기부담금
+  original_question_summary: 3살 믹스견 슬개골 탈구 수술 대비로 DB펫보험을 고려 중인데, 다른 추천 보험사가 있는지와 가격
+    부담 여부를 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: D사(DB)펫보험은 슬개골 탈구 수술 보장에 적합하고 경제적이며, 재활 보장 필요 시 KB펫보험을 고려할 수 있음.
+      자기부담금 조정으로 보험료 조절 가능
+    recommended_insurers:
+    - DB손해보험
+    - KB손해보험
+    coverage_advice: 재활 보장 필요 시 KB펫보험 고려
+    price_info: D사보험은 가격 대비 보장 우수, 자기부담금 조정으로 보험료 조절 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스견
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 10
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: minimal
+  preferred_insurers:
+  - DB손해보험

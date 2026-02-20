@@ -1,0 +1,33 @@
+meta:
+  article_id: '37284'
+  written_date: 2025.01.08. 11:46
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 슬개골
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 6개월 된 강아지의 슬개골 및 재활 보장을 포함한 폭넓은 보장을 원하며 KB펫보험 가입 여부를
+    고민 중
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: false
+    expert_name: null
+    reply_summary: null
+    recommended_insurers: null
+    coverage_advice: null
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 진돗개
+  age: 1
+  gender: female
+  is_neutered: false
+  weight: 17
+  health_condition:
+    frequent_illness_area: 슬개골
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

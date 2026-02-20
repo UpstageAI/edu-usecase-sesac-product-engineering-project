@@ -1,0 +1,33 @@
+meta:
+  article_id: '34467'
+  written_date: 2024.11.19. 17:25
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: 1살 된 믹스견 유기견을 위해 펫보험 가입 고려 중. 지인이 보내준 삼성화재 펫보험 '위풍댕댕'
+    상품 검토 중. 최근 펫보험이 의료실비처럼 이용 가능하다는 정보를 접하고 보험사 비교를 원하는 상태.
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험코디
+    reply_summary: 최근 펫보험 상품들이 개정되어 이전보다 좋은 상품들이 출시되었으며, 특히 치과질환 보장 확대. 면책 기간 확인과
+      비교 설계 필수. 회원님의 상황(성별, 직업, 병력, 가족력)에 따라 추천 상품이 달라짐.
+    recommended_insurers: null
+    coverage_advice: 치과질환 보장 확대
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 믹스
+  age: 1
+  gender: female
+  is_neutered: false
+  weight: 6
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: null

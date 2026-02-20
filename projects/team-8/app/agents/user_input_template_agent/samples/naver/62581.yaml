@@ -1,0 +1,36 @@
+meta:
+  article_id: '62581'
+  written_date: 2025.12.31. 16:47
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 갱신
+  - 보험사비교
+  original_question_summary: 6개월 된 미니 비숑의 펫보험 가입 조건(개월 수, 유전 질환 보장, 면책기간, 중성화 영향,
+    보험료 차이, 재가입/갱신 문제) 확인 및 주의점 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 6개월 미니 비숑은 펫보험 가입에 유리하며, 질병/수술 이력 없이 예방접종 정상 시 대부분 보험사에서 가입 가능.
+      슬개골 탈구 및 피부병 보장 여부와 면책기간(30~90일) 확인 필요. 중성화 전 가입이 유리하며, 보험료가 저렴하고 보장 제외 없이 가입
+      가능. 갱신형 상품 선택 시 향후 유지 가능.
+    recommended_insurers: null
+    coverage_advice: 슬개골 탈구·피부병 보장 여부 및 면책기간 확인 필요
+    price_info: 6개월 가입 시 보험료가 가장 저렴한 구간
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 미니 비숑
+  age: 1
+  gender: female
+  is_neutered: true
+  weight: 6
+  health_condition:
+    frequent_illness_area: 슬개골 탈구·피부병·귀질환
+    disease_surgery_history: 큰 질병이나 수술 이력 없음
+  coverage_style: comprehensive
+  preferred_insurers: null

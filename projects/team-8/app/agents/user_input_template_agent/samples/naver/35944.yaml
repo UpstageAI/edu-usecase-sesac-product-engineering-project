@@ -1,0 +1,37 @@
+meta:
+  article_id: '35944'
+  written_date: 2024.12.17. 14:06
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  original_question_summary: 고양이 펫보험 가입 고려 중이며, 메리츠화재 펫보험의 자기부담금·보상비율 설정 조언 및 타사 추천
+    요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 인스포유
+    reply_summary: 자기부담금은 낮추고 보상비율 80~90% 설정 추천, 현대해상(하이펫), DB손해보험(아이러브펫), KB손해보험(KB펫코노미)
+      등 타사 비교 및 건강 상태·약관 확인 중요
+    recommended_insurers:
+    - 현대해상화재보험
+    - DB손해보험
+    - KB손해보험
+    coverage_advice: 질병과 사고 보장 범위가 넓고 유전 질환 일부 커버 가능한 상품 추천
+    price_info: 메리츠화재 보험료는 타사 대비 높은 편이며, 본인 예산과 혜택 비교 필요
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 코리안숏헤어
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험

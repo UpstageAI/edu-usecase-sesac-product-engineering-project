@@ -1,0 +1,33 @@
+meta:
+  article_id: '38762'
+  written_date: 2025.02.05. 16:13
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 1살 말티푸를 위한 KB 펫보험 가입 고려 중인데 보험료가 높아 부담스럽다고 하며, 더 합리적인
+    가격 옵션 및 타사 비교 방법 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 현재 고려 중인 KB 펫보험의 보장 한도와 통원 치료비 한도 조정을 통해 보험료 절감 가능하며, M사 펫보험과 비교
+      설계할 것 추천. 정확한 상품명 기재가 불가한 점 안내
+    recommended_insurers: null
+    coverage_advice: 보장 한도와 통원 치료비 한도 조정으로 보장 범위 및 비용 조절 가능
+    price_info: 보장 한도 1천만 원, 통원 치료비 1일 한도 15만 원 설정 시 보험료 절감 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티푸
+  age: 1
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: KB손해보험

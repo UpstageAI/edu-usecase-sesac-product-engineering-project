@@ -1,0 +1,42 @@
+meta:
+  article_id: '64812'
+  written_date: 2026.02.03. 11:30
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  - 보험사비교
+  - 갱신
+  original_question_summary: 포메라니안 견주가 펫보험 가입 적합성을 고민하며, 무사고 시 돈 낭비 vs 사고 시 필수라는 경험을
+    듣고 구체적인 가입 기준(필요/불필요 경우)과 보험 선택 팁을 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 펫보험은 대형 사고 대비용이며, 포메라니안 등 소형견은 슬개골 탈구 위험 대비 필요. 2세 현재가 가입 골든타임.
+      실속형(70-80% 보장) vs 보장강화형(90% 이상) 중 선택. 면책기간(1년) 확인 및 빠른 가입 권장
+    recommended_insurers:
+    - A손해보험
+    - C손해보험
+    - K손해보험
+    coverage_advice: 보장 비율 80-90%가 무조건 좋은 건 아니며, 필요(빈번한 병원 이용) vs 실속(수술비 대비)에 따라 선택
+    price_info: 월 4-5만 원 보험료로 500만 원 이상 예비 가능. 실속형(C손해보험)은 보험료 부담 감소, 보장강화형(A,K손해보험)은
+      완벽 커버
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 포메라니안
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - 메리츠화재해상보험
+  - 삼성화재해상보험

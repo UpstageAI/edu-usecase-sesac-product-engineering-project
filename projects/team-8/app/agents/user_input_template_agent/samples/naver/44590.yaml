@@ -1,0 +1,37 @@
+meta:
+  article_id: '44590'
+  written_date: 2025.04.30. 11:14
+  is_pet_insurance_related: true
+  question_intent: 가입_적합성_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 슬개골 탈구 진료 이력이 있는 2살 말티즈의 펫보험 가입 가능성, KB 펫보험의 유전 질환 보장
+    범위, 보험료 수준 등을 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 올포유
+    reply_summary: 이미 진단받은 슬개골 탈구는 보장 제외되며, 다른 질환은 보장 가능. 유전 질환 중 미발생 질환은 보장 가능. 실손
+      보장 시 70~80% 보장. 진료 이력 시 보험료 인상 또는 담보 제외 가능
+    recommended_insurers:
+    - KB손해보험
+    coverage_advice: 기존 슬개골 탈구 제외 시 다른 질환(기관지염, 백내장 등)은 보장 가능
+    price_info: 진료 이력 있는 2살 말티즈 기준 월 6~8만 원대 또는 심사 후 인상 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: 기관지
+    disease_surgery_history: 슬개골 탈구 진료 1회
+  coverage_style: comprehensive
+  preferred_insurers:
+  - KB손해보험

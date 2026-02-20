@@ -1,0 +1,32 @@
+meta:
+  article_id: '42997'
+  written_date: 2025.04.04. 13:40
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 보험사비교
+  original_question_summary: 5살 치와와를 위한 메리츠화재해상보험 펫보험 제안서 확인 후 보강할 부분 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고s
+    reply_summary: 보험사별 보장 범위 및 조건 확인 필요, 기존 건강 상태 체크 후 적합 상품 선택 권장
+    recommended_insurers: null
+    coverage_advice: 보험사별 보장 항목과 조건 확인, 기존 건강 상태 기반 보장 범위 선택 필요
+    price_info: null
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 치와와
+  age: 5
+  gender: male
+  is_neutered: false
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - 메리츠화재해상보험

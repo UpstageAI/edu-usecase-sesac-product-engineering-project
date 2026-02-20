@@ -1,0 +1,36 @@
+meta:
+  article_id: '35381'
+  written_date: 2024.12.09. 16:42
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험사비교
+  - 갱신
+  original_question_summary: DB손해보험 펫블리 반려묘보험 가입 시 보험료 저렴하게 조정하는 방법과 보장 내용이 적절한지 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 위너
+    reply_summary: 1일보상한도 30만원, 자기부담금 1만원, 보상비율 90% 플랜 추천. 반려동물 의료비 대비 위해 통원한도를 넉넉하게
+      준비하고 타사와 비교견적 후 유리한 상품 선택 권장
+    recommended_insurers: null
+    coverage_advice: 1일보상한도 30만원, 자기부담금 1만원, 보상비율 90% 권장
+    price_info: 타사와 비교견적 후 보험료 절감 가능성 검토 권장
+  pet_index: 1
+state:
+  species: 고양이
+  breed: 랙돌
+  age: 6
+  gender: female
+  is_neutered: false
+  weight: 5
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers:
+  - DB손해보험

@@ -1,0 +1,33 @@
+meta:
+  article_id: '36512'
+  written_date: 2024.12.24. 16:52
+  is_pet_insurance_related: true
+  question_intent: 보험사_비교_추천
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보험사비교
+  original_question_summary: DB 펫보험 실속형과 표준형의 보장 내용 차이 및 자기부담금 90% 적절성 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 위너
+    reply_summary: 표준형과 고급형의 차이는 입원/통원 및 수술 한도 차이이며, MRI/CT, 특정약물, 치과치료 보장 여부 확인 필요.
+      보장 항목이 유사하므로 보험료가 저렴한 보험사 선택 추천
+    recommended_insurers: null
+    coverage_advice: MRI/CT, 특정약물(피부알러지), 치과치료 보장 여부 확인 필요
+    price_info: 보험료가 저렴한 곳으로 선택 추천
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 8
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: minimal
+  preferred_insurers:
+  - DB손해보험

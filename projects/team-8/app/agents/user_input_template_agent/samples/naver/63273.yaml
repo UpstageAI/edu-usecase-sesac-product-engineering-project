@@ -1,0 +1,39 @@
+meta:
+  article_id: '63273'
+  written_date: 2026.01.12. 15:00
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  - 보장범위
+  - 슬개골
+  - 피부질환
+  - 보험금청구
+  - 보험사비교
+  original_question_summary: 강아지 펫보험 가입자들의 보험료 대비 보장 체감 만족도, 자주 보장받는 항목, 보상 청구 과정
+    편의성 등을 문의
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 골드망고
+    reply_summary: 펫보험 체감은 병원 이용 빈도가 높거나 관절·피부 질환 취약 견종, 응급·수술 대비가 필요한 보호자에게서 높게 나타나며,
+      실제 치료 시 보장 비율·한도·자기부담금 구조가 체감도를 결정한다. 저축보다 보험은 리스크 분산 효과가 있으며, 어릴 때 가입하고 견종별
+      취약 질환을 보장하는 상품 선택이 중요하다.
+    recommended_insurers: null
+    coverage_advice: 보장 비율, 연간 보장 한도, 자기부담금 구조, 제외 질환(슬개골, 피부병 등)을 기준으로 상품을 선택해야 하며,
+      핵심 보장 위주로 선택하는 것이 체감도를 높인다.
+    price_info: 보험료를 낮추겠다고 보장을 줄이면 실제 치료 시 체감도가 급격히 떨어지므로, 견종·나이·병력에 맞춰 비교 후 가입해야
+      한다.
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 진돗개
+  age: 2
+  gender: male
+  is_neutered: true
+  weight: 21
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers: null

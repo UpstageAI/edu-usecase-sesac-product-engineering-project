@@ -1,0 +1,36 @@
+meta:
+  article_id: '44858'
+  written_date: 2025.05.06. 12:02
+  is_pet_insurance_related: true
+  question_intent: 보험료_확인
+  user_concerns:
+  - 보험료
+  - 보험사비교
+  - 보상비율
+  - 보상비율
+  - 보험금청구
+  original_question_summary: KB펫보험 가입 관련 강아지 나이와 보험료 인상 여부 및 보장 범위 확인 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴 김재은 팀장
+    reply_summary: 10세까지 가입 가능한 강아지보험 상품 설명. 8세 이상 시 보험료 인상 가능성 언급. 보상비 설정에 따른 보험료
+      차이 및 특별한 특약(무지개다리 위로금) 장점 강조. 타사 상품과 비교한 맞춤형 보험 선택 필요성 조언.
+    recommended_insurers:
+    - KB손해보험
+    coverage_advice: 강아지의 나이와 상황에 맞는 보험료 및 보장 범위 꼼꼼한 확인 필요
+    price_info: 보상비 설정에 따라 보험료 달라지며 나이 증가 시 보험료 인상 가능성 있음
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 말티즈
+  age: 3
+  gender: female
+  is_neutered: true
+  weight: 3
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: null
+  preferred_insurers:
+  - KB손해보험

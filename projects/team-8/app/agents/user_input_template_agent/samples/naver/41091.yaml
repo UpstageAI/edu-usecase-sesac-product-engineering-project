@@ -1,0 +1,37 @@
+meta:
+  article_id: '41091'
+  written_date: 2025.03.04. 11:47
+  is_pet_insurance_related: true
+  question_intent: 보장내용_확인
+  user_concerns:
+  - 보장범위
+  - 자기부담금
+  - 보상비율
+  - 보험금청구
+  - 보험료
+  - 갱신
+  original_question_summary: DB손해보험 펫블리 상품의 위탁비용 보장 여부 및 보험료 절감 방법 문의. 강아지 가입 조건 및
+    보험 상품 구성 설명 요청
+  total_pets: 1
+  expert_advice:
+    has_expert_reply: true
+    expert_name: 보험 캡틴
+    reply_summary: DB손해보험 펫블리 상품은 반려동물 의료비, 장례비, 위탁비용, 배상책임 등을 보장하며, 최대 2,000만원 한도로
+      90% 보상. 견주 입원 시 위탁비용 하루 5만원까지 보장. 최소 보험료 1만원부터 가입 가능하며, 호텔링 비용만 단독 가입도 가능. 체중·가입
+      조건에 따라 보험료 변동. 동물등록증 제출 등 할인 혜택 적용 가능
+    recommended_insurers: DB손해보험
+    coverage_advice: 의료비 보장과 함께 호텔링 비용 보장 고려 권장
+    price_info: 체중·가입 조건에 따라 보험료 변동, 최대 10% 할인 가능
+  pet_index: 1
+state:
+  species: 강아지
+  breed: 토이푸들
+  age: 1
+  gender: male
+  is_neutered: true
+  weight: 2
+  health_condition:
+    frequent_illness_area: null
+    disease_surgery_history: null
+  coverage_style: comprehensive
+  preferred_insurers: DB손해보험
