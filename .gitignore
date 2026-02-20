@@ -92,3 +92,8 @@ dataset/embeddings/
 *.tmp
 *.bak
 *.backup.py
+
+
+frontend/node_modules/
+node_modules/
+**/node_modules/
