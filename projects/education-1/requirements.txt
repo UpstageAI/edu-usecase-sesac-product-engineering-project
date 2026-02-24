@@ -1,0 +1,32 @@
+# Core LLM / LangChain
+langchain
+langchain-community
+langchain-upstage
+langgraph
+langchainhub
+openai
+
+# Retrieval / RAG
+faiss-cpu
+rank_bm25
+tiktoken
+
+# Parsing / Web
+requests
+beautifulsoup4
+youtube-transcript-api
+tavily-python
+
+# App / Scheduling
+python-dotenv
+apscheduler
+flask
+
+# Data / Validation
+pydantic
+
+# Notifications (OS-specific)
+winotify; platform_system == "Windows"
+pync; platform_system == "Darwin"
+pyobjc; platform_system == "Darwin"
+plyer
