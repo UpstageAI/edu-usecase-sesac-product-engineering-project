@@ -1,0 +1,394 @@
+[
+  {
+    "id": 1,
+    "category": "trade_terminology",
+    "content": "EXW | Ex Works | 공장 인도 조건 | 매도인이 자신의 영업장에서 물품을 매수인에게 인도하는 조건. 매도인의 책임과 비용이 최소화되며, 매수인이 모든 운송 비용과 위험을 부담합니다. | 사용: 매도인의 공장이나 창고에서 물품을 픽업하는 경우 | 위험 이전: 매도인의 영업장에서 물품 인도 시 | 비용 분담: 매도인: 물품 준비, 매수인: 모든 운송 비용 및 위험",
+    "metadata": {
+      "term": "EXW",
+      "full_name": "Ex Works",
+      "korean_name": "공장 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 2,
+    "category": "trade_terminology",
+    "content": "FCA | Free Carrier | 운송인 인도 조건 | 매도인이 지정 장소에서 매수인이 지정한 운송인에게 물품을 인도하는 조건. 수출 통관은 매도인이 책임집니다. | 사용: 컨테이너 운송, 복합 운송에 가장 적합 | 위험 이전: 지정 장소에서 운송인에게 물품 인도 시 | 비용 분담: 매도인: 운송인 인도까지, 매수인: 주운송 및 이후 비용",
+    "metadata": {
+      "term": "FCA",
+      "full_name": "Free Carrier",
+      "korean_name": "운송인 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 3,
+    "category": "trade_terminology",
+    "content": "CPT | Carriage Paid To | 운송비 지급 인도 조건 | 매도인이 지정 목적지까지의 운송비를 지불하지만, 위험은 운송인에게 물품을 인도한 시점에 매수인에게 이전됩니다. | 사용: 운송비만 매도인이 부담하고 보험은 매수인이 부담하는 경우 | 위험 이전: 운송인에게 물품 인도 시 | 비용 분담: 매도인: 목적지까지 운송비, 매수인: 위험 및 보험",
+    "metadata": {
+      "term": "CPT",
+      "full_name": "Carriage Paid To",
+      "korean_name": "운송비 지급 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 4,
+    "category": "trade_terminology",
+    "content": "CIP | Carriage and Insurance Paid To | 운송비·보험료 지급 인도 조건 | 매도인이 지정 목적지까지의 운송비와 보험료를 지불합니다. 위험은 운송인에게 물품을 인도한 시점에 매수인에게 이전됩니다. | 사용: 매도인이 운송비와 보험료를 모두 부담하는 경우 | 위험 이전: 운송인에게 물품 인도 시 | 비용 분담: 매도인: 운송비 + 보험료, 매수인: 위험",
+    "metadata": {
+      "term": "CIP",
+      "full_name": "Carriage and Insurance Paid To",
+      "korean_name": "운송비·보험료 지급 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 5,
+    "category": "trade_terminology",
+    "content": "DAP | Delivered At Place | 도착 장소 인도 조건 | 매도인이 지정 목적지에서 양하 준비가 완료된 상태로 물품을 인도하는 조건. 수입 통관은 매수인이 책임집니다. | 사용: 매도인이 목적지까지 모든 위험을 부담하는 경우 | 위험 이전: 목적지 도착 시 (양하 전) | 비용 분담: 매도인: 목적지까지 모든 비용, 매수인: 수입 통관 및 양하",
+    "metadata": {
+      "term": "DAP",
+      "full_name": "Delivered At Place",
+      "korean_name": "도착 장소 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 6,
+    "category": "trade_terminology",
+    "content": "DPU | Delivered at Place Unloaded | 도착 장소 양하 인도 조건 | 매도인이 지정 목적지에서 물품을 양하하여 인도하는 조건. 매도인이 양하 비용까지 부담합니다. | 사용: 매도인이 양하까지 책임지는 경우 | 위험 이전: 목적지에서 양하 완료 시 | 비용 분담: 매도인: 양하 비용까지, 매수인: 수입 통관",
+    "metadata": {
+      "term": "DPU",
+      "full_name": "Delivered at Place Unloaded",
+      "korean_name": "도착 장소 양하 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 7,
+    "category": "trade_terminology",
+    "content": "DDP | Delivered Duty Paid | 관세 지급 인도 조건 | 매도인이 수입 통관을 포함하여 지정 목적지까지 모든 비용과 위험을 부담하는 조건. 매도인의 책임이 가장 큰 조건입니다. | 사용: 매도인이 수입 통관까지 모두 처리하는 경우 | 위험 이전: 목적지 도착 시 (수입 통관 후) | 비용 분담: 매도인: 모든 비용 (수입 관세 포함), 매수인: 최소",
+    "metadata": {
+      "term": "DDP",
+      "full_name": "Delivered Duty Paid",
+      "korean_name": "관세 지급 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 8,
+    "category": "trade_terminology",
+    "content": "FAS | Free Alongside Ship | 본선옆 인도 조건 | 매도인이 지정 선적항에서 본선 옆에 물품을 인도하는 조건. 수출 통관은 매도인이 책임집니다. | 사용: 산적 화물이나 중량물 선적 시 | 위험 이전: 본선 옆 인도 시 | 비용 분담: 매도인: 본선 옆까지, 매수인: 선적비 및 이후 비용",
+    "metadata": {
+      "term": "FAS",
+      "full_name": "Free Alongside Ship",
+      "korean_name": "본선옆 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 9,
+    "category": "trade_terminology",
+    "content": "FOB | Free On Board | 본선 인도 조건 | 매도인이 지정 선적항에서 본선에 물품을 적재하여 인도하는 조건. 위험은 본선 난간을 통과하는 시점에 매수인에게 이전됩니다. | 사용: 해상 운송에서 가장 많이 사용되는 조건 | 위험 이전: 본선 적재 완료 시 | 비용 분담: 매도인: 선적비까지, 매수인: 해상 운임 및 이후 비용",
+    "metadata": {
+      "term": "FOB",
+      "full_name": "Free On Board",
+      "korean_name": "본선 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 10,
+    "category": "trade_terminology",
+    "content": "CFR | Cost and Freight | 운임 포함 인도 조건 | 매도인이 지정 목적항까지의 운임을 지불하지만, 위험은 본선 적재 시점에 매수인에게 이전됩니다. | 사용: 해상 운송에서 운임만 매도인이 부담하는 경우 | 위험 이전: 본선 적재 완료 시 | 비용 분담: 매도인: 해상 운임까지, 매수인: 보험 및 위험",
+    "metadata": {
+      "term": "CFR",
+      "full_name": "Cost and Freight",
+      "korean_name": "운임 포함 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 11,
+    "category": "trade_terminology",
+    "content": "CIF | Cost Insurance and Freight | 보험료·운임 포함 인도 조건 | 매도인이 지정 목적항까지의 운임과 보험료를 지불합니다. 위험은 본선 적재 시점에 매수인에게 이전됩니다. | 사용: 해상 운송에서 가장 많이 사용되는 조건 중 하나 | 위험 이전: 본선 적재 완료 시 | 비용 분담: 매도인: 운임 + 보험료, 매수인: 위험",
+    "metadata": {
+      "term": "CIF",
+      "full_name": "Cost Insurance and Freight",
+      "korean_name": "보험료·운임 포함 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "incoterms",
+      "priority": "high",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 12,
+    "category": "trade_terminology",
+    "content": "L/C | Letter of Credit | 신용장 | 은행이 매수인을 대신하여 대금 지급을 보증하는 서류. 매도인은 선적 서류를 은행에 제시하면 대금을 받을 수 있습니다. | 사용: 신용도가 낮은 거래처와의 거래 시 안전한 결제 방법",
+    "metadata": {
+      "term": "L/C",
+      "full_name": "Letter of Credit",
+      "korean_name": "신용장",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 13,
+    "category": "trade_terminology",
+    "content": "T/T | Telegraphic Transfer | 전신 송금 | 은행을 통한 전신 송금 방식. 가장 간단하고 빠른 결제 방법입니다. | 사용: 신용도가 높은 거래처와의 거래 시",
+    "metadata": {
+      "term": "T/T",
+      "full_name": "Telegraphic Transfer",
+      "korean_name": "전신 송금",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 14,
+    "category": "trade_terminology",
+    "content": "D/P | Documents against Payment | 지급 인도 조건 | 매수인이 대금을 지급하면 은행이 선적 서류를 인도하는 방식. 추심 결제의 일종입니다. | 사용: L/C보다 비용이 낮지만 신용도가 필요한 경우",
+    "metadata": {
+      "term": "D/P",
+      "full_name": "Documents against Payment",
+      "korean_name": "지급 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 15,
+    "category": "trade_terminology",
+    "content": "D/A | Documents against Acceptance | 인수 인도 조건 | 매수인이 환어음을 인수하면 은행이 선적 서류를 인도하는 방식. 일정 기간 후 대금을 지급합니다. | 사용: 외상 거래 시 사용",
+    "metadata": {
+      "term": "D/A",
+      "full_name": "Documents against Acceptance",
+      "korean_name": "인수 인도 조건",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 16,
+    "category": "trade_terminology",
+    "content": "CAD | Cash Against Documents | 서류 상환 지급 | 선적 서류와 동시에 현금으로 대금을 지급하는 방식. | 사용: 소액 거래 시",
+    "metadata": {
+      "term": "CAD",
+      "full_name": "Cash Against Documents",
+      "korean_name": "서류 상환 지급",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 17,
+    "category": "trade_terminology",
+    "content": "O/A | Open Account | 외상 거래 | 물품 선적 후 일정 기간 내에 대금을 지급하는 방식. 신용 거래입니다. | 사용: 신용도가 매우 높은 장기 거래처",
+    "metadata": {
+      "term": "O/A",
+      "full_name": "Open Account",
+      "korean_name": "외상 거래",
+      "document_type": "trade_terminology",
+      "category": "payment",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 18,
+    "category": "trade_terminology",
+    "content": "B/L | Bill of Lading | 선하증권 | 선박회사가 발행하는 화물 수령증이자 운송 계약서이며 소유권 증서. 무역에서 가장 중요한 서류입니다. | 사용: 해상 운송의 필수 서류",
+    "metadata": {
+      "term": "B/L",
+      "full_name": "Bill of Lading",
+      "korean_name": "선하증권",
+      "document_type": "trade_terminology",
+      "category": "document",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 19,
+    "category": "trade_terminology",
+    "content": "AWB | Air Waybill | 항공 화물 운송장 | 항공사가 발행하는 화물 수령증. B/L과 달리 유통 증권이 아닙니다. | 사용: 항공 운송의 필수 서류",
+    "metadata": {
+      "term": "AWB",
+      "full_name": "Air Waybill",
+      "korean_name": "항공 화물 운송장",
+      "document_type": "trade_terminology",
+      "category": "document",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 20,
+    "category": "trade_terminology",
+    "content": "C/I | Commercial Invoice | 상업 송장 | 매도인이 매수인에게 발행하는 대금 청구서. 물품 명세, 수량, 단가, 금액 등이 기재됩니다. | 사용: 모든 무역 거래의 필수 서류",
+    "metadata": {
+      "term": "C/I",
+      "full_name": "Commercial Invoice",
+      "korean_name": "상업 송장",
+      "document_type": "trade_terminology",
+      "category": "document",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 21,
+    "category": "trade_terminology",
+    "content": "P/L | Packing List | 포장 명세서 | 화물의 포장 내역을 상세히 기재한 서류. 중량, 부피, 포장 단위 등이 포함됩니다. | 사용: 통관 및 검수 시 필수",
+    "metadata": {
+      "term": "P/L",
+      "full_name": "Packing List",
+      "korean_name": "포장 명세서",
+      "document_type": "trade_terminology",
+      "category": "document",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 22,
+    "category": "trade_terminology",
+    "content": "C/O | Certificate of Origin | 원산지 증명서 | 물품의 원산지를 증명하는 서류. 관세 혜택을 받기 위해 필요합니다. | 사용: FTA 관세 혜택 신청 시",
+    "metadata": {
+      "term": "C/O",
+      "full_name": "Certificate of Origin",
+      "korean_name": "원산지 증명서",
+      "document_type": "trade_terminology",
+      "category": "document",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 23,
+    "category": "trade_terminology",
+    "content": "MT | Metric Ton | 미터톤 | 무게 단위. 1 MT = 1,000 kg | 사용: 무역에서 표준 무게 단위",
+    "metadata": {
+      "term": "MT",
+      "full_name": "Metric Ton",
+      "korean_name": "미터톤",
+      "document_type": "trade_terminology",
+      "category": "unit",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 24,
+    "category": "trade_terminology",
+    "content": "CBM | Cubic Meter | 세제곱미터 | 부피 단위. 1 CBM = 1m³ | 사용: 해상 운송 부피 측정",
+    "metadata": {
+      "term": "CBM",
+      "full_name": "Cubic Meter",
+      "korean_name": "세제곱미터",
+      "document_type": "trade_terminology",
+      "category": "unit",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 25,
+    "category": "trade_terminology",
+    "content": "CFT | Cubic Feet | 세제곱피트 | 부피 단위. 1 CFT = 1 ft³ | 사용: 항공 운송 부피 측정",
+    "metadata": {
+      "term": "CFT",
+      "full_name": "Cubic Feet",
+      "korean_name": "세제곱피트",
+      "document_type": "trade_terminology",
+      "category": "unit",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 26,
+    "category": "trade_terminology",
+    "content": "TEU | Twenty-foot Equivalent Unit | 20피트 컨테이너 단위 | 컨테이너 용량 단위. 20피트 컨테이너 1개를 기준으로 함 | 사용: 컨테이너 선박 용량 표시",
+    "metadata": {
+      "term": "TEU",
+      "full_name": "Twenty-foot Equivalent Unit",
+      "korean_name": "20피트 컨테이너 단위",
+      "document_type": "trade_terminology",
+      "category": "unit",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 27,
+    "category": "trade_terminology",
+    "content": "FCL | Full Container Load | 컨테이너 단독 적재 | 1개의 컨테이너를 한 화주가 단독으로 사용하는 방식 | 사용: 대량 화물 운송 시",
+    "metadata": {
+      "term": "FCL",
+      "full_name": "Full Container Load",
+      "korean_name": "컨테이너 단독 적재",
+      "document_type": "trade_terminology",
+      "category": "shipping",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  },
+  {
+    "id": 28,
+    "category": "trade_terminology",
+    "content": "LCL | Less than Container Load | 컨테이너 혼적 | 여러 화주의 화물을 1개의 컨테이너에 혼적하는 방식 | 사용: 소량 화물 운송 시",
+    "metadata": {
+      "term": "LCL",
+      "full_name": "Less than Container Load",
+      "korean_name": "컨테이너 혼적",
+      "document_type": "trade_terminology",
+      "category": "shipping",
+      "priority": "medium",
+      "source": "Standard Trade Terms"
+    }
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "trade_qa",
+    "content": "FOB 뜻",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working"],
+      "situation": ["incoterms_understanding", "trade_terms"],
+      "topic": ["incoterms", "FOB"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 2,
+    "category": "trade_qa",
+    "content": "CIF 뜻",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working"],
+      "situation": ["incoterms_understanding", "trade_terms"],
+      "topic": ["incoterms", "CIF"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 3,
+    "category": "trade_qa",
+    "content": "BL 역할",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working"],
+      "situation": ["documentation_understanding", "trade_documents"],
+      "topic": ["bill_of_lading", "documentation", "logistics"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 4,
+    "category": "trade_qa",
+    "content": "demurrage 정의",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["cost_understanding", "trade_terms"],
+      "topic": ["demurrage", "logistics_cost", "port_operations"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 5,
+    "category": "trade_qa",
+    "content": "detention 차이",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["cost_understanding", "trade_terms"],
+      "topic": ["detention", "demurrage", "logistics_cost"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 6,
+    "category": "trade_qa",
+    "content": "LC 구조",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "finance"],
+      "situation": ["trade_finance_understanding", "payment_terms"],
+      "topic": ["L/C", "trade_finance", "payment_methods"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 7,
+    "category": "trade_qa",
+    "content": "T/T payment",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "finance"],
+      "situation": ["trade_finance_understanding", "payment_terms"],
+      "topic": ["T/T_payment", "trade_finance", "payment_methods"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 8,
+    "category": "trade_qa",
+    "content": "consignee 의미",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working"],
+      "situation": ["documentation_understanding", "trade_terms"],
+      "topic": ["consignee", "documentation"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 9,
+    "category": "trade_qa",
+    "content": "notify party",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working"],
+      "situation": ["documentation_understanding", "trade_terms"],
+      "topic": ["notify_party", "documentation"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 10,
+    "category": "trade_qa",
+    "content": "HS code",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "compliance"],
+      "situation": ["customs_understanding", "trade_terms"],
+      "topic": ["HS_code", "customs_duty", "tariff_classification"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base", "compliance_check"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 11,
+    "category": "trade_qa",
+    "content": "packing list",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["documentation_understanding", "shipment_preparation"],
+      "topic": ["packing_list", "documentation", "logistics"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 12,
+    "category": "trade_qa",
+    "content": "proforma invoice",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "sales"],
+      "situation": ["documentation_understanding", "pre_sales"],
+      "topic": ["proforma_invoice", "documentation", "sales_process"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 13,
+    "category": "trade_qa",
+    "content": "commercial invoice",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "finance"],
+      "situation": ["documentation_understanding", "payment"],
+      "topic": ["commercial_invoice", "documentation", "trade_finance"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 14,
+    "category": "trade_qa",
+    "content": "ETA/ETD",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["logistics_understanding", "shipment_tracking"],
+      "topic": ["ETA", "ETD", "logistics", "shipment_tracking"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 15,
+    "category": "trade_qa",
+    "content": "transshipment",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["logistics_understanding", "shipment_route"],
+      "topic": ["transshipment", "logistics", "shipment_planning"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 16,
+    "category": "trade_qa",
+    "content": "free time",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["cost_understanding", "port_operations"],
+      "topic": ["demurrage", "detention", "logistics_cost"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 17,
+    "category": "trade_qa",
+    "content": "surrender BL",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "logistics"],
+      "situation": ["documentation_understanding", "cargo_release"],
+      "topic": ["bill_of_lading", "documentation", "logistics"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 18,
+    "category": "trade_qa",
+    "content": "switch BL",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics"],
+      "situation": ["documentation_understanding", "trade_practices"],
+      "topic": ["bill_of_lading", "documentation", "logistics"],
+      "priority": "normal",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 19,
+    "category": "trade_qa",
+    "content": "inspection",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "quality_control"],
+      "situation": ["quality_control", "cargo_inspection"],
+      "topic": ["inspection", "quality_control", "compliance"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base"],
+      "source_dataset": "trade_qa.json"
+    }
+  },
+  {
+    "id": 20,
+    "category": "trade_qa",
+    "content": "origin cert",
+    "metadata": {
+      "original_category": "trade_qa",
+      "document_type": "faq",
+      "country": ["Global"],
+      "role": ["beginner", "working", "compliance"],
+      "situation": ["documentation_understanding", "customs_requirement"],
+      "topic": ["certificate_of_origin", "documentation", "customs_procedure"],
+      "priority": "normal",
+      "level": "beginner",
+      "reliability": "high",
+      "use_case": ["training", "coaching", "faq", "knowledge_base", "compliance_check"],
+      "source_dataset": "trade_qa.json"
+    }
+  }
+]

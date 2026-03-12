@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "category": "ceo_style",
+    "content": "선적지연 | 거래처신뢰 | 즉시보고",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["delay", "shipment_delay"],
+      "ceo_focus": "거래처신뢰",
+      "action": "즉시보고",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["risk_management", "communication_strategy", "customer_relations"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 2,
+    "category": "ceo_style",
+    "content": "비용증가 | 마진보호 | 사전보고",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["cost_increase", "financial_impact"],
+      "ceo_focus": "마진보호",
+      "action": "사전보고",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["financial_management", "cost_control", "profitability"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 3,
+    "category": "ceo_style",
+    "content": "서류오류 | 속도보다정확 | 재확인",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["document_error", "compliance_issue"],
+      "ceo_focus": "속도보다정확",
+      "action": "재확인",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["documentation", "compliance", "quality_control"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "risk_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 4,
+    "category": "ceo_style",
+    "content": "환율변동 | 손실방지 | 즉시공유",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["currency_fluctuation", "financial_risk"],
+      "ceo_focus": "손실방지",
+      "action": "즉시공유",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["trade_finance", "exchange_rate", "risk_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 5,
+    "category": "ceo_style",
+    "content": "클레임 | 관계유지 | 선조치후보고",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["claim", "customer_dispute"],
+      "ceo_focus": "관계유지",
+      "action": "선조치후보고",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["claim_management", "customer_relations", "conflict_resolution"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "risk_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 6,
+    "category": "ceo_style",
+    "content": "품질이슈 | 브랜드보호 | 즉시대응",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["quality_issue", "brand_reputation"],
+      "ceo_focus": "브랜드보호",
+      "action": "즉시대응",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["quality_control", "brand_management", "crisis_management"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "crisis_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 7,
+    "category": "ceo_style",
+    "content": "일정변경 | 납기우선 | 공유",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["schedule_change", "delivery_delay"],
+      "ceo_focus": "납기우선",
+      "action": "공유",
+      "country": ["Global"],
+      "role": ["executive", "manager", "logistics"],
+      "topic": ["logistics_management", "supply_chain", "delivery_schedule"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "risk_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 8,
+    "category": "ceo_style",
+    "content": "신규거래 | 리스크관리 | 계약검토",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["new_business", "contract_negotiation"],
+      "ceo_focus": "리스크관리",
+      "action": "계약검토",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["business_development", "risk_management", "contract_review"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 9,
+    "category": "ceo_style",
+    "content": "대량주문 | 현금흐름 | 분할",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["large_order", "cash_flow_management"],
+      "ceo_focus": "현금흐름",
+      "action": "분할",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["financial_management", "sales_strategy", "inventory_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 10,
+    "category": "ceo_style",
+    "content": "급한선적 | 안정우선 | 확인",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["urgent_shipment", "stability_priority"],
+      "ceo_focus": "안정우선",
+      "action": "확인",
+      "country": ["Global"],
+      "role": ["executive", "manager", "logistics"],
+      "topic": ["logistics_management", "risk_management", "expedited_shipping"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "risk_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 11,
+    "category": "ceo_style",
+    "content": "비용절감 | 품질유지 | 비교",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["cost_reduction", "quality_maintenance"],
+      "ceo_focus": "품질유지",
+      "action": "비교",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["cost_management", "quality_control", "supplier_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 12,
+    "category": "ceo_style",
+    "content": "포워더선정 | 안정성 | 기존우선",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["forwarder_selection", "service_stability"],
+      "ceo_focus": "안정성",
+      "action": "기존우선",
+      "country": ["Global"],
+      "role": ["executive", "manager", "logistics"],
+      "topic": ["logistics_management", "supplier_selection", "risk_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 13,
+    "category": "ceo_style",
+    "content": "거래처불만 | 관계 | 빠른응답",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["customer_complaint", "customer_relations"],
+      "ceo_focus": "관계",
+      "action": "빠른응답",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "topic": ["customer_relations", "crisis_management", "communication_strategy"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "crisis_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 14,
+    "category": "ceo_style",
+    "content": "내부실수 | 투명성 | 보고",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["internal_error", "transparency_priority"],
+      "ceo_focus": "투명성",
+      "action": "보고",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["internal_controls", "corporate_governance", "risk_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "internal_audit"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 15,
+    "category": "ceo_style",
+    "content": "지연발생 | 신뢰 | 선공지",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["delay", "trust_building"],
+      "ceo_focus": "신뢰",
+      "action": "선공지",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "topic": ["customer_relations", "communication_strategy", "crisis_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "crisis_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 16,
+    "category": "ceo_style",
+    "content": "가격협상 | 장기거래 | 유연",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["price_negotiation", "long_term_deal"],
+      "ceo_focus": "장기거래",
+      "action": "유연",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "topic": ["negotiation_strategy", "contract_management", "business_development"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "negotiation_strategy"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 17,
+    "category": "ceo_style",
+    "content": "문서오류 | 정확 | 수정",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["document_error", "accuracy_priority"],
+      "ceo_focus": "정확",
+      "action": "수정",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["documentation", "compliance", "quality_control"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "error_prevention"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 18,
+    "category": "ceo_style",
+    "content": "일정겹침 | 우선순위 | 대표보고",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["schedule_conflict", "priority_management"],
+      "ceo_focus": "우선순위",
+      "action": "대표보고",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["time_management", "project_management", "reporting"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "project_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 19,
+    "category": "ceo_style",
+    "content": "긴급결정 | 리스크 | 팀장공유",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["urgent_decision", "risk_assessment"],
+      "ceo_focus": "리스크",
+      "action": "팀장공유",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["risk_management", "decision_making", "crisis_management"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "crisis_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 20,
+    "category": "ceo_style",
+    "content": "신규시장 | 검증 | 소량테스트",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "situation": ["new_market_entry", "validation"],
+      "ceo_focus": "검증",
+      "action": "소량테스트",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "topic": ["market_analysis", "business_development", "risk_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 21,
+    "category": "ceo_style",
+    "content": "가격보다 거래 지속성 중시",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["negotiation", "long_term_strategy"],
+      "ceo_focus": "거래 지속성",
+      "topic": ["negotiation_strategy", "customer_relations", "business_strategy"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 22,
+    "category": "ceo_style",
+    "content": "장기거래 buyer 우선",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["customer_management", "long_term_relationship"],
+      "ceo_focus": "장기거래 buyer",
+      "topic": ["customer_relations", "sales_strategy", "business_strategy"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 23,
+    "category": "ceo_style",
+    "content": "위험국가 거래 보수적",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["international_trade", "risk_assessment"],
+      "ceo_focus": "리스크 회피",
+      "topic": ["risk_management", "market_entry_strategy", "country_risk"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 24,
+    "category": "ceo_style",
+    "content": "환율 민감",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "finance"],
+      "situation": ["financial_management", "market_fluctuation"],
+      "ceo_focus": "환율 관리",
+      "topic": ["trade_finance", "exchange_rate", "risk_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 25,
+    "category": "ceo_style",
+    "content": "신용장 거래 선호",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "finance"],
+      "situation": ["payment_terms", "trade_finance"],
+      "ceo_focus": "신용장 거래",
+      "topic": ["L/C", "trade_finance", "payment_methods", "risk_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "risk_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 26,
+    "category": "ceo_style",
+    "content": "신규 거래 small lot 테스트",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["new_business", "market_entry"],
+      "ceo_focus": "신규 거래 테스트",
+      "topic": ["business_development", "market_research", "risk_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 27,
+    "category": "ceo_style",
+    "content": "분쟁시 빠른 할인 합의",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["dispute_resolution", "claim_settlement"],
+      "ceo_focus": "분쟁 해결",
+      "topic": ["conflict_resolution", "negotiation_strategy", "customer_relations"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "crisis_management"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 28,
+    "category": "ceo_style",
+    "content": "재고 회전율 중시",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["inventory_management", "operational_efficiency"],
+      "ceo_focus": "재고 회전율",
+      "topic": ["supply_chain_management", "inventory_optimization", "financial_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 29,
+    "category": "ceo_style",
+    "content": "선적 안정성 최우선",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "logistics"],
+      "situation": ["shipment_planning", "risk_management"],
+      "ceo_focus": "선적 안정성",
+      "topic": ["logistics_management", "supply_chain", "risk_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 30,
+    "category": "ceo_style",
+    "content": "선사 변경 보수적",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "logistics"],
+      "situation": ["supplier_management", "risk_management"],
+      "ceo_focus": "선사 변경",
+      "topic": ["logistics_management", "supplier_selection", "risk_management"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 31,
+    "category": "ceo_style",
+    "content": "가격협상 여지 3%",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["negotiation", "pricing_strategy"],
+      "ceo_focus": "가격협상",
+      "topic": ["negotiation_strategy", "pricing", "sales_strategy"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "negotiation_strategy"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 32,
+    "category": "ceo_style",
+    "content": "커피 품질 우선",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "quality_control"],
+      "situation": ["product_strategy", "quality_control"],
+      "ceo_focus": "커피 품질",
+      "topic": ["quality_control", "product_standards", "brand_management"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 33,
+    "category": "ceo_style",
+    "content": "지연 패널티 엄격",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["contract_management", "delay_penalties"],
+      "ceo_focus": "지연 패널티",
+      "topic": ["contract_law", "risk_management", "compliance"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "compliance_check"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 34,
+    "category": "ceo_style",
+    "content": "거래이력 중요",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["customer_management", "partner_evaluation"],
+      "ceo_focus": "거래이력",
+      "topic": ["customer_relations", "supplier_management", "risk_assessment"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 35,
+    "category": "ceo_style",
+    "content": "이메일보다 전화 선호",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["communication_preference"],
+      "ceo_focus": "소통 방식",
+      "topic": ["communication_strategy", "business_etiquette"],
+      "priority": "low",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "coaching"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 36,
+    "category": "ceo_style",
+    "content": "보고서 간결 선호",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["reporting_preference"],
+      "ceo_focus": "보고서 형식",
+      "topic": ["communication_strategy", "management_reporting"],
+      "priority": "low",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "coaching"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 37,
+    "category": "ceo_style",
+    "content": "주간 보고 요구",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["reporting_frequency"],
+      "ceo_focus": "보고 주기",
+      "topic": ["project_management", "management_reporting"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "coaching", "performance_monitoring"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 38,
+    "category": "ceo_style",
+    "content": "리스크 회피형",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["decision_making_style", "risk_management"],
+      "ceo_focus": "리스크 관리",
+      "topic": ["risk_management", "decision_making", "business_strategy"],
+      "priority": "high",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 39,
+    "category": "ceo_style",
+    "content": "관계 중심 협상",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager", "sales"],
+      "situation": ["negotiation_style", "customer_relations"],
+      "ceo_focus": "관계",
+      "topic": ["negotiation_strategy", "customer_relations", "business_strategy"],
+      "priority": "normal",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "negotiation_strategy"],
+      "source_dataset": "ceo_style.json"
+    }
+  },
+  {
+    "id": 40,
+    "category": "ceo_style",
+    "content": "현금흐름 우선",
+    "metadata": {
+      "original_category": "ceo_style",
+      "document_type": "ceo_guideline",
+      "country": ["Global"],
+      "role": ["executive", "manager"],
+      "situation": ["financial_management", "business_operations"],
+      "ceo_focus": "현금흐름",
+      "topic": ["financial_management", "cash_flow", "business_strategy"],
+      "priority": "critical",
+      "level": "executive",
+      "reliability": "high",
+      "use_case": ["simulation", "decision_support", "coaching", "strategy_planning"],
+      "source_dataset": "ceo_style.json"
+    }
+  }
+]

@@ -1,0 +1,251 @@
+[1] users.json (학습자 5명 세트)
+
+[
+  {
+    "user_id": "U01",
+    "role_level": "junior",
+    "experience_months": 1,
+    "weak_topics": ["payment", "documentation"],
+    "risk_tolerance": "low",
+    "preferred_style": "coaching"
+  },
+  {
+    "user_id": "U02",
+    "role_level": "junior",
+    "experience_months": 6,
+    "weak_topics": ["customs"],
+    "risk_tolerance": "low",
+    "preferred_style": "checklist"
+  },
+  {
+    "user_id": "U03",
+    "role_level": "working",
+    "experience_months": 24,
+    "weak_topics": ["incoterms"],
+    "risk_tolerance": "medium",
+    "preferred_style": "concise"
+  },
+  {
+    "user_id": "U04",
+    "role_level": "senior",
+    "experience_months": 60,
+    "weak_topics": [],
+    "risk_tolerance": "low",
+    "preferred_style": "blunt"
+  },
+  {
+    "user_id": "U05",
+    "role_level": "sales",
+    "experience_months": 36,
+    "weak_topics": ["negotiation"],
+    "risk_tolerance": "high",
+    "preferred_style": "concise"
+  }
+]
+
+[2] 시나리오 자동 생성기
+
+scripts/generate_scenarios.py
+
+이건 50개 케이스 → 상황 입력 텍스트 3개씩 생성 = 150개 시나리오
+
+import json
+import random
+from pathlib import Path
+
+INPUT_PATH = Path("data/mistakes.json")
+OUTPUT_PATH = Path("data/scenarios.json")
+
+TEMPLATES = [
+    "지금 {doc} 검토 중인데 이런 내용이 있어요: {snippet} 문제될까요?",
+    "{doc} 작성하다가 발견했습니다 → {snippet} 이거 그냥 진행해도 될까요?",
+    "바이어가 이렇게 보냈습니다: {snippet} 대응 어떻게 해야 하나요?"
+]
+
+DOC_TYPES = ["Invoice", "BL", "LC", "Email", "Packing List"]
+
+def make_snippet(text):
+    lines = text.split("\n")
+    if len(lines) > 2:
+        return lines[1]
+    return text[:80]
+
+def main():
+    items = json.loads(INPUT_PATH.read_text(encoding="utf-8"))
+
+    scenarios = []
+
+    for it in items:
+        for i in range(3):
+            template = random.choice(TEMPLATES)
+            doc = random.choice(DOC_TYPES)
+
+            scenario_text = template.format(
+                doc=doc,
+                snippet=make_snippet(it["embed_text"])
+            )
+
+            scenarios.append({
+                "scenario_id": f"{it['id']}-S{i+1}",
+                "base_id": it["id"],
+                "risk_type": it["risk_type"],
+                "input_text": scenario_text,
+                "expected_loss": it["expected_loss"]
+            })
+
+    OUTPUT_PATH.write_text(json.dumps(scenarios, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"OK: {len(scenarios)} scenarios created -> {OUTPUT_PATH}")
+
+if __name__ == "__main__":
+    main()
+
+[3] user × scenario 자동 검증 runner
+
+scripts/batch_runner_users.py
+
+
+150 시나리오 × 5명 = 750회 자동 실행 (꼭!)
+import json
+from pathlib import Path
+from mistake_predict_agent import MistakePredictAgent
+
+scenarios = json.loads(Path("data/scenarios.json").read_text(encoding="utf-8"))
+users = json.loads(Path("data/users.json").read_text(encoding="utf-8"))
+
+out_dir = Path("batch_user_outputs")
+out_dir.mkdir(exist_ok=True)
+
+agent = MistakePredictAgent()
+
+report = []
+
+for sc in scenarios:
+    for user in users:
+        result = agent.analyze(
+            user_input=sc["input_text"],
+            user_profile=user
+        )
+
+        passed = (
+            "risk_factors" in result and
+            len(result["risk_factors"]) >= 2 and
+            "evidence_sources" in result and
+            len(result["evidence_sources"]) > 0
+        )
+
+        record = {
+            "scenario": sc["scenario_id"],
+            "user": user["user_id"],
+            "risk_level": result.get("risk_scoring", {}).get("risk_level"),
+            "pass": passed
+        }
+
+        report.append(record)
+
+Path(out_dir/"report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+
+print("DONE:", len(report), "tests executed")
+
+<같은 사고 상황에서
+다른 직원이 물어봐도
+AI가 올바른 리스크 판단을 하는가>
+
+즉 “사람이 달라도 안전하게 동작하는가” 검증
+
+다음 단계는 user_profile에 따라 답변 내용이 달라지는지 평가 로직 추가
+
+[1] Agent 수정 — user_profile 반영 로직 추가
+def build_user_instruction(user_profile: dict) -> str:
+    role = user_profile.get("role_level", "")
+    style = user_profile.get("preferred_style", "")
+    risk = user_profile.get("risk_tolerance", "")
+    weak = ", ".join(user_profile.get("weak_topics", []))
+
+    if role == "junior":
+        tone = "교육용으로 쉽게 설명하고 단계별 체크리스트를 제공해라."
+    elif role == "senior":
+        tone = "관리자 보고 수준으로 간결하게 핵심 리스크와 즉시 조치를 제시해라."
+    elif role == "sales":
+        tone = "금전 손실과 협상 영향 중심으로 경고하라."
+    else:
+        tone = "실무자가 이해할 수 있는 수준으로 설명하라."
+
+    if style == "blunt":
+        tone += " 불필요한 설명 없이 단정적으로 말해라."
+    elif style == "coaching":
+        tone += " 왜 위험한지 이유를 포함해 코칭해라."
+    elif style == "checklist":
+        tone += " 반드시 실행 체크리스트 형태로 작성해라."
+
+    if risk == "low":
+        tone += " 보수적으로 판단하고 위험을 강조해라."
+    elif risk == "high":
+        tone += " 과도한 경고는 줄이고 핵심만 전달해라."
+
+    if weak:
+        tone += f" 특히 {weak} 관련 개념을 보강 설명해라."
+
+    return tone
+
+*LLM호출전에
+
+user_instruction = build_user_instruction(user_profile)
+
+system_prompt = f"""
+너는 물류/무역 실무 사수다.
+반드시 회사 내부 관점에서 설명해라.
+손실/지연/책임/신뢰 영향 중심으로 답변해라.
+
+추가 지침:
+{user_instruction}
+"""
+<검증에서 확인할것>
+1. 1차 검증: 리스크 찾았는지? 
+2. 2차 검증: 사람에 맞게 대답하는지?
+
+def coaching_style_score(output_text, user):
+    style = user["preferred_style"]
+
+    if style == "checklist":
+        return "1." in output_text or "-" in output_text
+
+    if style == "blunt":
+        return len(output_text) < 400
+
+    if style == "coaching":
+        return "왜" in output_text or "이유" in output_text
+
+    if style == "concise":
+        return len(output_text) < 600
+
+    return True
+
+<pass조건 변경>
+
+text_blob = json.dumps(result, ensure_ascii=False)
+
+style_ok = coaching_style_score(text_blob, user)
+
+passed = (
+    len(result.get("risk_factors", [])) >= 2 and
+    len(result.get("evidence_sources", [])) > 0 and
+    style_ok
+)
+
+<무엇을 검증하는가?>
+
+1. 리스크 탐지 정확성
+
+2. 근거 기반 설명 여부
+
+3. 사용자 맞춤 코칭 여부 *중요*
+
+<결과 해석 방법>
+
+batch_user_outputs/report.json 에서
+
+pass 비율	의미
+<60%	프롬프트 실패
+60~80%	RAG 부족
+80~90%	서비스 가능
+90%+	실제 운영 가능

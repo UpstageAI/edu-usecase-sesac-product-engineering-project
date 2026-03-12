@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "claims",
+    "content": "mold 발생",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "quality_control"],
+      "situation": ["claim", "quality_issue", "cargo_damage", "contamination"],
+      "topic": ["claim_management", "quality_control", "cargo_inspection", "food_safety"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "compliance_check"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 2,
+    "category": "claims",
+    "content": "bag torn",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "logistics"],
+      "situation": ["claim", "cargo_damage", "packaging_issue", "mishandling"],
+      "topic": ["claim_management", "packaging", "cargo_handling", "logistics_operations"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 3,
+    "category": "claims",
+    "content": "weight shortage",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics", "finance"],
+      "situation": ["claim", "quantity_discrepancy", "financial_loss"],
+      "topic": ["claim_management", "quantity_inspection", "weight_measurement", "logistics_operations"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "financial_management"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 4,
+    "category": "claims",
+    "content": "moisture 초과",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "quality_control"],
+      "situation": ["claim", "quality_issue", "product_defect", "storage_issue"],
+      "topic": ["claim_management", "quality_control", "cargo_inspection", "product_standards"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "compliance_check"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 5,
+    "category": "claims",
+    "content": "wrong grade",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "sales", "quality_control"],
+      "situation": ["claim", "quality_issue", "product_mismatch", "contract_breach"],
+      "topic": ["claim_management", "quality_control", "product_specification", "contract_compliance"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "negotiation"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 6,
+    "category": "claims",
+    "content": "late shipment",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics", "sales"],
+      "situation": ["claim", "delay", "late_shipment"],
+      "topic": ["claim_management", "logistics", "shipment_tracking", "contract_compliance"],
+      "priority": "critical",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "decision_support"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 7,
+    "category": "claims",
+    "content": "BL error",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics", "compliance"],
+      "situation": ["claim", "document_error", "BL_error", "customs_delay"],
+      "topic": ["claim_management", "bill_of_lading", "documentation", "compliance"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "compliance_check", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 8,
+    "category": "claims",
+    "content": "quantity mismatch",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics"],
+      "situation": ["claim", "quantity_discrepancy", "inventory_issue"],
+      "topic": ["claim_management", "quantity_inspection", "logistics_operations"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 9,
+    "category": "claims",
+    "content": "insurance claim",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "finance"],
+      "situation": ["claim", "insurance", "financial_loss"],
+      "topic": ["claim_management", "trade_insurance", "risk_management", "financial_management"],
+      "priority": "critical",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "decision_support", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 10,
+    "category": "claims",
+    "content": "container damage",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "logistics"],
+      "situation": ["claim", "cargo_damage", "equipment_damage"],
+      "topic": ["claim_management", "logistics", "container_management"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 11,
+    "category": "claims",
+    "content": "insect 발견",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "quality_control"],
+      "situation": ["claim", "quality_issue", "cargo_contamination", "pest_infestation"],
+      "topic": ["claim_management", "quality_control", "pest_control", "cargo_inspection"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 12,
+    "category": "claims",
+    "content": "smell issue",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "quality_control"],
+      "situation": ["claim", "quality_issue", "product_defect", "contamination"],
+      "topic": ["claim_management", "quality_control", "cargo_inspection"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 13,
+    "category": "claims",
+    "content": "delay penalty",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "finance"],
+      "situation": ["claim", "delay", "penalty", "cost_issue"],
+      "topic": ["claim_management", "contract_compliance", "financial_penalties"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "decision_support"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 14,
+    "category": "claims",
+    "content": "SGS mismatch",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "quality_control", "compliance"],
+      "situation": ["claim", "document_error", "quality_issue", "inspection_discrepancy"],
+      "topic": ["claim_management", "quality_control", "inspection_services", "compliance_check"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training", "compliance_check"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 15,
+    "category": "claims",
+    "content": "port storage fee",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "logistics", "finance"],
+      "situation": ["claim", "cost_issue", "port_delay", "demurrage"],
+      "topic": ["claim_management", "logistics_cost", "port_operations", "cost_control"],
+      "priority": "high",
+      "level": "manager",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "cost_control", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 16,
+    "category": "claims",
+    "content": "sample mismatch",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "sales", "quality_control"],
+      "situation": ["claim", "quality_issue", "product_mismatch"],
+      "topic": ["claim_management", "quality_control", "sample_management"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 17,
+    "category": "claims",
+    "content": "packaging defect",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "logistics", "quality_control"],
+      "situation": ["claim", "cargo_damage", "packaging_issue"],
+      "topic": ["claim_management", "packaging", "cargo_handling"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 18,
+    "category": "claims",
+    "content": "color issue",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "quality_control", "sales"],
+      "situation": ["claim", "quality_issue", "product_defect"],
+      "topic": ["claim_management", "quality_control", "product_specification"],
+      "priority": "critical",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "training"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 19,
+    "category": "claims",
+    "content": "roasting test fail",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "manager", "quality_control", "expert"],
+      "situation": ["claim", "quality_issue", "product_defect", "testing_failure"],
+      "topic": ["claim_management", "quality_control", "product_testing", "coffee_quality"],
+      "priority": "critical",
+      "level": "expert",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "training", "expert_consultation"],
+      "source_dataset": "claims.json"
+    }
+  },
+  {
+    "id": 20,
+    "category": "claims",
+    "content": "partial damage",
+    "metadata": {
+      "original_category": "claims",
+      "document_type": "claim_type",
+      "country": ["Global"],
+      "role": ["working", "logistics", "manager"],
+      "situation": ["claim", "cargo_damage", "partial_loss"],
+      "topic": ["claim_management", "logistics", "risk_management", "cargo_handling"],
+      "priority": "high",
+      "level": "working",
+      "reliability": "high",
+      "use_case": ["coaching", "problem_solving", "risk_management", "training"],
+      "source_dataset": "claims.json"
+    }
+  }
+]

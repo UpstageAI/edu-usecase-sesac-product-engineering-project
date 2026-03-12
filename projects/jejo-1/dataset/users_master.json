@@ -1,0 +1,59 @@
+[
+  {
+    "user_id": "U01",
+    "role_level": "junior",
+    "experience_months": 1,
+    "weak_topics": [
+      "payment",
+      "documentation"
+    ],
+    "risk_tolerance": "low",
+    "preferred_style": "checklist",
+    "content": "User U01 (junior): 1mo exp, Weak in payment, documentation, Prefers checklist style."
+  },
+  {
+    "user_id": "U02",
+    "role_level": "junior",
+    "experience_months": 6,
+    "weak_topics": [
+      "customs_clearance",
+      "documentation"
+    ],
+    "risk_tolerance": "low",
+    "preferred_style": "coaching",
+    "content": "User U02 (junior): 6mo exp, Weak in customs_clearance, documentation, Prefers coaching style."
+  },
+  {
+    "user_id": "U03",
+    "role_level": "working",
+    "experience_months": 24,
+    "weak_topics": [
+      "incoterms",
+      "contract_terms"
+    ],
+    "risk_tolerance": "medium",
+    "preferred_style": "coaching",
+    "content": "User U03 (working): 24mo exp, Weak in incoterms, contract_terms, Prefers coaching style."
+  },
+  {
+    "user_id": "U04",
+    "role_level": "senior",
+    "experience_months": 84,
+    "weak_topics": [],
+    "risk_tolerance": "low",
+    "preferred_style": "blunt",
+    "content": "User U04 (senior): 84mo exp, Weak in , Prefers blunt style."
+  },
+  {
+    "user_id": "U05",
+    "role_level": "working",
+    "experience_months": 36,
+    "weak_topics": [
+      "negotiation",
+      "pricing"
+    ],
+    "risk_tolerance": "high",
+    "preferred_style": "concise",
+    "content": "User U05 (working): 36mo exp, Weak in negotiation, pricing, Prefers concise style."
+  }
+]

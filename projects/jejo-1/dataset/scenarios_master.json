@@ -1,0 +1,1142 @@
+[
+  {
+    "scenario_id": "M001-S1",
+    "base_case_id": "M001",
+    "content": "BL 수하인 이름 철자가 계약서랑 한 글자 달라요. 그냥 진행해도 되나요?",
+    "input_text": "BL 수하인 이름 철자가 계약서랑 한 글자 달라요. 그냥 진행해도 되나요?",
+    "expected_answers": {
+      "risk_type": "이름 오타",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "통관 지연 (평균 3-5일)",
+        "BL amendment 비용 $150-300"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M001-S2",
+    "base_case_id": "M001",
+    "content": "Consignee name 오타 같아요. 수정 안 하면 어떤 문제가 생기죠?",
+    "input_text": "Consignee name 오타 같아요. 수정 안 하면 어떤 문제가 생기죠?",
+    "expected_answers": {
+      "risk_type": "이름 오타",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "통관 지연 (평균 3-5일)",
+        "BL amendment 비용 $150-300"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M001-S3",
+    "base_case_id": "M001",
+    "content": "서류상 수하인 표기가 애매해서 현지에서 거절될까 걱정돼요.",
+    "input_text": "서류상 수하인 표기가 애매해서 현지에서 거절될까 걱정돼요.",
+    "expected_answers": {
+      "risk_type": "이름 오타",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "통관 지연 (평균 3-5일)",
+        "BL amendment 비용 $150-300"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M002-S1",
+    "base_case_id": "M002",
+    "content": "Shipping Mark 누락 관련해서 지금 상황이 불안합니다. BL 확인 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "Shipping Mark 누락 관련해서 지금 상황이 불안합니다. BL 확인 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "Shipping Mark 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 식별 불가",
+        "창고 입고 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M002-S2",
+    "base_case_id": "M002",
+    "content": "Shipping Mark 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "Shipping Mark 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "Shipping Mark 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 식별 불가",
+        "창고 입고 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M002-S3",
+    "base_case_id": "M002",
+    "content": "실무에서 Shipping Mark 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 Shipping Mark 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "Shipping Mark 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 식별 불가",
+        "창고 입고 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M003-S1",
+    "base_case_id": "M003",
+    "content": "운임 조건 불일치 관련해서 지금 상황이 불안합니다. BL 확인 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "운임 조건 불일치 관련해서 지금 상황이 불안합니다. BL 확인 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "운임 조건 불일치",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "정산 분쟁 발생",
+        "화물 인도 거부 가능"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M003-S2",
+    "base_case_id": "M003",
+    "content": "운임 조건 불일치 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "운임 조건 불일치 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "운임 조건 불일치",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "정산 분쟁 발생",
+        "화물 인도 거부 가능"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M003-S3",
+    "base_case_id": "M003",
+    "content": "실무에서 운임 조건 불일치 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 운임 조건 불일치 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "운임 조건 불일치",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "정산 분쟁 발생",
+        "화물 인도 거부 가능"
+      ]
+    },
+    "context_metadata": {
+      "topic": "documentation",
+      "situation": "bl_review",
+      "doc_type": "BL"
+    }
+  },
+  {
+    "scenario_id": "M004-S1",
+    "base_case_id": "M004",
+    "content": "HS Code 오류 관련해서 지금 상황이 불안합니다. 통관 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "HS Code 오류 관련해서 지금 상황이 불안합니다. 통관 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "HS Code 오류",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "관세율 차이 발생",
+        "통관 보류 또는 반송"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M004-S2",
+    "base_case_id": "M004",
+    "content": "HS Code 오류 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "HS Code 오류 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "HS Code 오류",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "관세율 차이 발생",
+        "통관 보류 또는 반송"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M004-S3",
+    "base_case_id": "M004",
+    "content": "실무에서 HS Code 오류 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 HS Code 오류 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "HS Code 오류",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "관세율 차이 발생",
+        "통관 보류 또는 반송"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M005-S1",
+    "base_case_id": "M005",
+    "content": "인보이스 초안인데 품목별 합계랑 총액이 안 맞아요. 그냥 보내도 되나요?",
+    "input_text": "인보이스 초안인데 품목별 합계랑 총액이 안 맞아요. 그냥 보내도 되나요?",
+    "expected_answers": {
+      "risk_type": "금액 불일치",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "밀수 혐의",
+        "통관 보류 및 조사"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M005-S2",
+    "base_case_id": "M005",
+    "content": "Invoice line total 합계가 final amount랑 달라요. 어떤 실수가 생길 수 있죠?",
+    "input_text": "Invoice line total 합계가 final amount랑 달라요. 어떤 실수가 생길 수 있죠?",
+    "expected_answers": {
+      "risk_type": "금액 불일치",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "밀수 혐의",
+        "통관 보류 및 조사"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M005-S3",
+    "base_case_id": "M005",
+    "content": "견적서 기반으로 인보이스 만들었는데 숫자가 애매하게 10~20달러 정도 차이나요.",
+    "input_text": "견적서 기반으로 인보이스 만들었는데 숫자가 애매하게 10~20달러 정도 차이나요.",
+    "expected_answers": {
+      "risk_type": "금액 불일치",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "밀수 혐의",
+        "통관 보류 및 조사"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M006-S1",
+    "base_case_id": "M006",
+    "content": "원산지증명서 미제출 관련해서 지금 상황이 불안합니다. 통관 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "원산지증명서 미제출 관련해서 지금 상황이 불안합니다. 통관 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "원산지증명서 미제출",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "FTA 관세 혜택 미적용",
+        "높은 관세율 적용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M006-S2",
+    "base_case_id": "M006",
+    "content": "원산지증명서 미제출 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "원산지증명서 미제출 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "원산지증명서 미제출",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "FTA 관세 혜택 미적용",
+        "높은 관세율 적용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M006-S3",
+    "base_case_id": "M006",
+    "content": "실무에서 원산지증명서 미제출 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 원산지증명서 미제출 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "원산지증명서 미제출",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "FTA 관세 혜택 미적용",
+        "높은 관세율 적용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "customs",
+      "situation": "customs_preparation",
+      "doc_type": "Invoice"
+    }
+  },
+  {
+    "scenario_id": "M007-S1",
+    "base_case_id": "M007",
+    "content": "Packing List 수량 오류 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "Packing List 수량 오류 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "Packing List 수량 오류",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "통관 시 수량 검사 실시",
+        "통관 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M007-S2",
+    "base_case_id": "M007",
+    "content": "Packing List 수량 오류 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "Packing List 수량 오류 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "Packing List 수량 오류",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "통관 시 수량 검사 실시",
+        "통관 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M007-S3",
+    "base_case_id": "M007",
+    "content": "실무에서 Packing List 수량 오류 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 Packing List 수량 오류 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "Packing List 수량 오류",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "통관 시 수량 검사 실시",
+        "통관 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M008-S1",
+    "base_case_id": "M008",
+    "content": "선적 기한 미준수 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "선적 기한 미준수 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "선적 기한 미준수",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "L/C 불일치(Discrepancy)",
+        "은행의 대금 지급 거부"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M008-S2",
+    "base_case_id": "M008",
+    "content": "선적 기한 미준수 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "선적 기한 미준수 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "선적 기한 미준수",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "L/C 불일치(Discrepancy)",
+        "은행의 대금 지급 거부"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M008-S3",
+    "base_case_id": "M008",
+    "content": "실무에서 선적 기한 미준수 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 선적 기한 미준수 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "선적 기한 미준수",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "L/C 불일치(Discrepancy)",
+        "은행의 대금 지급 거부"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M009-S1",
+    "base_case_id": "M009",
+    "content": "B/L Notify Party 누락 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "B/L Notify Party 누락 관련해서 지금 상황이 불안합니다. 선적 서류 준비 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "B/L Notify Party 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 도착 통지 불가",
+        "화물 인수 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M009-S2",
+    "base_case_id": "M009",
+    "content": "B/L Notify Party 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "B/L Notify Party 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "B/L Notify Party 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 도착 통지 불가",
+        "화물 인수 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M009-S3",
+    "base_case_id": "M009",
+    "content": "실무에서 B/L Notify Party 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 B/L Notify Party 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "B/L Notify Party 누락",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 도착 통지 불가",
+        "화물 인수 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "logistics",
+      "situation": "shipment_preparation",
+      "doc_type": "Packing List"
+    }
+  },
+  {
+    "scenario_id": "M010-S1",
+    "base_case_id": "M010",
+    "content": "송금 정보 확인 중인데 은행은 UK인데 SWIFT 코드가 KR로 시작해요. 괜찮나요?",
+    "input_text": "송금 정보 확인 중인데 은행은 UK인데 SWIFT 코드가 KR로 시작해요. 괜찮나요?",
+    "expected_answers": {
+      "risk_type": "송금 정보 오류",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "대금 오송금",
+        "자금 회수 어려움"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M010-S2",
+    "base_case_id": "M010",
+    "content": "Bank name이 HSBC London인데 SWIFT가 KODBKRSE로 나왔어요. 이대로 보내도 되나요?",
+    "input_text": "Bank name이 HSBC London인데 SWIFT가 KODBKRSE로 나왔어요. 이대로 보내도 되나요?",
+    "expected_answers": {
+      "risk_type": "송금 정보 오류",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "대금 오송금",
+        "자금 회수 어려움"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M010-S3",
+    "base_case_id": "M010",
+    "content": "벤더가 준 계좌정보에 국가가 섞여 보이는데, 송금 진행 전에 뭐부터 확인해야 하나요?",
+    "input_text": "벤더가 준 계좌정보에 국가가 섞여 보이는데, 송금 진행 전에 뭐부터 확인해야 하나요?",
+    "expected_answers": {
+      "risk_type": "송금 정보 오류",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "대금 오송금",
+        "자금 회수 어려움"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M011-S1",
+    "base_case_id": "M011",
+    "content": "환율 적용 시점 착오 관련해서 지금 상황이 불안합니다. 대금 결제 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "환율 적용 시점 착오 관련해서 지금 상황이 불안합니다. 대금 결제 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "환율 적용 시점 착오",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "예상보다 적은 금액 수취",
+        "차액 발생으로 재정산 필요"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M011-S2",
+    "base_case_id": "M011",
+    "content": "환율 적용 시점 착오 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "환율 적용 시점 착오 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "환율 적용 시점 착오",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "예상보다 적은 금액 수취",
+        "차액 발생으로 재정산 필요"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M011-S3",
+    "base_case_id": "M011",
+    "content": "실무에서 환율 적용 시점 착오 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 환율 적용 시점 착오 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "환율 적용 시점 착오",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "예상보다 적은 금액 수취",
+        "차액 발생으로 재정산 필요"
+      ]
+    },
+    "context_metadata": {
+      "topic": "payment",
+      "situation": "remittance_execution",
+      "doc_type": "Bank Data"
+    }
+  },
+  {
+    "scenario_id": "M012-S1",
+    "base_case_id": "M012",
+    "content": "조건 미비 관련해서 지금 상황이 불안합니다. 계약서 작성 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "조건 미비 관련해서 지금 상황이 불안합니다. 계약서 작성 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "조건 미비",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "비용 분담 분쟁",
+        "위험 이전 시점 불명확"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M012-S2",
+    "base_case_id": "M012",
+    "content": "조건 미비 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "조건 미비 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "조건 미비",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "비용 분담 분쟁",
+        "위험 이전 시점 불명확"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M012-S3",
+    "base_case_id": "M012",
+    "content": "실무에서 조건 미비 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 조건 미비 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "조건 미비",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "비용 분담 분쟁",
+        "위험 이전 시점 불명확"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M013-S1",
+    "base_case_id": "M013",
+    "content": "품질 기준 모호 관련해서 지금 상황이 불안합니다. 계약서 작성 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "품질 기준 모호 관련해서 지금 상황이 불안합니다. 계약서 작성 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "품질 기준 모호",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "품질 클레임 발생",
+        "검사 기준 분쟁"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M013-S2",
+    "base_case_id": "M013",
+    "content": "품질 기준 모호 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "품질 기준 모호 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "품질 기준 모호",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "품질 클레임 발생",
+        "검사 기준 분쟁"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M013-S3",
+    "base_case_id": "M013",
+    "content": "실무에서 품질 기준 모호 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 품질 기준 모호 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "품질 기준 모호",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "품질 클레임 발생",
+        "검사 기준 분쟁"
+      ]
+    },
+    "context_metadata": {
+      "topic": "contract",
+      "situation": "contract_review",
+      "doc_type": "Contract"
+    }
+  },
+  {
+    "scenario_id": "M014-S1",
+    "base_case_id": "M014",
+    "content": "첨부파일 누락 관련해서 지금 상황이 불안합니다. 바이어 이메일 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "첨부파일 누락 관련해서 지금 상황이 불안합니다. 바이어 이메일 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "첨부파일 누락",
+      "min_severity": "LOW",
+      "must_contain_keywords": [
+        "비전문적 인상",
+        "업무 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M014-S2",
+    "base_case_id": "M014",
+    "content": "첨부파일 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "첨부파일 누락 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "첨부파일 누락",
+      "min_severity": "LOW",
+      "must_contain_keywords": [
+        "비전문적 인상",
+        "업무 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M014-S3",
+    "base_case_id": "M014",
+    "content": "실무에서 첨부파일 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 첨부파일 누락 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "첨부파일 누락",
+      "min_severity": "LOW",
+      "must_contain_keywords": [
+        "비전문적 인상",
+        "업무 지연"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M015-S1",
+    "base_case_id": "M015",
+    "content": "Reply All 오용 관련해서 지금 상황이 불안합니다. 바이어 이메일 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "Reply All 오용 관련해서 지금 상황이 불안합니다. 바이어 이메일 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "Reply All 오용",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "기밀 정보 유출",
+        "내부 의견 노출"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M015-S2",
+    "base_case_id": "M015",
+    "content": "Reply All 오용 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "Reply All 오용 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "Reply All 오용",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "기밀 정보 유출",
+        "내부 의견 노출"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M015-S3",
+    "base_case_id": "M015",
+    "content": "실무에서 Reply All 오용 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 Reply All 오용 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "Reply All 오용",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "기밀 정보 유출",
+        "내부 의견 노출"
+      ]
+    },
+    "context_metadata": {
+      "topic": "email",
+      "situation": "email_communication",
+      "doc_type": "Email"
+    }
+  },
+  {
+    "scenario_id": "M016-S1",
+    "base_case_id": "M016",
+    "content": "원가 정보 노출 관련해서 지금 상황이 불안합니다. 가격 협상 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "원가 정보 노출 관련해서 지금 상황이 불안합니다. 가격 협상 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "원가 정보 노출",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "협상력 상실",
+        "추가 가격 인하 압박"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M016-S2",
+    "base_case_id": "M016",
+    "content": "원가 정보 노출 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "원가 정보 노출 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "원가 정보 노출",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "협상력 상실",
+        "추가 가격 인하 압박"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M016-S3",
+    "base_case_id": "M016",
+    "content": "실무에서 원가 정보 노출 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 원가 정보 노출 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "원가 정보 노출",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "협상력 상실",
+        "추가 가격 인하 압박"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M017-S1",
+    "base_case_id": "M017",
+    "content": "즉시 책임 인정 관련해서 지금 상황이 불안합니다. 품질 클레임 대응 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "즉시 책임 인정 관련해서 지금 상황이 불안합니다. 품질 클레임 대응 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "즉시 책임 인정",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "불리한 협상 위치",
+        "과도한 보상 요구"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M017-S2",
+    "base_case_id": "M017",
+    "content": "즉시 책임 인정 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "즉시 책임 인정 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "즉시 책임 인정",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "불리한 협상 위치",
+        "과도한 보상 요구"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M017-S3",
+    "base_case_id": "M017",
+    "content": "실무에서 즉시 책임 인정 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 즉시 책임 인정 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "즉시 책임 인정",
+      "min_severity": "HIGH",
+      "must_contain_keywords": [
+        "불리한 협상 위치",
+        "과도한 보상 요구"
+      ]
+    },
+    "context_metadata": {
+      "topic": "risk_management",
+      "situation": "issue_handling",
+      "doc_type": "Internal Data"
+    }
+  },
+  {
+    "scenario_id": "M018-S1",
+    "base_case_id": "M018",
+    "content": "컨테이너 타입 오선택 관련해서 지금 상황이 불안합니다. 운송 주선 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "컨테이너 타입 오선택 관련해서 지금 상황이 불안합니다. 운송 주선 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "컨테이너 타입 오선택",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 적재 불가",
+        "컨테이너 변경 비용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M018-S2",
+    "base_case_id": "M018",
+    "content": "컨테이너 타입 오선택 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "컨테이너 타입 오선택 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "컨테이너 타입 오선택",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 적재 불가",
+        "컨테이너 변경 비용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M018-S3",
+    "base_case_id": "M018",
+    "content": "실무에서 컨테이너 타입 오선택 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 컨테이너 타입 오선택 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "컨테이너 타입 오선택",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "화물 적재 불가",
+        "컨테이너 변경 비용"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M019-S1",
+    "base_case_id": "M019",
+    "content": "CIF 조건인데 보험 서류가 아직 없어요. 선적 먼저 진행해도 되나요?",
+    "input_text": "CIF 조건인데 보험 서류가 아직 없어요. 선적 먼저 진행해도 되나요?",
+    "expected_answers": {
+      "risk_type": "보험 가입 누락",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "계약 위반",
+        "사고 시 전액 손실"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M019-S2",
+    "base_case_id": "M019",
+    "content": "CIF인데 insurance certificate 누락 상태예요. 지금 단계에서 리스크가 뭐죠?",
+    "input_text": "CIF인데 insurance certificate 누락 상태예요. 지금 단계에서 리스크가 뭐죠?",
+    "expected_answers": {
+      "risk_type": "보험 가입 누락",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "계약 위반",
+        "사고 시 전액 손실"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M019-S3",
+    "base_case_id": "M019",
+    "content": "운송보험 가입을 깜빡했는데 출항 전까지 꼭 해야 하나요?",
+    "input_text": "운송보험 가입을 깜빡했는데 출항 전까지 꼭 해야 하나요?",
+    "expected_answers": {
+      "risk_type": "보험 가입 누락",
+      "min_severity": "CRITICAL",
+      "must_contain_keywords": [
+        "계약 위반",
+        "사고 시 전액 손실"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M020-S1",
+    "base_case_id": "M020",
+    "content": "문화적 실례 관련해서 지금 상황이 불안합니다. 바이어 미팅 중에 이런 일이 생기면 어쩌죠?",
+    "input_text": "문화적 실례 관련해서 지금 상황이 불안합니다. 바이어 미팅 중에 이런 일이 생기면 어쩌죠?",
+    "expected_answers": {
+      "risk_type": "문화적 실례",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "신뢰 관계 손상",
+        "거래 결렬"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M020-S2",
+    "base_case_id": "M020",
+    "content": "문화적 실례 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "input_text": "문화적 실례 케이스에서 발생 가능한 결과와 예방책을 알고 싶습니다.",
+    "expected_answers": {
+      "risk_type": "문화적 실례",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "신뢰 관계 손상",
+        "거래 결렬"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  },
+  {
+    "scenario_id": "M020-S3",
+    "base_case_id": "M020",
+    "content": "실무에서 문화적 실례 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "input_text": "실무에서 문화적 실례 실수는 보통 왜 발생하고 어떻게 수습하나요?",
+    "expected_answers": {
+      "risk_type": "문화적 실례",
+      "min_severity": "MEDIUM",
+      "must_contain_keywords": [
+        "신뢰 관계 손상",
+        "거래 결렬"
+      ]
+    },
+    "context_metadata": {
+      "topic": "general",
+      "situation": "work_review",
+      "doc_type": "Document"
+    }
+  }
+]
